@@ -1,0 +1,28 @@
+GO-ID,NS,enrichment,name,p_uncorrected,depth,study_count,p_fdr_bh,Lineage
+GO:0043604,BP,e,amide biosynthetic process,1.57E-06,5,123,0.000428758,ROOT
+GO:0043043,BP,e,peptide biosynthetic process,1.91E-06,6,119,0.000428758,ROOT
+GO:0006412,BP,e,translation,2.69E-06,7,116,0.000428758,ROOT
+GO:0006518,BP,e,peptide metabolic process,0.000461853,5,129,0.018198491,ROOT
+GO:0048193,BP,e,Golgi vesicle transport,0.002737351,5,44,0.081553025,ROOT
+GO:0043603,BP,e,cellular amide metabolic process,0.002829175,4,141,0.084032503,ROOT
+GO:0005840,CC,e,ribosome,0.000428617,5,93,0.01730763,ROOT
+GO:0003735,MF,e,structural constituent of ribosome,4.46E-06,2,115,0.000428758,ROOT
+GO:0006814,BP,e,sodium ion transport,0.000250778,7,16,0.020591653,PARASITIFORMES
+GO:0005272,MF,e,sodium channel activity,2.46E-05,9,12,0.003297097,PARASITIFORMES
+GO:0005230,MF,e,extracellular ligand-gated ion channel activity,4.60E-05,8,23,0.005740546,PARASITIFORMES
+GO:0005216,MF,e,ion channel activity,7.15E-05,6,46,0.008080656,PARASITIFORMES
+GO:0022838,MF,e,substrate-specific channel activity,7.15E-05,5,46,0.008080656,PARASITIFORMES
+GO:0016782,MF,e,"transferase activity, transferring sulfur-containing groups",0.000158754,3,16,0.015398195,PARASITIFORMES
+GO:0015267,MF,e,channel activity,0.000227067,4,46,0.019135365,PARASITIFORMES
+GO:0022803,MF,e,passive transmembrane transporter activity,0.000227067,3,46,0.019135365,PARASITIFORMES
+GO:0008146,MF,e,sulfotransferase activity,0.000380213,4,12,0.030695013,PARASITIFORMES
+GO:0032813,MF,e,tumor necrosis factor receptor superfamily binding,0.000392405,5,6,0.031127419,PARASITIFORMES
+GO:0022834,MF,e,ligand-gated channel activity,0.000586344,6,24,0.044094661,PARASITIFORMES
+GO:0015276,MF,e,ligand-gated ion channel activity,0.000586344,7,24,0.044094661,PARASITIFORMES
+GO:0004970,MF,e,ionotropic glutamate receptor activity,0.000658281,10,13,0.04827562,PARASITIFORMES
+GO:0008066,MF,e,glutamate receptor activity,0.000658281,5,13,0.04827562,PARASITIFORMES
+GO:0042302,MF,e,structural constituent of cuticle,1.21E-06,2,24,0.000712617,MESOSTIGMATA
+GO:0042302,MF,e,structural constituent of cuticle,1.58E-05,2,15,0.001134467,ASIAN-MITES
+GO:0033897,MF,e,ribonuclease T2 activity,3.93E-05,8,5,0.002104642,VARROIDAE
+GO:0016892,MF,e,"endoribonuclease activity, producing 3'-phosphomonoesters",0.000207911,7,5,0.009350087,VARROIDAE
+GO:0016894,MF,e,"endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 3'-phosphomonoesters",0.000673177,6,5,0.02603803,VARROIDAE

@@ -1,0 +1,108 @@
+Species,code,other,Gene.duplicated,RefSeq.accession,chromosome,start,end,gene.description
+T. mercedesae,ortho.dup.mites_06,ortho.dup.mites_01,augustus-scaffold0000010459-processed-gene-0*42-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_06,ortho.dup.mites_01,genemark-scaffold0000010459-processed-gene-0*25-mRNA-1,NA,NA,NA,NA,NA
+V. destructor,ortho.dup.mites_06,ortho.dup.mites_01,LOC111242914,NW_019211454.1 ,chr1,7920735,7921988,uncharacterized LOC111242914
+V. destructor,ortho.dup.mites_06,ortho.dup.mites_01,LOC111254853,NW_019211454.1 ,chr1,7926508,7927636,uncharacterized LOC111254853
+V. jacobsoni,ortho.dup.mites_06,ortho.dup.mites_01,LOC111270642,NW_019214399.1,NA,70654,71985,uncharacterized LOC111270642
+V. jacobsoni,ortho.dup.mites_06,ortho.dup.mites_01,LOC111270644,NW_019214399.1,NA,76506,77729,uncharacterized LOC111270644
+T. mercedesae,ortho.dup.mites_03,ortho.dup.mites_02,augustus-scaffold0000025218-processed-gene-0*30-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_03,ortho.dup.mites_02,maker-scaffold0000005750-augustus-gene-0*16-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_03,ortho.dup.mites_02,maker-scaffold0000007252-augustus-gene-0*29-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_03,ortho.dup.mites_02,maker-scaffold0000025218-augustus-gene-0*51-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_03,ortho.dup.mites_02,maker-scaffold0000025218-augustus-gene-0*52-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_03,ortho.dup.mites_02,maker-scaffold0000025218-augustus-gene-0*54-mRNA-1,NA,NA,NA,NA,NA
+V. destructor,ortho.dup.mites_03,ortho.dup.mites_02,LOC111255508,NW_019211454.1 ,chr1,19841743,19854469,elongation of very long chain fatty acids protein F-like
+V. destructor,ortho.dup.mites_03,ortho.dup.mites_02,LOC111242988,NW_019211454.1 ,chr1,19859885,19864607,elongation of very long chain fatty acids protein 5-like
+V. jacobsoni,ortho.dup.mites_03,ortho.dup.mites_02,LOC111261598,NW_019213474.1 ,NA,66655,78823,elongation of very long chain fatty acids protein F-like
+V. jacobsoni,ortho.dup.mites_03,ortho.dup.mites_02,LOC111261597,NW_019213474.1 ,NA,84232,88940,elongation of very long chain fatty acids protein 5-like
+V. destructor,ortho.dup.mites_18,ortho.dup.mites_03,LOC111255571,NW_019211454.1 ,chr1,23657414,23663175,"DNA-directed RNA polymerase, mitochondrial-like"
+V. destructor,ortho.dup.mites_18,ortho.dup.mites_03,LOC111254886,NW_019211454.1 ,chr1,28064320,28077997,"DNA-directed RNA polymerase, mitochondrial-like"
+V. destructor,ortho.dup.mites_18,ortho.dup.mites_03,LOC111252286,NW_019211454.1 ,chr1,28079176,28098736,"DNA-directed RNA polymerase, mitochondrial-like"
+V. jacobsoni,ortho.dup.mites_18,ortho.dup.mites_03,LOC111268093,NW_019214158.1 ,NA,24968,38282,"DNA-directed RNA polymerase, mitochondrial-like"
+V. jacobsoni,ortho.dup.mites_18,ortho.dup.mites_03,LOC111268087,NW_019214158.1 ,NA,40018,59549,"DNA-directed RNA polymerase, mitochondrial-like"
+T. mercedesae,ortho.dup.mites_10,ortho.dup.mites_04,genemark-scaffold0000014965-processed-gene-0*3-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_10,ortho.dup.mites_04,maker-scaffold0000010285-augustus-gene-0*11-mRNA-1,NA,NA,NA,NA,NA
+V. destructor,ortho.dup.mites_10,ortho.dup.mites_04,LOC111243341,NW_019211454.1 ,chr1,38101258,38106569,uncharacterized LOC111243341
+V. destructor,ortho.dup.mites_10,ortho.dup.mites_04,LOC111243346,NW_019211454.1 ,chr1,38111291,38116538,glutamate receptor U1-like
+V. jacobsoni,ortho.dup.mites_10,ortho.dup.mites_04,LOC111262769,NW_019213602.1 ,NA,100556,106304,uncharacterized LOC111262769
+V. jacobsoni,ortho.dup.mites_10,ortho.dup.mites_04,LOC111262777,NW_019213602.1 ,NA,110307,116917,glutamate receptor U1-like
+V. destructor,ortho.dup.mites_15,ortho.dup.mites_05,LOC111252060,NW_019211454.1 ,chr1,67229240,67232591,mitochondrial ribonuclease P protein 1 homolog
+V. destructor,ortho.dup.mites_15,ortho.dup.mites_05,LOC111252040,NW_019211454.1 ,chr1,67239939,67242716,tRNA methyltransferase 10 homolog B-like
+V. destructor,ortho.dup.mites_15,ortho.dup.mites_05,LOC111252044,NW_019211454.1 ,chr1,67243465,67246375,mitochondrial ribonuclease P protein 1 homolog
+V. jacobsoni,ortho.dup.mites_15,ortho.dup.mites_05,LOC111259075,NW_019213192.1 ,NA,53221,56149,mitochondrial ribonuclease P protein 1 homolog
+V. jacobsoni,ortho.dup.mites_15,ortho.dup.mites_05,LOC111259073,NW_019213192.1 ,NA,63941,67150,tRNA methyltransferase 10 homolog B-like
+V. jacobsoni,ortho.dup.mites_15,ortho.dup.mites_05,LOC111259074,NW_019213192.1 ,NA,67256,70394,mitochondrial ribonuclease P protein 1 homolog
+V. destructor,ortho.dup.mites_17,ortho.dup.mites_06,LOC111245395,NW_019211455.1,chr2,12452744,12458667,transcription elongation factor SPT5-like
+V. destructor,ortho.dup.mites_17,ortho.dup.mites_06,LOC111245230,NW_019211455.1,chr2,12459495,12468672,transcription elongation factor SPT5-like
+V. destructor,ortho.dup.mites_17,ortho.dup.mites_06,LOC111244893,NW_019211455.1,chr2,41111788,41113559,uncharacterized LOC111244893
+V. jacobsoni,ortho.dup.mites_17,ortho.dup.mites_06,LOC111263943,NW_019212991.1 ,NA,17430,18306,uncharacterized LOC111263943
+V. jacobsoni,ortho.dup.mites_17,ortho.dup.mites_06,LOC111261005,NW_019213409.1 ,NA,27429,33358,transcription elongation factor SPT5-like
+V. jacobsoni,ortho.dup.mites_17,ortho.dup.mites_06,LOC111261003,NW_019213409.1 ,NA,34665,42952,transcription elongation factor SPT5-like
+V. destructor,ortho.dup.mites_07,ortho.dup.mites_07,LOC111246006,NW_019211455.1 ,chr2,21906314,21907854,solute carrier family 41 member 1-like
+V. destructor,ortho.dup.mites_07,ortho.dup.mites_07,LOC111245481,NW_019211455.1 ,chr2,21917494,21920311,solute carrier family 41 member 3-like
+V. jacobsoni,ortho.dup.mites_07,ortho.dup.mites_07,LOC111263703,NW_019213684.1 ,NA,174075,175604,solute carrier family 41 member 1-like
+V. jacobsoni,ortho.dup.mites_07,ortho.dup.mites_07,LOC111263698,NW_019213684.1 ,NA,181101,188101,solute carrier family 41 member 3-like
+V. destructor,ortho.dup.mites_08,ortho.dup.mites_08,LOC111245578,NW_019211455.1 ,chr2,28022346,28041356,monoacylglycerol lipase ABHD12-like
+V. destructor,ortho.dup.mites_08,ortho.dup.mites_08,LOC111243615,NW_019211455.1 ,chr2,28047890,28049944,monoacylglycerol lipase ABHD12-like
+V. jacobsoni,ortho.dup.mites_08,ortho.dup.mites_08,LOC111271572,NW_019214523.1 ,NA,102095,103848,monoacylglycerol lipase ABHD12-like
+V. jacobsoni,ortho.dup.mites_08,ortho.dup.mites_08,LOC111271580,NW_019214523.1 ,NA,110662,120522,monoacylglycerol lipase ABHD12-like
+V. destructor,ortho.dup.mites_05,ortho.dup.mites_09,LOC111246000,NW_019211455.1 ,chr2,52408824,52424052,cathepsin L1-like
+V. destructor,ortho.dup.mites_05,ortho.dup.mites_09,LOC111245998,NW_019211455.1 ,chr2,52430607,52455554,cathepsin L1-like
+V. jacobsoni,ortho.dup.mites_05,ortho.dup.mites_09,LOC111269547,NW_019214299.1 ,NA,93137,105933,cathepsin L1-like
+V. jacobsoni,ortho.dup.mites_05,ortho.dup.mites_09,LOC111269548,NW_019214299.1 ,NA,115276,118299,cathepsin L1-like
+T. mercedesae,ortho.dup.mites_04,ortho.dup.mites_10,augustus-scaffold0000004951-processed-gene-0*25-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_04,ortho.dup.mites_10,genemark-scaffold0000004951-processed-gene-0*13-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_04,ortho.dup.mites_10,maker-scaffold0000004951-augustus-gene-0*67-mRNA-1,NA,NA,NA,NA,NA
+V. destructor,ortho.dup.mites_04,ortho.dup.mites_10,LOC111248108,NW_019211456.1 ,chr3,22559235,22560505,uncharacterized LOC111248108
+V. destructor,ortho.dup.mites_04,ortho.dup.mites_10,LOC111248074,NW_019211456.1 ,chr3,22570706,22572032,uncharacterized LOC111248074
+V. jacobsoni,ortho.dup.mites_04,ortho.dup.mites_10,LOC111264077,NW_019213721.1 ,NA,3186,4512,uncharacterized LOC111264077
+V. jacobsoni,ortho.dup.mites_04,ortho.dup.mites_10,LOC111264080,NW_019213721.1 ,NA,14642,15913,cuticle protein 16.8-like
+V. destructor,ortho.dup.mites_11,ortho.dup.mites_11,LOC111246882,NW_019211456.1 ,chr3,29241758,29242667,leukocyte surface antigen CD53-like
+V. destructor,ortho.dup.mites_11,ortho.dup.mites_11,LOC111246881,NW_019211456.1 ,chr3,29244157,29245300,CD63 antigen-like
+V. jacobsoni,ortho.dup.mites_11,ortho.dup.mites_11,LOC111273149,NW_019215430.1,NA,387,1085,leukocyte surface antigen CD53-like
+V. jacobsoni,ortho.dup.mites_11,ortho.dup.mites_11,LOC111273148,NW_019215430.1,NA,2698,3922,CD63 antigen-like
+T. mercedesae,ortho.dup.mites_12,ortho.dup.mites_12,augustus-scaffold0000025448-processed-gene-0*12-mRNA-1,NA,NA,NA,NA,NA
+T. mercedesae,ortho.dup.mites_12,ortho.dup.mites_12,maker-scaffold0000001146-exonerate_est2genome-gene-0*0-mRNA-1,NA,NA,NA,NA,NA
+V. destructor,ortho.dup.mites_12,ortho.dup.mites_12,LOC111246765,NW_019211456.1 ,chr3,44392468,44398666,uncharacterized LOC111246765
+V. destructor,ortho.dup.mites_12,ortho.dup.mites_12,LOC111246580,NW_019211456.1 ,chr3,44483321,44485769,uncharacterized LOC111246580
+V. jacobsoni,ortho.dup.mites_12,ortho.dup.mites_12,LOC111262088,NW_019213528.1,NA,424691,427153,uncharacterized LOC111262088
+V. jacobsoni,ortho.dup.mites_12,ortho.dup.mites_12,LOC111262090,NW_019213528.1,NA,510631,518136,uncharacterized LOC111262090
+V. destructor,ortho.dup.mites_13,ortho.dup.mites_13,LOC111249808,NW_019211457.1 ,chr4,26537961,26548379,uncharacterized LOC111249808
+V. destructor,ortho.dup.mites_13,ortho.dup.mites_13,LOC111249807,NW_019211457.1 ,chr4,26548723,26559832,uncharacterized LOC111249807
+V. jacobsoni,ortho.dup.mites_13,ortho.dup.mites_13,LOC111259576,NW_019213249.1 ,NA,234,9471,uncharacterized LOC111259576
+V. jacobsoni,ortho.dup.mites_13,ortho.dup.mites_13,LOC111259577,NW_019213249.1 ,NA,11411,21851,uncharacterized LOC111259577
+V. destructor,ortho.dup.mites_09,ortho.dup.mites_14,LOC111249466,NW_019211457.1 ,chr4,40396082,40397422,uncharacterized LOC111249466
+V. destructor,ortho.dup.mites_09,ortho.dup.mites_14,LOC111249565,NW_019211457.1 ,chr4,40398045,40399204,uncharacterized LOC111249565
+V. destructor,ortho.dup.mites_09,ortho.dup.mites_14,LOC111249576,NW_019211457.1 ,chr4,40403707,40404871,uncharacterized LOC111249576
+V. destructor,ortho.dup.mites_09,ortho.dup.mites_14,LOC111249372,NW_019211457.1 ,chr4,40406103,40407376,uncharacterized LOC111249372
+V. jacobsoni,ortho.dup.mites_09,ortho.dup.mites_14,LOC111264654,NW_019213785.1,NA,177662,179013,uncharacterized LOC111264654
+V. jacobsoni,ortho.dup.mites_09,ortho.dup.mites_14,LOC111264657,NW_019213785.1,NA,179624,180776,uncharacterized LOC111264657
+V. jacobsoni,ortho.dup.mites_09,ortho.dup.mites_14,LOC111264655,NW_019213785.1,NA,185390,186497,uncharacterized LOC111264655
+V. jacobsoni,ortho.dup.mites_09,ortho.dup.mites_14,LOC111264656,NW_019213785.1,NA,187758,189080,uncharacterized LOC111264656
+V. destructor,ortho.dup.mites_02,ortho.dup.mites_15,LOC111252228,NW_019211459.1,chr6,6635425,6639238,elongation of very long chain fatty acids protein 4-like
+V. destructor,ortho.dup.mites_02,ortho.dup.mites_15,LOC111252227,NW_019211459.1,chr6,6645058,6649933,elongation of very long chain fatty acids protein 5-like
+V. jacobsoni,ortho.dup.mites_02,ortho.dup.mites_15,LOC111267023,NW_019214043.1 ,NA,2075,9256,elongation of very long chain fatty acids protein 4-like
+V. jacobsoni,ortho.dup.mites_02,ortho.dup.mites_15,LOC111267022,NW_019214043.1 ,NA,9345,14215,elongation of very long chain fatty acids protein 5-like
+V. destructor,ortho.dup.mites_14,ortho.dup.mites_16,LOC111252417,NW_019211459.1 ,chr6,27323049,27361417,probable cation-transporting ATPase 13A3
+V. destructor,ortho.dup.mites_14,ortho.dup.mites_16,LOC111252521,NW_019211459.1 ,chr6,27431675,27466876,probable cation-transporting ATPase 13A3
+V. jacobsoni,ortho.dup.mites_14,ortho.dup.mites_16,LOC111268220,NW_019214167.1 ,NA,94695,107203,probable cation-transporting ATPase 13A3
+V. jacobsoni,ortho.dup.mites_14,ortho.dup.mites_16,LOC111268223,NW_019214167.1 ,NA,109092,118845,probable cation-transporting ATPase 13A3
+V. jacobsoni,ortho.dup.mites_14,ortho.dup.mites_16,LOC111268217,NW_019214167.1 ,NA,195408,236719,probable cation-transporting ATPase 13A3
+V. destructor,ortho.dup.mites_01,ortho.dup.mites_17,LOC111254696,NW_019211460.1,chr7,3738691,3755775,tyrosine-protein kinase Btk29A-like
+V. destructor,ortho.dup.mites_01,ortho.dup.mites_17,LOC111253689,NW_019211460.1 ,chr7,3642056,3702345,tyrosine-protein kinase Btk29A-like
+V. jacobsoni,ortho.dup.mites_01,ortho.dup.mites_17,LOC111267658,NW_019214109.1 ,NA,992,17173,tyrosine-protein kinase Btk29A-like
+V. jacobsoni,ortho.dup.mites_01,ortho.dup.mites_17,LOC111267655,NW_019214109.1 ,NA,53995,114672,tyrosine-protein kinase Btk29A-like
+V. destructor,ortho.dup.mites_19,ortho.dup.mites_18,LOC111254123,NW_019211460.1 ,chr7,15295932,15298054,uncharacterized LOC111254123
+V. destructor,ortho.dup.mites_19,ortho.dup.mites_18,LOC111254784,NW_019211460.1 ,chr7,15300853,15303881,uncharacterized LOC111254784
+V. jacobsoni,ortho.dup.mites_19,ortho.dup.mites_18,LOC111263098,NW_019213636.1 ,NA,415290,418310,ribonuclease-like storage protein
+V. jacobsoni,ortho.dup.mites_19,ortho.dup.mites_18,LOC111263099,NW_019213636.1 ,NA,421146,423033,uncharacterized LOC111263099
+V. destructor,ortho.dup.mites_16,ortho.dup.mites_19,LOC111254342,NW_019211460.1 ,chr7,34679609,34682061,uncharacterized LOC111254342
+V. destructor,ortho.dup.mites_16,ortho.dup.mites_19,LOC111254178,NW_019211460.1 ,chr7,37757863,37768493,uncharacterized LOC111254178
+V. destructor,ortho.dup.mites_16,ortho.dup.mites_19,LOC111254354,NW_019211460.1 ,chr7,37778717,37781084,uncharacterized LOC111254354
+V. destructor,ortho.dup.mites_16,ortho.dup.mites_19,LOC111254355,NW_019211460.1 ,chr7,37783990,37792007,uncharacterized LOC111254355
+V. destructor,ortho.dup.mites_16,ortho.dup.mites_19,LOC111251291,NW_019211458.1,chr5,33243911,33246316,uncharacterized LOC111251291
+V. jacobsoni,ortho.dup.mites_16,ortho.dup.mites_19,LOC111259739,NW_019213262.1 ,NA,44530,53718,uncharacterized LOC111259739
+V. jacobsoni,ortho.dup.mites_16,ortho.dup.mites_19,LOC111259740,NW_019213262.1 ,NA,55861,58961,uncharacterized LOC111259740
+V. jacobsoni,ortho.dup.mites_16,ortho.dup.mites_19,LOC111259738,NW_019213262.1 ,NA,68448,79182,uncharacterized LOC111259738
+V. jacobsoni,ortho.dup.mites_16,ortho.dup.mites_19,LOC111262113,NW_019213530.1 ,NA,177110,179625,uncharacterized LOC111262113
+V. jacobsoni,ortho.dup.mites_16,ortho.dup.mites_19,LOC111271684,NW_019214543.1 ,NA,103922,106777,uncharacterized LOC111271684

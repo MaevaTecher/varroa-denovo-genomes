@@ -1,0 +1,383 @@
+Order,Species,Ontology,GOBPI,Pvalue,OddsRatio,ExpCount,Count,Size,Term
+1,V. destructor,BP,GO:0007420,0.002513631,13.37371134,0.282965478,3,100,brain development
+2,V. destructor,BP,GO:0060322,0.002735122,12.965,0.291454443,3,103,head development
+3,V. destructor,BP,GO:0009612,0.003529888,26.95384615,0.090548953,2,32,response to mechanical stimulus
+4,V. destructor,BP,GO:0006909,0.004213741,24.48951049,0.099037917,2,35,phagocytosis
+5,V. destructor,BP,GO:0007417,0.005170737,10.23809524,0.365025467,3,129,central nervous system development
+6,V. destructor,BP,GO:0030900,0.005213533,21.82536383,0.110356537,2,39,forebrain development
+7,V. destructor,BP,GO:0098868,0.005651835,377.5,0.00565931,1,2,bone growth
+8,V. destructor,BP,GO:0003416,0.005651835,377.5,0.00565931,1,2,endochondral bone growth
+9,V. destructor,BP,GO:0003417,0.005651835,377.5,0.00565931,1,2,growth plate cartilage development
+10,V. destructor,BP,GO:0048570,0.005651835,377.5,0.00565931,1,2,notochord morphogenesis
+11,V. destructor,BP,GO:0048511,0.008465492,16.78846154,0.141482739,2,50,rhythmic process
+12,V. destructor,BP,GO:0030097,0.008465492,16.78846154,0.141482739,2,50,hemopoiesis
+13,V. destructor,BP,GO:0009083,0.008466559,188.7142857,0.008488964,1,3,branched-chain amino acid catabolic process
+14,V. destructor,BP,GO:0048534,0.009133611,16.11076923,0.147142049,2,52,hematopoietic or lymphoid organ development
+15,V. destructor,BP,GO:0007568,0.00947632,15.7918552,0.149971703,2,53,aging
+16,V. destructor,BP,GO:0002520,0.00947632,15.7918552,0.149971703,2,53,immune system development
+17,V. destructor,BP,GO:0009628,0.011638079,7.523529412,0.489530277,3,173,response to abiotic stimulus
+18,V. destructor,BP,GO:0060537,0.011651737,14.11336032,0.166949632,2,59,muscle tissue development
+19,V. destructor,BP,GO:0007517,0.012033883,13.86737401,0.169779287,2,60,muscle organ development
+20,V. destructor,BP,GO:0043010,0.012814686,13.4,0.175438596,2,62,camera-type eye development
+21,V. destructor,BP,GO:0007409,0.013617302,12.96277916,0.181097906,2,64,axonogenesis
+22,V. destructor,BP,GO:0032757,0.014073711,94.32142857,0.014148274,1,5,positive regulation of interleukin-8 production
+23,V. destructor,BP,GO:0032677,0.014073711,94.32142857,0.014148274,1,5,regulation of interleukin-8 production
+24,V. destructor,BP,GO:0032637,0.014073711,94.32142857,0.014148274,1,5,interleukin-8 production
+25,V. destructor,BP,GO:0060700,0.014073711,94.32142857,0.014148274,1,5,regulation of ribonuclease activity
+26,V. destructor,BP,GO:0070370,0.014073711,94.32142857,0.014148274,1,5,cellular heat acclimation
+27,V. destructor,BP,GO:0060699,0.014073711,94.32142857,0.014148274,1,5,regulation of endoribonuclease activity
+28,V. destructor,BP,GO:1902380,0.014073711,94.32142857,0.014148274,1,5,positive regulation of endoribonuclease activity
+29,V. destructor,BP,GO:0030903,0.014073711,94.32142857,0.014148274,1,5,notochord development
+30,V. destructor,BP,GO:0031400,0.016594836,11.63210702,0.20090549,2,71,negative regulation of protein modification process
+31,V. destructor,BP,GO:0035902,0.016866176,75.44285714,0.016977929,1,6,response to immobilization stress
+32,V. destructor,BP,GO:0098974,0.016866176,75.44285714,0.016977929,1,6,postsynaptic actin cytoskeleton organization
+33,V. destructor,BP,GO:0060350,0.016866176,75.44285714,0.016977929,1,6,endochondral bone morphogenesis
+34,V. destructor,BP,GO:0060351,0.016866176,75.44285714,0.016977929,1,6,cartilage development involved in endochondral bone morphogenesis
+35,V. destructor,BP,GO:0060349,0.016866176,75.44285714,0.016977929,1,6,bone morphogenesis
+36,V. destructor,BP,GO:1903265,0.016866176,75.44285714,0.016977929,1,6,positive regulation of tumor necrosis factor-mediated signaling pathway
+37,V. destructor,BP,GO:0061971,0.016866176,75.44285714,0.016977929,1,6,replacement bone morphogenesis
+38,V. destructor,BP,GO:0046718,0.016866176,75.44285714,0.016977929,1,6,viral entry into host cell
+39,V. destructor,BP,GO:0010803,0.016866176,75.44285714,0.016977929,1,6,regulation of tumor necrosis factor-mediated signaling pathway
+40,V. destructor,BP,GO:0009081,0.016866176,75.44285714,0.016977929,1,6,branched-chain amino acid metabolic process
+41,V. destructor,BP,GO:0099188,0.016866176,75.44285714,0.016977929,1,6,postsynaptic cytoskeleton organization
+42,V. destructor,BP,GO:0006897,0.018877935,10.83575884,0.215053763,2,76,endocytosis
+43,V. destructor,BP,GO:0061564,0.018877935,10.83575884,0.215053763,2,76,axon development
+44,V. destructor,BP,GO:0048667,0.018877935,10.83575884,0.215053763,2,76,cell morphogenesis involved in neuron differentiation
+45,V. destructor,BP,GO:0007281,0.018877935,10.83575884,0.215053763,2,76,germ cell development
+46,V. destructor,BP,GO:0044409,0.019651258,62.85714286,0.019807583,1,7,entry into host
+47,V. destructor,BP,GO:0045648,0.019651258,62.85714286,0.019807583,1,7,positive regulation of erythrocyte differentiation
+48,V. destructor,BP,GO:0045639,0.019651258,62.85714286,0.019807583,1,7,positive regulation of myeloid cell differentiation
+49,V. destructor,BP,GO:0051828,0.019651258,62.85714286,0.019807583,1,7,entry into other organism involved in symbiotic interaction
+50,V. destructor,BP,GO:0051806,0.019651258,62.85714286,0.019807583,1,7,entry into cell of other organism involved in symbiotic interaction
+51,V. destructor,BP,GO:0071257,0.019651258,62.85714286,0.019807583,1,7,cellular response to electrical stimulus
+52,V. destructor,BP,GO:0010286,0.019651258,62.85714286,0.019807583,1,7,heat acclimation
+53,V. destructor,BP,GO:1904030,0.019651258,62.85714286,0.019807583,1,7,negative regulation of cyclin-dependent protein kinase activity
+54,V. destructor,BP,GO:0030260,0.019651258,62.85714286,0.019807583,1,7,entry into host cell
+55,V. destructor,BP,GO:0002121,0.019651258,62.85714286,0.019807583,1,7,inter-male aggressive behavior
+56,V. destructor,BP,GO:0006468,0.019668211,4.681460272,1.089417091,4,385,protein phosphorylation
+57,V. destructor,BP,GO:0098657,0.022285486,9.886039886,0.234861347,2,83,import into cell
+58,V. destructor,BP,GO:0022412,0.022285486,9.886039886,0.234861347,2,83,cellular process involved in reproduction in multicellular organism
+59,V. destructor,BP,GO:0048857,0.022428975,53.86734694,0.022637238,1,8,neural nucleus development
+60,V. destructor,BP,GO:0021762,0.022428975,53.86734694,0.022637238,1,8,substantia nigra development
+61,V. destructor,BP,GO:0033209,0.022428975,53.86734694,0.022637238,1,8,tumor necrosis factor-mediated signaling pathway
+62,V. destructor,BP,GO:0090169,0.022428975,53.86734694,0.022637238,1,8,regulation of spindle assembly
+63,V. destructor,BP,GO:1901673,0.022428975,53.86734694,0.022637238,1,8,regulation of mitotic spindle assembly
+64,V. destructor,BP,GO:0030282,0.022428975,53.86734694,0.022637238,1,8,bone mineralization
+65,V. destructor,BP,GO:0002118,0.022428975,53.86734694,0.022637238,1,8,aggressive behavior
+66,V. destructor,BP,GO:0002244,0.022428975,53.86734694,0.022637238,1,8,hematopoietic progenitor cell differentiation
+67,V. destructor,BP,GO:0032069,0.022428975,53.86734694,0.022637238,1,8,regulation of nuclease activity
+68,V. destructor,BP,GO:0032075,0.022428975,53.86734694,0.022637238,1,8,positive regulation of nuclease activity
+69,V. destructor,BP,GO:0016319,0.022428975,53.86734694,0.022637238,1,8,mushroom body development
+70,V. destructor,BP,GO:0048858,0.023303155,9.644114921,0.240520656,2,85,cell projection morphogenesis
+71,V. destructor,BP,GO:0048812,0.023303155,9.644114921,0.240520656,2,85,neuron projection morphogenesis
+72,V. destructor,BP,GO:0120039,0.023303155,9.644114921,0.240520656,2,85,plasma membrane bounded cell projection morphogenesis
+73,V. destructor,BP,GO:0035239,0.023819199,9.527472527,0.243350311,2,86,tube morphogenesis
+74,V. destructor,BP,GO:0009605,0.024072885,5.649553571,0.642331636,3,227,response to external stimulus
+75,V. destructor,BP,GO:0071356,0.025199344,47.125,0.025466893,1,9,cellular response to tumor necrosis factor
+76,V. destructor,BP,GO:0060236,0.025199344,47.125,0.025466893,1,9,regulation of mitotic spindle organization
+77,V. destructor,BP,GO:0060760,0.025199344,47.125,0.025466893,1,9,positive regulation of response to cytokine stimulus
+78,V. destructor,BP,GO:0060759,0.025199344,47.125,0.025466893,1,9,regulation of response to cytokine stimulus
+79,V. destructor,BP,GO:0007339,0.025199344,47.125,0.025466893,1,9,binding of sperm to zona pellucida
+80,V. destructor,BP,GO:1903708,0.025199344,47.125,0.025466893,1,9,positive regulation of hemopoiesis
+81,V. destructor,BP,GO:0090063,0.025199344,47.125,0.025466893,1,9,positive regulation of microtubule nucleation
+82,V. destructor,BP,GO:0007291,0.025199344,47.125,0.025466893,1,9,sperm individualization
+83,V. destructor,BP,GO:0070868,0.025199344,47.125,0.025466893,1,9,heterochromatin organization involved in chromatin silencing
+84,V. destructor,BP,GO:0001961,0.025199344,47.125,0.025466893,1,9,positive regulation of cytokine-mediated signaling pathway
+85,V. destructor,BP,GO:0031397,0.025199344,47.125,0.025466893,1,9,negative regulation of protein ubiquitination
+86,V. destructor,BP,GO:0001959,0.025199344,47.125,0.025466893,1,9,regulation of cytokine-mediated signaling pathway
+87,V. destructor,BP,GO:0090224,0.025199344,47.125,0.025466893,1,9,regulation of spindle organization
+88,V. destructor,BP,GO:0010968,0.025199344,47.125,0.025466893,1,9,regulation of microtubule nucleation
+89,V. destructor,BP,GO:0097549,0.025199344,47.125,0.025466893,1,9,chromatin organization involved in negative regulation of transcription
+90,V. destructor,BP,GO:0035036,0.025199344,47.125,0.025466893,1,9,sperm-egg recognition
+91,V. destructor,BP,GO:0034401,0.025199344,47.125,0.025466893,1,9,chromatin organization involved in regulation of transcription
+92,V. destructor,BP,GO:0009988,0.025199344,47.125,0.025466893,1,9,cell-cell recognition
+93,V. destructor,BP,GO:0032990,0.025930798,9.087412587,0.25466893,2,90,cell part morphogenesis
+94,V. destructor,BP,GO:0034612,0.027962384,41.88095238,0.028296548,1,10,response to tumor necrosis factor
+95,V. destructor,BP,GO:0051701,0.027962384,41.88095238,0.028296548,1,10,interaction with host
+96,V. destructor,BP,GO:0106030,0.027962384,41.88095238,0.028296548,1,10,neuron projection fasciculation
+97,V. destructor,BP,GO:0007413,0.027962384,41.88095238,0.028296548,1,10,axonal fasciculation
+98,V. destructor,BP,GO:0043044,0.027962384,41.88095238,0.028296548,1,10,ATP-dependent chromatin remodeling
+99,V. destructor,BP,GO:0070828,0.027962384,41.88095238,0.028296548,1,10,heterochromatin organization
+100,V. destructor,BP,GO:0021987,0.027962384,41.88095238,0.028296548,1,10,cerebral cortex development
+101,V. destructor,BP,GO:0030488,0.027962384,41.88095238,0.028296548,1,10,tRNA methylation
+102,V. destructor,BP,GO:0030901,0.027962384,41.88095238,0.028296548,1,10,midbrain development
+103,V. destructor,BP,GO:0000904,0.029237501,8.497545008,0.271646859,2,96,cell morphogenesis involved in differentiation
+104,V. destructor,BP,GO:0051276,0.030317292,5.143877551,0.701754386,3,248,chromosome organization
+105,V. destructor,BP,GO:0045646,0.030718114,37.68571429,0.031126203,1,11,regulation of erythrocyte differentiation
+106,V. destructor,BP,GO:0006622,0.030718114,37.68571429,0.031126203,1,11,protein targeting to lysosome
+107,V. destructor,BP,GO:0061462,0.030718114,37.68571429,0.031126203,1,11,protein localization to lysosome
+108,V. destructor,BP,GO:0061740,0.030718114,37.68571429,0.031126203,1,11,protein targeting to lysosome involved in chaperone-mediated autophagy
+109,V. destructor,BP,GO:0071211,0.030718114,37.68571429,0.031126203,1,11,protein targeting to vacuole involved in autophagy
+110,V. destructor,BP,GO:0007349,0.030718114,37.68571429,0.031126203,1,11,cellularization
+111,V. destructor,BP,GO:0031214,0.030718114,37.68571429,0.031126203,1,11,biomineral tissue development
+112,V. destructor,BP,GO:0001654,0.030951981,8.229976209,0.280135823,2,99,eye development
+113,V. destructor,BP,GO:0061061,0.032117127,8.060606061,0.285795133,2,101,muscle structure development
+114,V. destructor,BP,GO:0006623,0.03346655,34.25324675,0.033955857,1,12,protein targeting to vacuole
+115,V. destructor,BP,GO:0044849,0.03346655,34.25324675,0.033955857,1,12,estrous cycle
+116,V. destructor,BP,GO:0051602,0.03346655,34.25324675,0.033955857,1,12,response to electrical stimulus
+117,V. destructor,BP,GO:0061741,0.03346655,34.25324675,0.033955857,1,12,chaperone-mediated protein transport involved in chaperone-mediated autophagy
+118,V. destructor,BP,GO:0061738,0.03346655,34.25324675,0.033955857,1,12,late endosomal microautophagy
+119,V. destructor,BP,GO:0060348,0.03346655,34.25324675,0.033955857,1,12,bone development
+120,V. destructor,BP,GO:0010045,0.03346655,34.25324675,0.033955857,1,12,response to nickel cation
+121,V. destructor,BP,GO:0061684,0.03346655,34.25324675,0.033955857,1,12,chaperone-mediated autophagy
+122,V. destructor,BP,GO:1903334,0.03346655,34.25324675,0.033955857,1,12,positive regulation of protein folding
+123,V. destructor,BP,GO:1900034,0.03346655,34.25324675,0.033955857,1,12,regulation of cellular response to heat
+124,V. destructor,BP,GO:0090307,0.03346655,34.25324675,0.033955857,1,12,mitotic spindle assembly
+125,V. destructor,BP,GO:0001913,0.03346655,34.25324675,0.033955857,1,12,T cell mediated cytotoxicity
+126,V. destructor,BP,GO:0001914,0.03346655,34.25324675,0.033955857,1,12,regulation of T cell mediated cytotoxicity
+127,V. destructor,BP,GO:0001916,0.03346655,34.25324675,0.033955857,1,12,positive regulation of T cell mediated cytotoxicity
+128,V. destructor,BP,GO:0070527,0.03346655,34.25324675,0.033955857,1,12,platelet aggregation
+129,V. destructor,BP,GO:0097212,0.03346655,34.25324675,0.033955857,1,12,lysosomal membrane organization
+130,V. destructor,BP,GO:0097213,0.03346655,34.25324675,0.033955857,1,12,regulation of lysosomal membrane permeability
+131,V. destructor,BP,GO:0097214,0.03346655,34.25324675,0.033955857,1,12,positive regulation of lysosomal membrane permeability
+132,V. destructor,BP,GO:0072318,0.03346655,34.25324675,0.033955857,1,12,clathrin coat disassembly
+133,V. destructor,BP,GO:0072319,0.03346655,34.25324675,0.033955857,1,12,vesicle uncoating
+134,V. destructor,BP,GO:0002456,0.03346655,34.25324675,0.033955857,1,12,T cell mediated immunity
+135,V. destructor,BP,GO:0002711,0.03346655,34.25324675,0.033955857,1,12,positive regulation of T cell mediated immunity
+136,V. destructor,BP,GO:1990832,0.03346655,34.25324675,0.033955857,1,12,slow axonal transport
+137,V. destructor,BP,GO:1990834,0.03346655,34.25324675,0.033955857,1,12,response to odorant
+138,V. destructor,BP,GO:0002709,0.03346655,34.25324675,0.033955857,1,12,regulation of T cell mediated immunity
+139,V. destructor,BP,GO:1904764,0.03346655,34.25324675,0.033955857,1,12,chaperone-mediated autophagy translocation complex disassembly
+140,V. destructor,BP,GO:0032091,0.03346655,34.25324675,0.033955857,1,12,negative regulation of protein binding
+141,V. destructor,BP,GO:1904592,0.03346655,34.25324675,0.033955857,1,12,positive regulation of protein refolding
+142,V. destructor,BP,GO:0016191,0.03346655,34.25324675,0.033955857,1,12,synaptic vesicle uncoating
+143,V. destructor,BP,GO:0035295,0.034499668,7.741598208,0.297113752,2,105,tube development
+144,V. destructor,BP,GO:0016310,0.034833846,3.870244293,1.29598189,4,458,phosphorylation
+145,V. destructor,BP,GO:0007276,0.035106038,7.665680473,0.299943407,2,106,gamete generation
+146,V. destructor,BP,GO:0043412,0.035318167,3.122580645,2.648556876,6,936,macromolecule modification
+147,V. destructor,BP,GO:0061083,0.036207711,31.39285714,0.036785512,1,13,regulation of protein refolding
+148,V. destructor,BP,GO:0048026,0.036207711,31.39285714,0.036785512,1,13,"positive regulation of mRNA splicing, via spliceosome"
+149,V. destructor,BP,GO:0051651,0.036207711,31.39285714,0.036785512,1,13,maintenance of location in cell
+150,V. destructor,BP,GO:0032507,0.036207711,31.39285714,0.036785512,1,13,maintenance of protein location in cell
+151,V. destructor,BP,GO:0007020,0.036207711,31.39285714,0.036785512,1,13,microtubule nucleation
+152,V. destructor,BP,GO:0050685,0.036207711,31.39285714,0.036785512,1,13,positive regulation of mRNA processing
+153,V. destructor,BP,GO:0071276,0.036207711,31.39285714,0.036785512,1,13,cellular response to cadmium ion
+154,V. destructor,BP,GO:0033120,0.036207711,31.39285714,0.036785512,1,13,positive regulation of RNA splicing
+155,V. destructor,BP,GO:0001912,0.036207711,31.39285714,0.036785512,1,13,positive regulation of leukocyte mediated cytotoxicity
+156,V. destructor,BP,GO:0031112,0.036207711,31.39285714,0.036785512,1,13,positive regulation of microtubule polymerization or depolymerization
+157,V. destructor,BP,GO:0031116,0.036207711,31.39285714,0.036785512,1,13,positive regulation of microtubule polymerization
+158,V. destructor,BP,GO:0030168,0.036207711,31.39285714,0.036785512,1,13,platelet activation
+159,V. destructor,BP,GO:0002460,0.036207711,31.39285714,0.036785512,1,13,adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
+160,V. destructor,BP,GO:1905710,0.036207711,31.39285714,0.036785512,1,13,positive regulation of membrane permeability
+161,V. destructor,BP,GO:0002250,0.036207711,31.39285714,0.036785512,1,13,adaptive immune response
+162,V. destructor,BP,GO:0035265,0.036207711,31.39285714,0.036785512,1,13,organ growth
+163,V. destructor,BP,GO:0002821,0.036207711,31.39285714,0.036785512,1,13,positive regulation of adaptive immune response
+164,V. destructor,BP,GO:0002822,0.036207711,31.39285714,0.036785512,1,13,regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
+165,V. destructor,BP,GO:0002824,0.036207711,31.39285714,0.036785512,1,13,positive regulation of adaptive immune response based on somatic recombination of immune receptors built from immunoglobulin superfamily domains
+166,V. destructor,BP,GO:0002819,0.036207711,31.39285714,0.036785512,1,13,regulation of adaptive immune response
+167,V. destructor,BP,GO:0034109,0.036207711,31.39285714,0.036785512,1,13,homotypic cell-cell adhesion
+168,V. destructor,BP,GO:0032269,0.036950507,7.446441409,0.308432371,2,109,negative regulation of cellular protein metabolic process
+169,V. destructor,BP,GO:1903047,0.036950507,7.446441409,0.308432371,2,109,mitotic cell cycle process
+170,V. destructor,BP,GO:0016246,0.038941615,28.97252747,0.039615167,1,14,RNA interference
+171,V. destructor,BP,GO:0051216,0.038941615,28.97252747,0.039615167,1,14,cartilage development
+172,V. destructor,BP,GO:0044829,0.038941615,28.97252747,0.039615167,1,14,positive regulation by host of viral genome replication
+173,V. destructor,BP,GO:0048488,0.038941615,28.97252747,0.039615167,1,14,synaptic vesicle endocytosis
+174,V. destructor,BP,GO:0007052,0.038941615,28.97252747,0.039615167,1,14,mitotic spindle organization
+175,V. destructor,BP,GO:1903321,0.038941615,28.97252747,0.039615167,1,14,negative regulation of protein modification by small protein conjugation or removal
+176,V. destructor,BP,GO:0061635,0.038941615,28.97252747,0.039615167,1,14,regulation of protein complex stability
+177,V. destructor,BP,GO:1901032,0.038941615,28.97252747,0.039615167,1,14,negative regulation of response to reactive oxygen species
+178,V. destructor,BP,GO:2001039,0.038941615,28.97252747,0.039615167,1,14,negative regulation of cellular response to drug
+179,V. destructor,BP,GO:0001700,0.038941615,28.97252747,0.039615167,1,14,embryonic development via the syncytial blastoderm
+180,V. destructor,BP,GO:1903206,0.038941615,28.97252747,0.039615167,1,14,negative regulation of hydrogen peroxide-induced cell death
+181,V. destructor,BP,GO:0001910,0.038941615,28.97252747,0.039615167,1,14,regulation of leukocyte mediated cytotoxicity
+182,V. destructor,BP,GO:0031343,0.038941615,28.97252747,0.039615167,1,14,positive regulation of cell killing
+183,V. destructor,BP,GO:0001909,0.038941615,28.97252747,0.039615167,1,14,leukocyte mediated cytotoxicity
+184,V. destructor,BP,GO:0007608,0.038941615,28.97252747,0.039615167,1,14,sensory perception of smell
+185,V. destructor,BP,GO:0031113,0.038941615,28.97252747,0.039615167,1,14,regulation of microtubule polymerization
+186,V. destructor,BP,GO:0002705,0.038941615,28.97252747,0.039615167,1,14,positive regulation of leukocyte mediated immunity
+187,V. destructor,BP,GO:0002708,0.038941615,28.97252747,0.039615167,1,14,positive regulation of lymphocyte mediated immunity
+188,V. destructor,BP,GO:0051248,0.040751291,7.042886317,0.3254103,2,115,negative regulation of protein metabolic process
+189,V. destructor,BP,GO:0045637,0.04166828,26.89795918,0.042444822,1,15,regulation of myeloid cell differentiation
+190,V. destructor,BP,GO:0044794,0.04166828,26.89795918,0.042444822,1,15,positive regulation by host of viral process
+191,V. destructor,BP,GO:0044788,0.04166828,26.89795918,0.042444822,1,15,modulation by host of viral process
+192,V. destructor,BP,GO:0044827,0.04166828,26.89795918,0.042444822,1,15,modulation by host of viral genome replication
+193,V. destructor,BP,GO:0050766,0.04166828,26.89795918,0.042444822,1,15,positive regulation of phagocytosis
+194,V. destructor,BP,GO:0042698,0.04166828,26.89795918,0.042444822,1,15,ovulation cycle
+195,V. destructor,BP,GO:2001024,0.04166828,26.89795918,0.042444822,1,15,negative regulation of response to drug
+196,V. destructor,BP,GO:2001038,0.04166828,26.89795918,0.042444822,1,15,regulation of cellular response to drug
+197,V. destructor,BP,GO:0007338,0.04166828,26.89795918,0.042444822,1,15,single fertilization
+198,V. destructor,BP,GO:0001895,0.04166828,26.89795918,0.042444822,1,15,retina homeostasis
+199,V. destructor,BP,GO:1903205,0.04166828,26.89795918,0.042444822,1,15,regulation of hydrogen peroxide-induced cell death
+200,V. destructor,BP,GO:0031341,0.04166828,26.89795918,0.042444822,1,15,regulation of cell killing
+201,V. destructor,BP,GO:0001906,0.04166828,26.89795918,0.042444822,1,15,cell killing
+202,V. destructor,BP,GO:0010662,0.04166828,26.89795918,0.042444822,1,15,regulation of striated muscle cell apoptotic process
+203,V. destructor,BP,GO:0010664,0.04166828,26.89795918,0.042444822,1,15,negative regulation of striated muscle cell apoptotic process
+204,V. destructor,BP,GO:0010665,0.04166828,26.89795918,0.042444822,1,15,regulation of cardiac muscle cell apoptotic process
+205,V. destructor,BP,GO:0010667,0.04166828,26.89795918,0.042444822,1,15,negative regulation of cardiac muscle cell apoptotic process
+206,V. destructor,BP,GO:0021543,0.04166828,26.89795918,0.042444822,1,15,pallium development
+207,V. destructor,BP,GO:0010656,0.04166828,26.89795918,0.042444822,1,15,negative regulation of muscle cell apoptotic process
+208,V. destructor,BP,GO:0010658,0.04166828,26.89795918,0.042444822,1,15,striated muscle cell apoptotic process
+209,V. destructor,BP,GO:0010659,0.04166828,26.89795918,0.042444822,1,15,cardiac muscle cell apoptotic process
+210,V. destructor,BP,GO:0090559,0.04166828,26.89795918,0.042444822,1,15,regulation of membrane permeability
+211,V. destructor,BP,GO:0002449,0.04166828,26.89795918,0.042444822,1,15,lymphocyte mediated immunity
+212,V. destructor,BP,GO:0019221,0.04166828,26.89795918,0.042444822,1,15,cytokine-mediated signaling pathway
+213,V. destructor,BP,GO:0045070,0.04166828,26.89795918,0.042444822,1,15,positive regulation of viral genome replication
+214,V. destructor,BP,GO:0002703,0.04166828,26.89795918,0.042444822,1,15,regulation of leukocyte mediated immunity
+215,V. destructor,BP,GO:0002706,0.04166828,26.89795918,0.042444822,1,15,regulation of lymphocyte mediated immunity
+216,V. destructor,BP,GO:0072665,0.04166828,26.89795918,0.042444822,1,15,protein localization to vacuole
+217,V. destructor,BP,GO:0072666,0.04166828,26.89795918,0.042444822,1,15,establishment of protein localization to vacuole
+218,V. destructor,BP,GO:0007423,0.042706267,6.856763926,0.333899264,2,118,sensory organ development
+219,V. destructor,BP,GO:0051100,0.044387723,25.1,0.045274477,1,16,negative regulation of binding
+220,V. destructor,BP,GO:0051225,0.044387723,25.1,0.045274477,1,16,spindle assembly
+221,V. destructor,BP,GO:0051702,0.044387723,25.1,0.045274477,1,16,interaction with symbiont
+222,V. destructor,BP,GO:0051851,0.044387723,25.1,0.045274477,1,16,modification by host of symbiont morphology or physiology
+223,V. destructor,BP,GO:0061448,0.044387723,25.1,0.045274477,1,16,connective tissue development
+224,V. destructor,BP,GO:0036474,0.044387723,25.1,0.045274477,1,16,cell death in response to hydrogen peroxide
+225,V. destructor,BP,GO:0050817,0.044387723,25.1,0.045274477,1,16,coagulation
+226,V. destructor,BP,GO:1901031,0.044387723,25.1,0.045274477,1,16,regulation of response to reactive oxygen species
+227,V. destructor,BP,GO:0000281,0.044387723,25.1,0.045274477,1,16,mitotic cytokinesis
+228,V. destructor,BP,GO:0007596,0.044387723,25.1,0.045274477,1,16,blood coagulation
+229,V. destructor,BP,GO:0007599,0.044387723,25.1,0.045274477,1,16,hemostasis
+230,V. destructor,BP,GO:0010660,0.044387723,25.1,0.045274477,1,16,regulation of muscle cell apoptotic process
+231,V. destructor,BP,GO:0010657,0.044387723,25.1,0.045274477,1,16,muscle cell apoptotic process
+232,V. destructor,BP,GO:1903902,0.044387723,25.1,0.045274477,1,16,positive regulation of viral life cycle
+233,V. destructor,BP,GO:1904029,0.044387723,25.1,0.045274477,1,16,regulation of cyclin-dependent protein kinase activity
+234,V. destructor,BP,GO:0072321,0.044387723,25.1,0.045274477,1,16,chaperone-mediated protein transport
+235,V. destructor,BP,GO:0008038,0.044387723,25.1,0.045274477,1,16,neuron recognition
+236,V. destructor,BP,GO:0015991,0.044387723,25.1,0.045274477,1,16,ATP hydrolysis coupled proton transport
+237,V. destructor,BP,GO:0015988,0.044387723,25.1,0.045274477,1,16,"energy coupled proton transmembrane transport, against electrochemical gradient"
+238,V. destructor,BP,GO:0099132,0.044387723,25.1,0.045274477,1,16,ATP hydrolysis coupled cation transmembrane transport
+239,V. destructor,BP,GO:0045185,0.044387723,25.1,0.045274477,1,16,maintenance of protein location
+240,V. destructor,BP,GO:0031175,0.04469675,6.680025856,0.342388229,2,121,neuron projection development
+241,V. destructor,BP,GO:0016567,0.045368022,6.623076923,0.345217883,2,122,protein ubiquitination
+242,V. destructor,BP,GO:0051705,0.047099962,23.52678571,0.048104131,1,17,multi-organism behavior
+243,V. destructor,BP,GO:0051817,0.047099962,23.52678571,0.048104131,1,17,modification of morphology or physiology of other organism involved in symbiotic interaction
+244,V. destructor,BP,GO:0036465,0.047099962,23.52678571,0.048104131,1,17,synaptic vesicle recycling
+245,V. destructor,BP,GO:1903313,0.047099962,23.52678571,0.048104131,1,17,positive regulation of mRNA metabolic process
+246,V. destructor,BP,GO:1903332,0.047099962,23.52678571,0.048104131,1,17,regulation of protein folding
+247,V. destructor,BP,GO:0021537,0.047099962,23.52678571,0.048104131,1,17,telencephalon development
+248,V. destructor,BP,GO:0031110,0.047099962,23.52678571,0.048104131,1,17,regulation of microtubule polymerization or depolymerization
+249,V. destructor,BP,GO:0090662,0.047099962,23.52678571,0.048104131,1,17,ATP hydrolysis coupled transmembrane transport
+250,V. destructor,BP,GO:0051085,0.047099962,23.52678571,0.048104131,1,17,chaperone cofactor-dependent protein refolding
+251,V. destructor,BP,GO:0099131,0.047099962,23.52678571,0.048104131,1,17,ATP hydrolysis coupled ion transmembrane transport
+252,V. destructor,BP,GO:0035821,0.047099962,23.52678571,0.048104131,1,17,modification of morphology or physiology of other organism
+253,V. destructor,BP,GO:0000902,0.047404835,6.457786116,0.353706848,2,125,cell morphogenesis
+254,V. destructor,BP,GO:0019953,0.047404835,6.457786116,0.353706848,2,125,sexual reproduction
+255,V. destructor,BP,GO:0032570,0.049805015,22.13865546,0.050933786,1,18,response to progesterone
+256,V. destructor,BP,GO:0007040,0.049805015,22.13865546,0.050933786,1,18,lysosome organization
+257,V. destructor,BP,GO:0048705,0.049805015,22.13865546,0.050933786,1,18,skeletal system morphogenesis
+258,V. destructor,BP,GO:1903202,0.049805015,22.13865546,0.050933786,1,18,negative regulation of oxidative stress-induced cell death
+259,V. destructor,BP,GO:0080171,0.049805015,22.13865546,0.050933786,1,18,lytic vacuole organization
+260,V. destructor,BP,GO:0006081,0.049805015,22.13865546,0.050933786,1,18,cellular aldehyde metabolic process
+261,V. destructor,BP,GO:0051084,0.049805015,22.13865546,0.050933786,1,18,'de novo' posttranslational protein folding
+262,V. destructor,MF,GO:0016903,0.002113879,34.755,0.069488133,2,18,"oxidoreductase activity, acting on the aldehyde or oxo group of donors"
+263,V. destructor,MF,GO:0004030,0.00770655,267.9230769,0.007720904,1,2,aldehyde dehydrogenase [NAD(P)+] activity
+264,V. destructor,MF,GO:0003863,0.00770655,267.9230769,0.007720904,1,2,3-methyl-2-oxobutanoate dehydrogenase (2-methylpropanoyl-transferring) activity
+265,V. destructor,MF,GO:0003826,0.00770655,267.9230769,0.007720904,1,2,alpha-ketoacid dehydrogenase activity
+266,V. destructor,MF,GO:0016624,0.01915924,66.95192308,0.019302259,1,5,"oxidoreductase activity, acting on the aldehyde or oxo group of donors, disulfide as acceptor"
+267,V. destructor,MF,GO:0031249,0.01915924,66.95192308,0.019302259,1,5,denatured protein binding
+268,V. destructor,MF,GO:0104005,0.01915924,66.95192308,0.019302259,1,5,hijacked molecular function
+269,V. destructor,MF,GO:0001618,0.01915924,66.95192308,0.019302259,1,5,virus receptor activity
+270,V. destructor,MF,GO:0098918,0.022948437,53.55384615,0.023162711,1,6,structural constituent of synapse
+271,V. destructor,MF,GO:0050998,0.022948437,53.55384615,0.023162711,1,6,nitric-oxide synthase binding
+272,V. destructor,MF,GO:0099186,0.022948437,53.55384615,0.023162711,1,6,structural constituent of postsynapse
+273,V. destructor,MF,GO:0098973,0.022948437,53.55384615,0.023162711,1,6,structural constituent of postsynaptic actin cytoskeleton
+274,V. destructor,MF,GO:0005198,0.02614322,3.947352854,1.150414641,4,298,structural molecule activity
+275,V. destructor,MF,GO:0031492,0.026723536,44.62179487,0.027023163,1,7,nucleosomal DNA binding
+276,V. destructor,MF,GO:0005201,0.030484587,38.24175824,0.030883615,1,8,extracellular matrix structural constituent
+277,V. destructor,MF,GO:0030957,0.030484587,38.24175824,0.030883615,1,8,Tat protein binding
+278,V. destructor,MF,GO:0019894,0.034231641,33.45673077,0.034744066,1,9,kinesin binding
+279,V. destructor,MF,GO:0000980,0.034231641,33.45673077,0.034744066,1,9,RNA polymerase II distal enhancer sequence-specific DNA binding
+280,V. destructor,MF,GO:0005524,0.037570586,2.739470256,2.563340006,6,664,ATP binding
+281,V. destructor,MF,GO:0001106,0.037964747,29.73504274,0.038604518,1,10,RNA polymerase II transcription corepressor activity
+282,V. destructor,MF,GO:0044183,0.037964747,29.73504274,0.038604518,1,10,protein binding involved in protein folding
+283,V. destructor,MF,GO:0032559,0.040024215,2.694183062,2.601944524,6,674,adenyl ribonucleotide binding
+284,V. destructor,MF,GO:0030554,0.040780355,2.680860123,2.613525879,6,677,adenyl nucleotide binding
+285,V. destructor,MF,GO:0023023,0.041683955,26.75769231,0.04246497,1,11,MHC protein complex binding
+286,V. destructor,MF,GO:0023026,0.041683955,26.75769231,0.04246497,1,11,MHC class II protein complex binding
+287,V. destructor,MF,GO:0001191,0.041683955,26.75769231,0.04246497,1,11,"transcriptional repressor activity, RNA polymerase II transcription factor binding"
+288,V. destructor,MF,GO:0042302,0.044827054,6.400930233,0.33971976,2,88,structural constituent of cuticle
+289,V. destructor,MF,GO:0050542,0.045389316,24.32167832,0.046325422,1,12,icosanoid binding
+290,V. destructor,MF,GO:1990833,0.045389316,24.32167832,0.046325422,1,12,clathrin-uncoating ATPase activity
+291,V. destructor,MF,GO:0031685,0.045389316,24.32167832,0.046325422,1,12,adenosine receptor binding
+292,V. destructor,MF,GO:0031686,0.045389316,24.32167832,0.046325422,1,12,A1 adenosine receptor binding
+293,V. destructor,MF,GO:0001158,0.045389316,24.32167832,0.046325422,1,12,enhancer sequence-specific DNA binding
+294,V. destructor,MF,GO:1904593,0.045389316,24.32167832,0.046325422,1,12,prostaglandin binding
+295,V. destructor,MF,GO:0055131,0.045389316,24.32167832,0.046325422,1,12,C3HC4-type RING finger domain binding
+296,V. destructor,MF,GO:0008134,0.048561882,6.112888889,0.355161567,2,92,transcription factor binding
+297,V. destructor,MF,GO:0035326,0.049080878,22.29166667,0.050185874,1,13,enhancer binding
+298,V. destructor,MF,GO:0042826,0.049080878,22.29166667,0.050185874,1,13,histone deacetylase binding
+299,V. destructor,MF,GO:0031491,0.049080878,22.29166667,0.050185874,1,13,nucleosome binding
+300,V. destructor,MF,GO:0016620,0.049080878,22.29166667,0.050185874,1,13,"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor"
+301,V. destructor,CC,GO:1990234,0.000832059,13.62235067,0.476062399,4,177,transferase complex
+302,V. destructor,CC,GO:0072562,0.001086753,54.27941176,0.051102743,2,19,blood microparticle
+303,V. destructor,CC,GO:0005694,0.001614621,11.27536232,0.567509414,4,211,chromosome
+304,V. destructor,CC,GO:0099080,0.003177004,13.39006211,0.317374933,3,118,supramolecular complex
+305,V. destructor,CC,GO:0099081,0.003177004,13.39006211,0.317374933,3,118,supramolecular polymer
+306,V. destructor,CC,GO:0043209,0.003288757,29.65322581,0.088757396,2,33,myelin sheath
+307,V. destructor,CC,GO:0000123,0.003489286,28.71875,0.091447015,2,34,histone acetyltransferase complex
+308,V. destructor,CC,GO:1902493,0.003695444,27.84090909,0.094136633,2,35,acetyltransferase complex
+309,V. destructor,CC,GO:0014069,0.003695444,27.84090909,0.094136633,2,35,postsynaptic density
+310,V. destructor,CC,GO:0031248,0.003695444,27.84090909,0.094136633,2,35,protein acetyltransferase complex
+311,V. destructor,CC,GO:0099572,0.003695444,27.84090909,0.094136633,2,35,postsynaptic specialization
+312,V. destructor,CC,GO:0000785,0.003744288,12.5971897,0.336202259,3,125,chromatin
+313,V. destructor,CC,GO:0032279,0.00412454,26.23571429,0.099515869,2,37,asymmetric synapse
+314,V. destructor,CC,GO:0045121,0.00412454,26.23571429,0.099515869,2,37,membrane raft
+315,V. destructor,CC,GO:0098857,0.00412454,26.23571429,0.099515869,2,37,membrane microdomain
+316,V. destructor,CC,GO:0098589,0.004347428,25.5,0.102205487,2,38,membrane region
+317,V. destructor,CC,GO:0098984,0.004809758,24.14473684,0.107584723,2,40,neuron to neuron synapse
+318,V. destructor,CC,GO:0098644,0.005372724,411.8888889,0.005379236,1,2,complex of collagen trimers
+319,V. destructor,CC,GO:0005615,0.006504239,10.23681687,0.408821947,3,152,extracellular space
+320,V. destructor,CC,GO:1902494,0.007360759,7.180952381,0.857988166,4,319,catalytic complex
+321,V. destructor,CC,GO:0005925,0.007738768,18.66836735,0.137170522,2,51,focal adhesion
+322,V. destructor,CC,GO:0030055,0.008036756,18.29,0.13986014,2,52,cell-substrate junction
+323,V. destructor,CC,GO:0005924,0.008036756,18.29,0.13986014,2,52,cell-substrate adherens junction
+324,V. destructor,CC,GO:0043527,0.008049331,205.8888889,0.008068854,1,3,tRNA methyltransferase complex
+325,V. destructor,CC,GO:0031515,0.008049331,205.8888889,0.008068854,1,3,tRNA (m1A) methyltransferase complex
+326,V. destructor,CC,GO:0032991,0.009047001,5.670366944,2.926304465,7,1088,protein-containing complex
+327,V. destructor,CC,GO:0098794,0.009932623,16.30357143,0.155997848,2,58,postsynapse
+328,V. destructor,CC,GO:0005912,0.010266365,16.01315789,0.158687466,2,59,adherens junction
+329,V. destructor,CC,GO:0070161,0.010266365,16.01315789,0.158687466,2,59,anchoring junction
+330,V. destructor,CC,GO:0044451,0.01040649,8.549636804,0.484131253,3,180,nucleoplasm part
+331,V. destructor,CC,GO:0044427,0.010566615,8.499197432,0.486820871,3,181,chromosomal part
+332,V. destructor,CC,GO:0031012,0.011297568,15.2,0.166756321,2,62,extracellular matrix
+333,V. destructor,CC,GO:0000790,0.011651216,14.94672131,0.169445939,2,63,nuclear chromatin
+334,V. destructor,CC,GO:0099513,0.012009781,14.7016129,0.172135557,2,64,polymeric cytoskeletal fiber
+335,V. destructor,CC,GO:0005581,0.013383107,102.8888889,0.01344809,1,5,collagen trimer
+336,V. destructor,CC,GO:0035060,0.013383107,102.8888889,0.01344809,1,5,brahma complex
+337,V. destructor,CC,GO:0000124,0.016040303,82.28888889,0.016137708,1,6,SAGA complex
+338,V. destructor,CC,GO:0097433,0.016040303,82.28888889,0.016137708,1,6,dense body
+339,V. destructor,CC,GO:0044454,0.017108047,12.11,0.207100592,2,77,nuclear chromosome part
+340,V. destructor,CC,GO:0044421,0.018207762,6.861074705,0.594405594,3,221,extracellular region part
+341,V. destructor,CC,GO:0030424,0.019278453,11.3375,0.220548682,2,82,axon
+342,V. destructor,CC,GO:0000228,0.019726075,11.19444444,0.2232383,2,83,nuclear chromosome
+343,V. destructor,CC,GO:0070062,0.021095621,10.78571429,0.231307154,2,86,extracellular exosome
+344,V. destructor,CC,GO:0033179,0.021335381,58.74603175,0.021516945,1,8,"proton-transporting V-type ATPase, V0 domain"
+345,V. destructor,CC,GO:0016235,0.021335381,58.74603175,0.021516945,1,8,aggresome
+346,V. destructor,CC,GO:0002199,0.021335381,58.74603175,0.021516945,1,8,zona pellucida receptor complex
+347,V. destructor,CC,GO:0002102,0.021335381,58.74603175,0.021516945,1,8,podosome
+348,V. destructor,CC,GO:1903561,0.022504729,10.40517241,0.239376009,2,89,extracellular vesicle
+349,V. destructor,CC,GO:0043230,0.022504729,10.40517241,0.239376009,2,89,extracellular organelle
+350,V. destructor,CC,GO:0070461,0.0266048,45.66666667,0.026896181,1,10,SAGA-type complex
+351,V. destructor,CC,GO:0005726,0.0266048,45.66666667,0.026896181,1,10,perichromatin fibrils
+352,V. destructor,CC,GO:0035267,0.029229922,41.08888889,0.029585799,1,11,NuA4 histone acetyltransferase complex
+353,V. destructor,CC,GO:0005604,0.029229922,41.08888889,0.029585799,1,11,basement membrane
+354,V. destructor,CC,GO:0044456,0.031757526,8.578571429,0.287789134,2,107,synapse part
+355,V. destructor,CC,GO:0000974,0.03184867,37.34343434,0.032275417,1,12,Prp19 complex
+356,V. destructor,CC,GO:0044420,0.03184867,37.34343434,0.032275417,1,12,extracellular matrix component
+357,V. destructor,CC,GO:0008180,0.03184867,37.34343434,0.032275417,1,12,COP9 signalosome
+358,V. destructor,CC,GO:0043189,0.03184867,37.34343434,0.032275417,1,12,H4/H2A histone acetyltransferase complex
+359,V. destructor,CC,GO:0099522,0.03184867,37.34343434,0.032275417,1,12,region of cytosol
+360,V. destructor,CC,GO:0099523,0.03184867,37.34343434,0.032275417,1,12,presynaptic cytosol
+361,V. destructor,CC,GO:0099524,0.03184867,37.34343434,0.032275417,1,12,postsynaptic cytosol
+362,V. destructor,CC,GO:1990836,0.03184867,37.34343434,0.032275417,1,12,lysosomal matrix
+363,V. destructor,CC,GO:1990124,0.034461059,34.22222222,0.034965035,1,13,messenger ribonucleoprotein complex
+364,V. destructor,CC,GO:0031011,0.034461059,34.22222222,0.034965035,1,13,Ino80 complex
+365,V. destructor,CC,GO:0033202,0.034461059,34.22222222,0.034965035,1,13,DNA helicase complex
+366,V. destructor,CC,GO:0043202,0.034461059,34.22222222,0.034965035,1,13,lysosomal lumen
+367,V. destructor,CC,GO:1902562,0.037067102,31.58119658,0.037654653,1,14,H4 histone acetyltransferase complex
+368,V. destructor,CC,GO:0016234,0.037067102,31.58119658,0.037654653,1,14,inclusion body
+369,V. destructor,CC,GO:0099512,0.037458771,7.810869565,0.314685315,2,117,supramolecular fiber
+370,V. destructor,CC,GO:0030027,0.039666813,29.31746032,0.040344271,1,15,lamellipodium
+371,V. destructor,CC,GO:0097346,0.039666813,29.31746032,0.040344271,1,15,INO80-type complex
+372,V. destructor,CC,GO:0005775,0.039666813,29.31746032,0.040344271,1,15,vacuolar lumen
+373,V. destructor,CC,GO:0030054,0.041060671,7.411157025,0.330823023,2,123,cell junction
+374,V. destructor,CC,GO:0005882,0.042260206,27.35555556,0.043033889,1,16,intermediate filament
+375,V. destructor,CC,GO:0005884,0.042260206,27.35555556,0.043033889,1,16,actin filament
+376,V. destructor,CC,GO:0033176,0.042260206,27.35555556,0.043033889,1,16,proton-transporting V-type ATPase complex
+377,V. destructor,CC,GO:0033177,0.042260206,27.35555556,0.043033889,1,16,"proton-transporting two-sector ATPase complex, proton-transporting domain"
+378,V. destructor,CC,GO:0042470,0.042260206,27.35555556,0.043033889,1,16,melanosome
+379,V. destructor,CC,GO:0034708,0.042260206,27.35555556,0.043033889,1,16,methyltransferase complex
+380,V. destructor,CC,GO:0048770,0.042260206,27.35555556,0.043033889,1,16,pigment granule
+381,V. destructor,CC,GO:0045202,0.042910872,7.225806452,0.338891877,2,126,synapse
+382,V. destructor,CC,GO:0043204,0.047428089,24.12418301,0.048413125,1,18,perikaryon

@@ -1,0 +1,559 @@
+Species,Ontology,GOBPI,Pvalue,OddsRatio,ExpCount,Count,Size,Term
+V. destructor,BP,GO:0003254,0.000502023,29.79230769,0.17562724,3,7,regulation of membrane depolarization
+V. destructor,BP,GO:0051899,0.001161135,19.85384615,0.225806452,3,9,membrane depolarization
+V. destructor,BP,GO:0097306,0.002198224,14.88461538,0.275985663,3,11,cellular response to alcohol
+V. destructor,BP,GO:0042391,0.002724691,7.981395349,0.602150538,4,24,regulation of membrane potential
+V. destructor,BP,GO:0042670,0.005945423,26.28498728,0.125448029,2,5,retinal cone cell differentiation
+V. destructor,BP,GO:0046549,0.005945423,26.28498728,0.125448029,2,5,retinal cone cell development
+V. destructor,BP,GO:0010506,0.008817046,5.49478749,0.827956989,4,33,regulation of autophagy
+V. destructor,BP,GO:0060219,0.012080018,15.7648855,0.17562724,2,7,camera-type eye photoreceptor cell differentiation
+V. destructor,BP,GO:0006629,0.013346332,2.085251492,7.275985663,14,290,lipid metabolic process
+V. destructor,BP,GO:0036314,0.01584385,13.13486005,0.200716846,2,8,response to sterol
+V. destructor,BP,GO:0036315,0.01584385,13.13486005,0.200716846,2,8,cellular response to sterol
+V. destructor,BP,GO:0048878,0.019315427,3.043356922,2.132616487,6,85,chemical homeostasis
+V. destructor,BP,GO:0045292,0.020038911,11.25627045,0.225806452,2,9,"mRNA cis splicing, via spliceosome"
+V. destructor,BP,GO:0050801,0.020265162,3.441540948,1.580645161,5,63,ion homeostasis
+V. destructor,BP,GO:0006885,0.024641529,9.847328244,0.250896057,2,10,regulation of pH
+V. destructor,BP,GO:0055067,0.024641529,9.847328244,0.250896057,2,10,monovalent inorganic cation homeostasis
+V. destructor,BP,GO:1901655,0.024641529,9.847328244,0.250896057,2,10,cellular response to ketone
+V. destructor,BP,GO:0034727,0.025089606,Inf,0.025089606,1,1,piecemeal microautophagy of the nucleus
+V. destructor,BP,GO:0016237,0.025089606,Inf,0.025089606,1,1,lysosomal microautophagy
+V. destructor,BP,GO:1902570,0.025089606,Inf,0.025089606,1,1,protein localization to nucleolus
+V. destructor,BP,GO:0022615,0.025089606,Inf,0.025089606,1,1,protein to membrane docking
+V. destructor,BP,GO:0055011,0.025089606,Inf,0.025089606,1,1,atrial cardiac muscle cell differentiation
+V. destructor,BP,GO:0055014,0.025089606,Inf,0.025089606,1,1,atrial cardiac muscle cell development
+V. destructor,BP,GO:0055015,0.025089606,Inf,0.025089606,1,1,ventricular cardiac muscle cell development
+V. destructor,BP,GO:0006919,0.025089606,Inf,0.025089606,1,1,activation of cysteine-type endopeptidase activity involved in apoptotic process
+V. destructor,BP,GO:0036446,0.025089606,Inf,0.025089606,1,1,myofibroblast differentiation
+V. destructor,BP,GO:0071361,0.025089606,Inf,0.025089606,1,1,cellular response to ethanol
+V. destructor,BP,GO:0051902,0.025089606,Inf,0.025089606,1,1,negative regulation of mitochondrial depolarization
+V. destructor,BP,GO:0071447,0.025089606,Inf,0.025089606,1,1,cellular response to hydroperoxide
+V. destructor,BP,GO:0048203,0.025089606,Inf,0.025089606,1,1,"vesicle targeting, trans-Golgi to endosome"
+V. destructor,BP,GO:0001757,0.025089606,Inf,0.025089606,1,1,somite specification
+V. destructor,BP,GO:0007406,0.025089606,Inf,0.025089606,1,1,negative regulation of neuroblast proliferation
+V. destructor,BP,GO:0033194,0.025089606,Inf,0.025089606,1,1,response to hydroperoxide
+V. destructor,BP,GO:0070593,0.025089606,Inf,0.025089606,1,1,dendrite self-avoidance
+V. destructor,BP,GO:0010587,0.025089606,Inf,0.025089606,1,1,miRNA catabolic process
+V. destructor,BP,GO:2000407,0.025089606,Inf,0.025089606,1,1,regulation of T cell extravasation
+V. destructor,BP,GO:2000409,0.025089606,Inf,0.025089606,1,1,positive regulation of T cell extravasation
+V. destructor,BP,GO:2000786,0.025089606,Inf,0.025089606,1,1,positive regulation of autophagosome assembly
+V. destructor,BP,GO:0010940,0.025089606,Inf,0.025089606,1,1,positive regulation of necrotic cell death
+V. destructor,BP,GO:0021942,0.025089606,Inf,0.025089606,1,1,radial glia guided migration of Purkinje cell
+V. destructor,BP,GO:1904180,0.025089606,Inf,0.025089606,1,1,negative regulation of membrane depolarization
+V. destructor,BP,GO:0072702,0.025089606,Inf,0.025089606,1,1,response to methyl methanesulfonate
+V. destructor,BP,GO:0072703,0.025089606,Inf,0.025089606,1,1,cellular response to methyl methanesulfonate
+V. destructor,BP,GO:1904760,0.025089606,Inf,0.025089606,1,1,regulation of myofibroblast differentiation
+V. destructor,BP,GO:1904761,0.025089606,Inf,0.025089606,1,1,negative regulation of myofibroblast differentiation
+V. destructor,BP,GO:1904751,0.025089606,Inf,0.025089606,1,1,positive regulation of protein localization to nucleolus
+V. destructor,BP,GO:1904749,0.025089606,Inf,0.025089606,1,1,regulation of protein localization to nucleolus
+V. destructor,BP,GO:0002691,0.025089606,Inf,0.025089606,1,1,regulation of cellular extravasation
+V. destructor,BP,GO:0002693,0.025089606,Inf,0.025089606,1,1,positive regulation of cellular extravasation
+V. destructor,BP,GO:0072683,0.025089606,Inf,0.025089606,1,1,T cell extravasation
+V. destructor,BP,GO:0044090,0.025089606,Inf,0.025089606,1,1,positive regulation of vacuole organization
+V. destructor,BP,GO:0035621,0.025089606,Inf,0.025089606,1,1,ER to Golgi ceramide transport
+V. destructor,BP,GO:0035627,0.025089606,Inf,0.025089606,1,1,ceramide transport
+V. destructor,BP,GO:0045123,0.025089606,Inf,0.025089606,1,1,cellular extravasation
+V. destructor,BP,GO:0071396,0.027233794,3.165302579,1.70609319,5,68,cellular response to lipid
+V. destructor,BP,GO:0022898,0.029104632,4.946153846,0.677419355,3,27,regulation of transmembrane transporter activity
+V. destructor,BP,GO:0032412,0.029104632,4.946153846,0.677419355,3,27,regulation of ion transmembrane transporter activity
+V. destructor,BP,GO:0032409,0.029104632,4.946153846,0.677419355,3,27,regulation of transporter activity
+V. destructor,BP,GO:0051607,0.02962893,8.751484309,0.275985663,2,11,defense response to virus
+V. destructor,BP,GO:0009893,0.030580995,1.898357228,7.326164875,13,292,positive regulation of metabolic process
+V. destructor,BP,GO:0010942,0.033614358,3.530060293,1.229390681,4,49,positive regulation of cell death
+V. destructor,BP,GO:0031325,0.03400342,1.918656862,6.673835125,12,266,positive regulation of cellular metabolic process
+V. destructor,BP,GO:0007010,0.034323089,2.051504271,5.193548387,10,207,cytoskeleton organization
+V. destructor,BP,GO:0010508,0.034979214,7.87480916,0.301075269,2,12,positive regulation of autophagy
+V. destructor,BP,GO:1904062,0.038271712,4.394017094,0.752688172,3,30,regulation of cation transmembrane transport
+V. destructor,BP,GO:0097190,0.04057439,3.30749354,1.304659498,4,52,apoptotic signaling pathway
+V. destructor,BP,GO:0000045,0.040671322,7.157529493,0.326164875,2,13,autophagosome assembly
+V. destructor,BP,GO:1905037,0.040671322,7.157529493,0.326164875,2,13,autophagosome organization
+V. destructor,BP,GO:0009615,0.040671322,7.157529493,0.326164875,2,13,response to virus
+V. destructor,BP,GO:0034314,0.040671322,7.157529493,0.326164875,2,13,Arp2/3 complex-mediated actin nucleation
+V. destructor,BP,GO:0030036,0.041116354,2.317263545,3.211469534,7,128,actin cytoskeleton organization
+V. destructor,BP,GO:0032502,0.041482466,1.525707516,18.46594982,26,736,developmental process
+V. destructor,BP,GO:0034765,0.041617295,4.236263736,0.777777778,3,31,regulation of ion transmembrane transport
+V. destructor,BP,GO:0030029,0.042600439,2.297814208,3.23655914,7,129,actin filament-based process
+V. destructor,BP,GO:0010721,0.045105387,4.08938992,0.802867384,3,32,negative regulation of cell development
+V. destructor,BP,GO:0019915,0.046685011,6.559796438,0.35125448,2,14,lipid storage
+V. destructor,BP,GO:0045088,0.048734221,3.952307692,0.827956989,3,33,regulation of innate immune response
+V. destructor,BP,GO:0002902,0.049554338,39.14393939,0.050179211,1,2,regulation of B cell apoptotic process
+V. destructor,BP,GO:0002903,0.049554338,39.14393939,0.050179211,1,2,negative regulation of B cell apoptotic process
+V. destructor,BP,GO:0032467,0.049554338,39.14393939,0.050179211,1,2,positive regulation of cytokinesis
+V. destructor,BP,GO:0051781,0.049554338,39.14393939,0.050179211,1,2,positive regulation of cell division
+V. destructor,BP,GO:0034644,0.049554338,39.14393939,0.050179211,1,2,cellular response to UV
+V. destructor,BP,GO:0055012,0.049554338,39.14393939,0.050179211,1,2,ventricular cardiac muscle cell differentiation
+V. destructor,BP,GO:0051882,0.049554338,39.14393939,0.050179211,1,2,mitochondrial depolarization
+V. destructor,BP,GO:0006995,0.049554338,39.14393939,0.050179211,1,2,cellular response to nitrogen starvation
+V. destructor,BP,GO:0060368,0.049554338,39.14393939,0.050179211,1,2,regulation of Fc receptor mediated stimulatory signaling pathway
+V. destructor,BP,GO:0051900,0.049554338,39.14393939,0.050179211,1,2,regulation of mitochondrial depolarization
+V. destructor,BP,GO:0032954,0.049554338,39.14393939,0.050179211,1,2,regulation of cytokinetic process
+V. destructor,BP,GO:0048102,0.049554338,39.14393939,0.050179211,1,2,autophagic cell death
+V. destructor,BP,GO:1903490,0.049554338,39.14393939,0.050179211,1,2,positive regulation of mitotic cytokinesis
+V. destructor,BP,GO:1903471,0.049554338,39.14393939,0.050179211,1,2,regulation of mitotic actomyosin contractile ring contraction
+V. destructor,BP,GO:1903473,0.049554338,39.14393939,0.050179211,1,2,positive regulation of mitotic actomyosin contractile ring contraction
+V. destructor,BP,GO:1903436,0.049554338,39.14393939,0.050179211,1,2,regulation of mitotic cytokinetic process
+V. destructor,BP,GO:1903438,0.049554338,39.14393939,0.050179211,1,2,positive regulation of mitotic cytokinetic process
+V. destructor,BP,GO:0033003,0.049554338,39.14393939,0.050179211,1,2,regulation of mast cell activation
+V. destructor,BP,GO:0001783,0.049554338,39.14393939,0.050179211,1,2,B cell apoptotic process
+V. destructor,BP,GO:0000395,0.049554338,39.14393939,0.050179211,1,2,mRNA 5'-splice site recognition
+V. destructor,BP,GO:0071816,0.049554338,39.14393939,0.050179211,1,2,tail-anchored membrane protein insertion into ER membrane
+V. destructor,BP,GO:1900025,0.049554338,39.14393939,0.050179211,1,2,negative regulation of substrate adhesion-dependent cell spreading
+V. destructor,BP,GO:0070782,0.049554338,39.14393939,0.050179211,1,2,phosphatidylserine exposure on apoptotic cell surface
+V. destructor,BP,GO:0021795,0.049554338,39.14393939,0.050179211,1,2,cerebral cortex cell migration
+V. destructor,BP,GO:0021799,0.049554338,39.14393939,0.050179211,1,2,cerebral cortex radially oriented cell migration
+V. destructor,BP,GO:0021885,0.049554338,39.14393939,0.050179211,1,2,forebrain cell migration
+V. destructor,BP,GO:0010586,0.049554338,39.14393939,0.050179211,1,2,miRNA metabolic process
+V. destructor,BP,GO:0021535,0.049554338,39.14393939,0.050179211,1,2,cell migration in hindbrain
+V. destructor,BP,GO:2000401,0.049554338,39.14393939,0.050179211,1,2,regulation of lymphocyte migration
+V. destructor,BP,GO:2000403,0.049554338,39.14393939,0.050179211,1,2,positive regulation of lymphocyte migration
+V. destructor,BP,GO:2000404,0.049554338,39.14393939,0.050179211,1,2,regulation of T cell migration
+V. destructor,BP,GO:2000406,0.049554338,39.14393939,0.050179211,1,2,positive regulation of T cell migration
+V. destructor,BP,GO:1900182,0.049554338,39.14393939,0.050179211,1,2,positive regulation of protein localization to nucleus
+V. destructor,BP,GO:0031146,0.049554338,39.14393939,0.050179211,1,2,SCF-dependent proteasomal ubiquitin-dependent protein catabolic process
+V. destructor,BP,GO:0021932,0.049554338,39.14393939,0.050179211,1,2,hindbrain radial glia guided cell migration
+V. destructor,BP,GO:2000574,0.049554338,39.14393939,0.050179211,1,2,regulation of microtubule motor activity
+V. destructor,BP,GO:0040024,0.049554338,39.14393939,0.050179211,1,2,dauer larval development
+V. destructor,BP,GO:0043562,0.049554338,39.14393939,0.050179211,1,2,cellular response to nitrogen levels
+V. destructor,BP,GO:2000647,0.049554338,39.14393939,0.050179211,1,2,negative regulation of stem cell proliferation
+V. destructor,BP,GO:0022029,0.049554338,39.14393939,0.050179211,1,2,telencephalon cell migration
+V. destructor,BP,GO:0031991,0.049554338,39.14393939,0.050179211,1,2,regulation of actomyosin contractile ring contraction
+V. destructor,BP,GO:0031952,0.049554338,39.14393939,0.050179211,1,2,regulation of protein autophosphorylation
+V. destructor,BP,GO:0045048,0.049554338,39.14393939,0.050179211,1,2,protein insertion into ER membrane
+V. destructor,BP,GO:1902412,0.049554338,39.14393939,0.050179211,1,2,regulation of mitotic cytokinesis
+V. destructor,BP,GO:1902404,0.049554338,39.14393939,0.050179211,1,2,mitotic actomyosin contractile ring contraction
+V. destructor,BP,GO:0072676,0.049554338,39.14393939,0.050179211,1,2,lymphocyte migration
+V. destructor,BP,GO:0072678,0.049554338,39.14393939,0.050179211,1,2,T cell migration
+V. destructor,BP,GO:0034199,0.049554338,39.14393939,0.050179211,1,2,activation of protein kinase A activity
+V. destructor,BP,GO:0006428,0.049554338,39.14393939,0.050179211,1,2,isoleucyl-tRNA aminoacylation
+V. destructor,BP,GO:0006915,0.049961196,2.08374026,4.064516129,8,162,apoptotic process
+V. destructor,CC,GO:0032590,0.005170465,28.45490196,0.116998386,2,5,dendrite membrane
+V. destructor,CC,GO:0032589,0.007638047,21.33529412,0.140398063,2,6,neuron projection membrane
+V. destructor,CC,GO:0031256,0.010531339,17.06352941,0.163797741,2,7,leading edge membrane
+V. destructor,CC,GO:0097440,0.010531339,17.06352941,0.163797741,2,7,apical dendrite
+V. destructor,CC,GO:0031903,0.013829532,14.21568627,0.187197418,2,8,microbody membrane
+V. destructor,CC,GO:0005778,0.013829532,14.21568627,0.187197418,2,8,peroxisomal membrane
+V. destructor,CC,GO:0005776,0.019626974,5.858766234,0.584991931,3,25,autophagosome
+V. destructor,CC,GO:0080008,0.023399677,Inf,0.023399677,1,1,Cul4-RING E3 ubiquitin ligase complex
+V. destructor,CC,GO:0097225,0.023399677,Inf,0.023399677,1,1,sperm midpiece
+V. destructor,CC,GO:0031462,0.023399677,Inf,0.023399677,1,1,Cul2-RING ubiquitin ligase complex
+V. destructor,CC,GO:0043224,0.023399677,Inf,0.023399677,1,1,nuclear SCF ubiquitin ligase complex
+V. destructor,CC,GO:0031466,0.023399677,Inf,0.023399677,1,1,Cul5-RING ubiquitin ligase complex
+V. destructor,CC,GO:0031467,0.023399677,Inf,0.023399677,1,1,Cul7-RING ubiquitin ligase complex
+V. destructor,CC,GO:0042579,0.026588921,5.151428571,0.655190963,3,28,microbody
+V. destructor,CC,GO:0005777,0.026588921,5.151428571,0.655190963,3,28,peroxisome
+V. destructor,CC,GO:0044438,0.03067988,8.52,0.280796127,2,12,microbody part
+V. destructor,CC,GO:0044439,0.03067988,8.52,0.280796127,2,12,peroxisomal part
+V. destructor,CC,GO:0030119,0.035714912,7.743315508,0.304195804,2,13,AP-type membrane coat adaptor complex
+V. destructor,CC,GO:0005935,0.046257958,42.20930233,0.046799354,1,2,cellular bud neck
+V. destructor,CC,GO:0031097,0.046257958,42.20930233,0.046799354,1,2,medial cortex
+V. destructor,CC,GO:0005846,0.046257958,42.20930233,0.046799354,1,2,nuclear cap binding complex
+V. destructor,CC,GO:0009524,0.046257958,42.20930233,0.046799354,1,2,phragmoplast
+V. destructor,CC,GO:0030123,0.046257958,42.20930233,0.046799354,1,2,AP-3 adaptor complex
+V. destructor,CC,GO:0000930,0.046257958,42.20930233,0.046799354,1,2,gamma-tubulin complex
+V. destructor,CC,GO:0034973,0.046257958,42.20930233,0.046799354,1,2,Sid2-Mob1 complex
+V. destructor,CC,GO:0032839,0.046257958,42.20930233,0.046799354,1,2,dendrite cytoplasm
+V. destructor,CC,GO:0000159,0.046257958,42.20930233,0.046799354,1,2,protein phosphatase type 2A complex
+V. destructor,CC,GO:0031463,0.046257958,42.20930233,0.046799354,1,2,Cul3-RING ubiquitin ligase complex
+V. destructor,CC,GO:0032541,0.046257958,42.20930233,0.046799354,1,2,cortical endoplasmic reticulum
+V. destructor,CC,GO:0071561,0.046257958,42.20930233,0.046799354,1,2,nucleus-vacuole junction
+V. destructor,CC,GO:0044232,0.046257958,42.20930233,0.046799354,1,2,organelle membrane contact site
+V. destructor,MF,GO:0005451,0.003217344,41.88343558,0.0943666,2,4,monovalent cation:proton antiporter activity
+V. destructor,MF,GO:0015385,0.003217344,41.88343558,0.0943666,2,4,sodium:proton antiporter activity
+V. destructor,MF,GO:0017150,0.003217344,41.88343558,0.0943666,2,4,tRNA dihydrouridine synthase activity
+V. destructor,MF,GO:0030674,0.005759415,9.709401709,0.3774664,3,16,"protein binding, bridging"
+V. destructor,MF,GO:0015491,0.007796441,20.93558282,0.1415499,2,6,cation:cation antiporter activity
+V. destructor,MF,GO:0015299,0.007796441,20.93558282,0.1415499,2,6,solute:proton antiporter activity
+V. destructor,MF,GO:0060090,0.008107368,8.412345679,0.4246497,3,18,molecular adaptor activity
+V. destructor,MF,GO:0099516,0.010746655,16.74601227,0.16514155,2,7,ion antiporter activity
+V. destructor,MF,GO:1901981,0.014100821,4.688060732,0.943665999,4,40,phosphatidylinositol phosphate binding
+V. destructor,MF,GO:0015298,0.014108275,13.95296524,0.1887332,2,8,solute:cation antiporter activity
+V. destructor,MF,GO:0050660,0.016656045,4.440013076,0.990849299,4,42,flavin adenine dinucleotide binding
+V. destructor,MF,GO:0003713,0.018035382,4.325529543,1.014440949,4,43,transcription coactivator activity
+V. destructor,MF,GO:0035091,0.018202799,3.525520833,1.533457249,5,65,phosphatidylinositol binding
+V. destructor,MF,GO:0000166,0.019634499,1.564967363,22.22333429,32,942,nucleotide binding
+V. destructor,MF,GO:1901265,0.019634499,1.564967363,22.22333429,32,942,nucleoside phosphate binding
+V. destructor,MF,GO:0043168,0.020132398,1.543522322,23.99270804,34,1017,anion binding
+V. destructor,MF,GO:0036094,0.020957797,1.538036325,24.06348299,34,1020,small molecule binding
+V. destructor,MF,GO:0004852,0.02359165,Inf,0.02359165,1,1,uroporphyrinogen-III synthase activity
+V. destructor,MF,GO:0035650,0.02359165,Inf,0.02359165,1,1,AP-1 adaptor complex binding
+V. destructor,MF,GO:0047617,0.02359165,Inf,0.02359165,1,1,acyl-CoA hydrolase activity
+V. destructor,MF,GO:0036440,0.02359165,Inf,0.02359165,1,1,citrate synthase activity
+V. destructor,MF,GO:0003847,0.02359165,Inf,0.02359165,1,1,1-alkyl-2-acetylglycerophosphocholine esterase activity
+V. destructor,MF,GO:0004385,0.02359165,Inf,0.02359165,1,1,guanylate kinase activity
+V. destructor,MF,GO:0008187,0.02359165,Inf,0.02359165,1,1,poly-pyrimidine tract binding
+V. destructor,MF,GO:0008266,0.02359165,Inf,0.02359165,1,1,poly(U) RNA binding
+V. destructor,MF,GO:0004108,0.02359165,Inf,0.02359165,1,1,citrate (Si)-synthase activity
+V. destructor,MF,GO:0097602,0.02359165,Inf,0.02359165,1,1,cullin family protein binding
+V. destructor,MF,GO:0005319,0.024902937,5.250771605,0.63697455,3,27,lipid transporter activity
+V. destructor,MF,GO:0015297,0.026457121,9.297886844,0.25950815,2,11,antiporter activity
+V. destructor,MF,GO:0004672,0.034171768,1.90530138,6.652845296,12,282,protein kinase activity
+V. destructor,MF,GO:0000049,0.036384492,7.605131065,0.30669145,2,13,tRNA binding
+V. destructor,MF,GO:0004822,0.046630028,41.63414634,0.0471833,1,2,isoleucine-tRNA ligase activity
+V. destructor,MF,GO:0052735,0.046630028,41.63414634,0.0471833,1,2,tRNA (cytosine-3-)-methyltransferase activity
+V. destructor,MF,GO:0043023,0.046630028,41.63414634,0.0471833,1,2,ribosomal large subunit binding
+V. destructor,MF,GO:0016289,0.046630028,41.63414634,0.0471833,1,2,CoA hydrolase activity
+V. destructor,MF,GO:0004452,0.046630028,41.63414634,0.0471833,1,2,isopentenyl-diphosphate delta-isomerase activity
+V. destructor,MF,GO:0008142,0.046630028,41.63414634,0.0471833,1,2,oxysterol binding
+V. destructor,MF,GO:0005545,0.046630028,41.63414634,0.0471833,1,2,1-phosphatidylinositol binding
+V. destructor,MF,GO:0050080,0.046630028,41.63414634,0.0471833,1,2,malonyl-CoA decarboxylase activity
+V. destructor,MF,GO:0016773,0.046653334,1.762762325,7.761652845,13,329,"phosphotransferase activity, alcohol group as acceptor"
+V. destructor,MF,GO:0004866,0.047501347,6.433223218,0.35387475,2,15,endopeptidase inhibitor activity
+V. destructor,MF,GO:0032934,0.047501347,6.433223218,0.35387475,2,15,sterol binding
+V. destructor,MF,GO:0061135,0.047501347,6.433223218,0.35387475,2,15,endopeptidase regulator activity
+V. jacobsoni,BP,GO:0006627,0.000698604,Inf,0.053052467,2,2,protein processing involved in protein targeting to mitochondrion
+V. jacobsoni,BP,GO:0034982,0.000698604,Inf,0.053052467,2,2,mitochondrial protein processing
+V. jacobsoni,BP,GO:0042373,0.002059279,74.47761194,0.079578701,2,3,vitamin K metabolic process
+V. jacobsoni,BP,GO:0009268,0.009769459,18.60820896,0.159157402,2,6,response to pH
+V. jacobsoni,BP,GO:0006775,0.013440826,14.88358209,0.185683636,2,7,fat-soluble vitamin metabolic process
+V. jacobsoni,BP,GO:0046112,0.013440826,14.88358209,0.185683636,2,7,nucleobase biosynthetic process
+V. jacobsoni,BP,GO:0016079,0.013440826,14.88358209,0.185683636,2,7,synaptic vesicle exocytosis
+V. jacobsoni,BP,GO:0009112,0.013440826,14.88358209,0.185683636,2,7,nucleobase metabolic process
+V. jacobsoni,BP,GO:0006414,0.014955895,6.599734631,0.530524673,3,20,translational elongation
+V. jacobsoni,BP,GO:0032940,0.016345071,2.857881137,2.652623366,7,100,secretion by cell
+V. jacobsoni,BP,GO:0009163,0.017611986,12.40049751,0.212209869,2,8,nucleoside biosynthetic process
+V. jacobsoni,BP,GO:0042073,0.017611986,12.40049751,0.212209869,2,8,intraciliary transport
+V. jacobsoni,BP,GO:0017156,0.017611986,12.40049751,0.212209869,2,8,calcium ion regulated exocytosis
+V. jacobsoni,BP,GO:0042455,0.017611986,12.40049751,0.212209869,2,8,ribonucleoside biosynthetic process
+V. jacobsoni,BP,GO:0045055,0.019441152,5.902651365,0.583577141,3,22,regulated exocytosis
+V. jacobsoni,BP,GO:0008406,0.019441152,5.902651365,0.583577141,3,22,gonad development
+V. jacobsoni,BP,GO:0042060,0.020680772,4.170875421,1.061049347,4,40,wound healing
+V. jacobsoni,BP,GO:1901659,0.022254239,10.62686567,0.238736103,2,9,glycosyl compound biosynthetic process
+V. jacobsoni,BP,GO:0006222,0.026526234,Inf,0.026526234,1,1,UMP biosynthetic process
+V. jacobsoni,BP,GO:0010611,0.026526234,Inf,0.026526234,1,1,regulation of cardiac muscle hypertrophy
+V. jacobsoni,BP,GO:0071881,0.026526234,Inf,0.026526234,1,1,adenylate cyclase-inhibiting adrenergic receptor signaling pathway
+V. jacobsoni,BP,GO:0010614,0.026526234,Inf,0.026526234,1,1,negative regulation of cardiac muscle hypertrophy
+V. jacobsoni,BP,GO:0071875,0.026526234,Inf,0.026526234,1,1,adrenergic receptor signaling pathway
+V. jacobsoni,BP,GO:0071877,0.026526234,Inf,0.026526234,1,1,regulation of adenylate cyclase-inhibiting adrenergic receptor signaling pathway
+V. jacobsoni,BP,GO:0033198,0.026526234,Inf,0.026526234,1,1,response to ATP
+V. jacobsoni,BP,GO:0021508,0.026526234,Inf,0.026526234,1,1,floor plate formation
+V. jacobsoni,BP,GO:0071651,0.026526234,Inf,0.026526234,1,1,positive regulation of chemokine (C-C motif) ligand 5 production
+V. jacobsoni,BP,GO:0071640,0.026526234,Inf,0.026526234,1,1,regulation of macrophage inflammatory protein 1 alpha production
+V. jacobsoni,BP,GO:0071642,0.026526234,Inf,0.026526234,1,1,positive regulation of macrophage inflammatory protein 1 alpha production
+V. jacobsoni,BP,GO:0071649,0.026526234,Inf,0.026526234,1,1,regulation of chemokine (C-C motif) ligand 5 production
+V. jacobsoni,BP,GO:0071637,0.026526234,Inf,0.026526234,1,1,regulation of monocyte chemotactic protein-1 production
+V. jacobsoni,BP,GO:0071639,0.026526234,Inf,0.026526234,1,1,positive regulation of monocyte chemotactic protein-1 production
+V. jacobsoni,BP,GO:0071605,0.026526234,Inf,0.026526234,1,1,monocyte chemotactic protein-1 production
+V. jacobsoni,BP,GO:0071608,0.026526234,Inf,0.026526234,1,1,macrophage inflammatory protein-1 alpha production
+V. jacobsoni,BP,GO:0071609,0.026526234,Inf,0.026526234,1,1,chemokine (C-C motif) ligand 5 production
+V. jacobsoni,BP,GO:0014741,0.026526234,Inf,0.026526234,1,1,negative regulation of muscle hypertrophy
+V. jacobsoni,BP,GO:0046666,0.026526234,Inf,0.026526234,1,1,retinal cell programmed cell death
+V. jacobsoni,BP,GO:0030048,0.026526234,Inf,0.026526234,1,1,actin filament-based movement
+V. jacobsoni,BP,GO:0033504,0.026526234,Inf,0.026526234,1,1,floor plate development
+V. jacobsoni,BP,GO:0033505,0.026526234,Inf,0.026526234,1,1,floor plate morphogenesis
+V. jacobsoni,BP,GO:0018214,0.026526234,Inf,0.026526234,1,1,protein carboxylation
+V. jacobsoni,BP,GO:0007390,0.026526234,Inf,0.026526234,1,1,germ-band shortening
+V. jacobsoni,BP,GO:0007396,0.026526234,Inf,0.026526234,1,1,suture of dorsal opening
+V. jacobsoni,BP,GO:0007386,0.026526234,Inf,0.026526234,1,1,compartment pattern specification
+V. jacobsoni,BP,GO:0007303,0.026526234,Inf,0.026526234,1,1,"cytoplasmic transport, nurse cell to oocyte"
+V. jacobsoni,BP,GO:0016260,0.026526234,Inf,0.026526234,1,1,selenocysteine biosynthetic process
+V. jacobsoni,BP,GO:0016259,0.026526234,Inf,0.026526234,1,1,selenocysteine metabolic process
+V. jacobsoni,BP,GO:1903524,0.026526234,Inf,0.026526234,1,1,positive regulation of blood circulation
+V. jacobsoni,BP,GO:0090075,0.026526234,Inf,0.026526234,1,1,relaxation of muscle
+V. jacobsoni,BP,GO:0035926,0.026526234,Inf,0.026526234,1,1,chemokine (C-C motif) ligand 2 secretion
+V. jacobsoni,BP,GO:0045234,0.026526234,Inf,0.026526234,1,1,protein palmitoleylation
+V. jacobsoni,BP,GO:0045744,0.026526234,Inf,0.026526234,1,1,negative regulation of G-protein coupled receptor protein signaling pathway
+V. jacobsoni,BP,GO:0055119,0.026526234,Inf,0.026526234,1,1,relaxation of cardiac muscle
+V. jacobsoni,BP,GO:0045823,0.026526234,Inf,0.026526234,1,1,positive regulation of heart contraction
+V. jacobsoni,BP,GO:0090195,0.026526234,Inf,0.026526234,1,1,chemokine secretion
+V. jacobsoni,BP,GO:0009173,0.026526234,Inf,0.026526234,1,1,pyrimidine ribonucleoside monophosphate metabolic process
+V. jacobsoni,BP,GO:0009174,0.026526234,Inf,0.026526234,1,1,pyrimidine ribonucleoside monophosphate biosynthetic process
+V. jacobsoni,BP,GO:0050873,0.026526234,Inf,0.026526234,1,1,brown fat cell differentiation
+V. jacobsoni,BP,GO:0050820,0.026526234,Inf,0.026526234,1,1,positive regulation of coagulation
+V. jacobsoni,BP,GO:0060087,0.026526234,Inf,0.026526234,1,1,relaxation of vascular smooth muscle
+V. jacobsoni,BP,GO:0044205,0.026526234,Inf,0.026526234,1,1,'de novo' UMP biosynthetic process
+V. jacobsoni,BP,GO:0042311,0.026526234,Inf,0.026526234,1,1,vasodilation
+V. jacobsoni,BP,GO:0017187,0.026526234,Inf,0.026526234,1,1,peptidyl-glutamic acid carboxylation
+V. jacobsoni,BP,GO:0045986,0.026526234,Inf,0.026526234,1,1,negative regulation of smooth muscle contraction
+V. jacobsoni,BP,GO:0045989,0.026526234,Inf,0.026526234,1,1,positive regulation of striated muscle contraction
+V. jacobsoni,BP,GO:0045932,0.026526234,Inf,0.026526234,1,1,negative regulation of muscle contraction
+V. jacobsoni,BP,GO:0060452,0.026526234,Inf,0.026526234,1,1,positive regulation of cardiac muscle contraction
+V. jacobsoni,BP,GO:0044557,0.026526234,Inf,0.026526234,1,1,relaxation of smooth muscle
+V. jacobsoni,BP,GO:1990255,0.026526234,Inf,0.026526234,1,1,subsynaptic reticulum organization
+V. jacobsoni,BP,GO:0060288,0.026526234,Inf,0.026526234,1,1,formation of a compartment boundary
+V. jacobsoni,BP,GO:0008258,0.026526234,Inf,0.026526234,1,1,head involution
+V. jacobsoni,BP,GO:0046049,0.026526234,Inf,0.026526234,1,1,UMP metabolic process
+V. jacobsoni,BP,GO:0051187,0.027340037,9.296641791,0.265262337,2,10,cofactor catabolic process
+V. jacobsoni,BP,GO:1901568,0.027340037,9.296641791,0.265262337,2,10,fatty acid derivative metabolic process
+V. jacobsoni,BP,GO:0045137,0.027412796,5.094668489,0.663155842,3,25,development of primary sexual characteristics
+V. jacobsoni,BP,GO:0046903,0.032328065,2.453416595,3.050516871,7,115,secretion
+V. jacobsoni,BP,GO:0006887,0.035048578,3.48696265,1.246732982,4,47,exocytosis
+V. jacobsoni,BP,GO:0007596,0.038737591,7.434328358,0.318314804,2,12,blood coagulation
+V. jacobsoni,BP,GO:0007599,0.038737591,7.434328358,0.318314804,2,12,hemostasis
+V. jacobsoni,BP,GO:0050817,0.038737591,7.434328358,0.318314804,2,12,coagulation
+V. jacobsoni,BP,GO:0009116,0.040350743,4.307403123,0.769260776,3,29,nucleoside metabolic process
+V. jacobsoni,BP,GO:0009611,0.042609403,3.257575758,1.326311683,4,50,response to wounding
+V. jacobsoni,BP,GO:1901657,0.043989812,4.147034252,0.79578701,3,30,glycosyl compound metabolic process
+V. jacobsoni,BP,GO:0060606,0.044999654,6.757123474,0.344841038,2,13,tube closure
+V. jacobsoni,BP,GO:0001843,0.044999654,6.757123474,0.344841038,2,13,neural tube closure
+V. jacobsoni,BP,GO:0016575,0.044999654,6.757123474,0.344841038,2,13,histone deacetylation
+V. jacobsoni,BP,GO:0097480,0.044999654,6.757123474,0.344841038,2,13,establishment of synaptic vesicle localization
+V. jacobsoni,BP,GO:0048489,0.044999654,6.757123474,0.344841038,2,13,synaptic vesicle transport
+V. jacobsoni,BP,GO:0051604,0.047787075,3.998120301,0.822313244,3,31,protein maturation
+V. jacobsoni,CC,GO:0030992,0.005184899,28.43089431,0.1171875,2,5,intraciliary transport particle B
+V. jacobsoni,CC,GO:0030990,0.010560473,17.04878049,0.1640625,2,7,intraciliary transport particle
+V. jacobsoni,CC,GO:0005788,0.02161978,10.64634146,0.234375,2,10,endoplasmic reticulum lumen
+V. jacobsoni,CC,GO:0031166,0.0234375,Inf,0.0234375,1,1,integral component of vacuolar membrane
+V. jacobsoni,CC,GO:0071212,0.0234375,Inf,0.0234375,1,1,subsynaptic reticulum
+V. jacobsoni,CC,GO:0032281,0.0234375,Inf,0.0234375,1,1,AMPA glutamate receptor complex
+V. jacobsoni,CC,GO:1905103,0.0234375,Inf,0.0234375,1,1,integral component of lysosomal membrane
+V. jacobsoni,CC,GO:0008328,0.0234375,Inf,0.0234375,1,1,ionotropic glutamate receptor complex
+V. jacobsoni,CC,GO:0098878,0.0234375,Inf,0.0234375,1,1,neurotransmitter receptor complex
+V. jacobsoni,CC,GO:0031310,0.0234375,Inf,0.0234375,1,1,intrinsic component of vacuolar membrane
+V. jacobsoni,CC,GO:0043235,0.026026569,9.460704607,0.2578125,2,11,receptor complex
+V. jacobsoni,CC,GO:0000118,0.030762789,8.512195122,0.28125,2,12,histone deacetylase complex
+V. jacobsoni,CC,GO:0071944,0.032960676,1.827956989,9.0703125,15,387,cell periphery
+V. jacobsoni,CC,GO:0016021,0.035910821,1.610634489,17.671875,25,754,integral component of membrane
+V. jacobsoni,CC,GO:0005667,0.040996441,3.315384615,1.3125,4,56,transcription factor complex
+V. jacobsoni,CC,GO:0098858,0.041154239,7.089430894,0.328125,2,14,actin-based cell projection
+V. jacobsoni,CC,GO:0031224,0.043250463,1.574992005,17.9765625,25,767,intrinsic component of membrane
+V. jacobsoni,CC,GO:0000812,0.046332072,42.15662651,0.046875,1,2,Swr1 complex
+V. jacobsoni,CC,GO:0042581,0.046332072,42.15662651,0.046875,1,2,specific granule
+V. jacobsoni,CC,GO:0005853,0.046332072,42.15662651,0.046875,1,2,eukaryotic translation elongation factor 1 complex
+V. jacobsoni,CC,GO:0035579,0.046332072,42.15662651,0.046875,1,2,specific granule membrane
+V. jacobsoni,CC,GO:0071986,0.046332072,42.15662651,0.046875,1,2,Ragulator complex
+V. jacobsoni,CC,GO:0044298,0.046332072,42.15662651,0.046875,1,2,cell body membrane
+V. jacobsoni,CC,GO:0031390,0.046332072,42.15662651,0.046875,1,2,Ctf18 RFC-like complex
+V. jacobsoni,CC,GO:0097542,0.046332072,42.15662651,0.046875,1,2,ciliary tip
+V. jacobsoni,CC,GO:0032809,0.046332072,42.15662651,0.046875,1,2,neuronal cell body membrane
+V. jacobsoni,MF,GO:0003824,0.000109513,1.828701742,64.53827928,88,2707,catalytic activity
+V. jacobsoni,MF,GO:0043167,0.006354821,1.570336391,37.85991411,52,1588,ion binding
+V. jacobsoni,MF,GO:0043168,0.007597986,1.666076905,23.29290686,35,977,anion binding
+V. jacobsoni,MF,GO:0016829,0.009249428,3.606635945,1.811935436,6,76,lyase activity
+V. jacobsoni,MF,GO:0017069,0.014392383,13.80712788,0.190730046,2,8,snRNA binding
+V. jacobsoni,MF,GO:0016840,0.014392383,13.80712788,0.190730046,2,8,carbon-nitrogen lyase activity
+V. jacobsoni,MF,GO:0004871,0.016450327,2.140799191,5.98415519,12,251,signal transducer activity
+V. jacobsoni,MF,GO:0005524,0.016506828,1.699497583,15.25840367,24,640,ATP binding
+V. jacobsoni,MF,GO:0032559,0.019592868,1.669550617,15.49681623,24,650,adenyl ribonucleotide binding
+V. jacobsoni,MF,GO:0030554,0.020602638,1.660752208,15.56834,24,653,adenyl nucleotide binding
+V. jacobsoni,MF,GO:0008144,0.021042518,1.626276133,17.26106915,26,724,drug binding
+V. jacobsoni,MF,GO:0016853,0.021331052,3.375723739,1.597364134,5,67,isomerase activity
+V. jacobsoni,MF,GO:0003746,0.022418802,10.35220126,0.238412557,2,10,translation elongation factor activity
+V. jacobsoni,MF,GO:0019905,0.022418802,10.35220126,0.238412557,2,10,syntaxin binding
+V. jacobsoni,MF,GO:0030623,0.023841256,Inf,0.023841256,1,1,U5 snRNA binding
+V. jacobsoni,MF,GO:0033608,0.023841256,Inf,0.023841256,1,1,formyl-CoA transferase activity
+V. jacobsoni,MF,GO:0016781,0.023841256,Inf,0.023841256,1,1,"phosphotransferase activity, paired acceptors"
+V. jacobsoni,MF,GO:0015131,0.023841256,Inf,0.023841256,1,1,oxaloacetate transmembrane transporter activity
+V. jacobsoni,MF,GO:0035586,0.023841256,Inf,0.023841256,1,1,purinergic receptor activity
+V. jacobsoni,MF,GO:0004931,0.023841256,Inf,0.023841256,1,1,extracellularly ATP-gated cation channel activity
+V. jacobsoni,MF,GO:0004935,0.023841256,Inf,0.023841256,1,1,adrenergic receptor activity
+V. jacobsoni,MF,GO:0008239,0.023841256,Inf,0.023841256,1,1,dipeptidyl-peptidase activity
+V. jacobsoni,MF,GO:0016502,0.023841256,Inf,0.023841256,1,1,nucleotide receptor activity
+V. jacobsoni,MF,GO:0016509,0.023841256,Inf,0.023841256,1,1,long-chain-3-hydroxyacyl-CoA dehydrogenase activity
+V. jacobsoni,MF,GO:0001614,0.023841256,Inf,0.023841256,1,1,purinergic nucleotide receptor activity
+V. jacobsoni,MF,GO:0035381,0.023841256,Inf,0.023841256,1,1,ATP-gated ion channel activity
+V. jacobsoni,MF,GO:0004756,0.023841256,Inf,0.023841256,1,1,"selenide, water dikinase activity"
+V. jacobsoni,MF,GO:0070547,0.023841256,Inf,0.023841256,1,1,L-tyrosine aminotransferase activity
+V. jacobsoni,MF,GO:0047057,0.023841256,Inf,0.023841256,1,1,vitamin-K-epoxide reductase (warfarin-sensitive) activity
+V. jacobsoni,MF,GO:0047058,0.023841256,Inf,0.023841256,1,1,vitamin-K-epoxide reductase (warfarin-insensitive) activity
+V. jacobsoni,MF,GO:1990698,0.023841256,Inf,0.023841256,1,1,palmitoleoyltransferase activity
+V. jacobsoni,MF,GO:0004709,0.023841256,Inf,0.023841256,1,1,MAP kinase kinase kinase activity
+V. jacobsoni,MF,GO:0047045,0.023841256,Inf,0.023841256,1,1,testosterone 17-beta-dehydrogenase (NADP+) activity
+V. jacobsoni,MF,GO:0097682,0.023841256,Inf,0.023841256,1,1,"intracellular phosphatidylinositol-3,5-bisphosphate-sensitive cation channel activity"
+V. jacobsoni,MF,GO:0004838,0.023841256,Inf,0.023841256,1,1,L-tyrosine:2-oxoglutarate aminotransferase activity
+V. jacobsoni,MF,GO:0004590,0.023841256,Inf,0.023841256,1,1,orotidine-5'-phosphate decarboxylase activity
+V. jacobsoni,MF,GO:0003721,0.023841256,Inf,0.023841256,1,1,telomerase RNA reverse transcriptase activity
+V. jacobsoni,MF,GO:0004588,0.023841256,Inf,0.023841256,1,1,orotate phosphoribosyltransferase activity
+V. jacobsoni,MF,GO:0004044,0.023841256,Inf,0.023841256,1,1,amidophosphoribosyltransferase activity
+V. jacobsoni,MF,GO:0004001,0.023841256,Inf,0.023841256,1,1,adenosine kinase activity
+V. jacobsoni,MF,GO:1901239,0.023841256,Inf,0.023841256,1,1,malonate(1-) transmembrane transporter activity
+V. jacobsoni,MF,GO:0000829,0.023841256,Inf,0.023841256,1,1,inositol heptakisphosphate kinase activity
+V. jacobsoni,MF,GO:0034658,0.023841256,Inf,0.023841256,1,1,isopropylmalate transmembrane transporter activity
+V. jacobsoni,MF,GO:0016900,0.023841256,Inf,0.023841256,1,1,"oxidoreductase activity, acting on the CH-OH group of donors, disulfide as acceptor"
+V. jacobsoni,MF,GO:0050699,0.023841256,Inf,0.023841256,1,1,WW domain binding
+V. jacobsoni,MF,GO:0048037,0.027337335,2.127525042,4.982822449,10,209,cofactor binding
+V. jacobsoni,MF,GO:0035639,0.027489364,1.569492537,18.52465571,27,777,purine ribonucleoside triphosphate binding
+V. jacobsoni,MF,GO:0032555,0.032177928,1.543893541,18.78690952,27,788,purine ribonucleotide binding
+V. jacobsoni,MF,GO:0032553,0.034982583,1.530239935,18.92995706,27,794,ribonucleotide binding
+V. jacobsoni,MF,GO:0017076,0.034982583,1.530239935,18.92995706,27,794,purine nucleotide binding
+V. jacobsoni,MF,GO:0015276,0.036172086,2.902421652,1.835776692,5,77,ligand-gated ion channel activity
+V. jacobsoni,MF,GO:0022834,0.036172086,2.902421652,1.835776692,5,77,ligand-gated channel activity
+V. jacobsoni,MF,GO:0004888,0.036354093,2.109210526,4.505997335,9,189,transmembrane signaling receptor activity
+V. jacobsoni,MF,GO:0004702,0.037087952,7.52544311,0.309936325,2,13,"signal transducer, downstream of receptor, with serine/threonine kinase activity"
+V. jacobsoni,MF,GO:0000049,0.037087952,7.52544311,0.309936325,2,13,tRNA binding
+V. jacobsoni,MF,GO:0000149,0.042604236,6.897274633,0.33377758,2,14,SNARE binding
+V. jacobsoni,MF,GO:0018024,0.042604236,6.897274633,0.33377758,2,14,histone-lysine N-methyltransferase activity
+V. jacobsoni,MF,GO:0016740,0.043447877,1.45175587,23.6982082,32,994,transferase activity
+V. jacobsoni,MF,GO:0004396,0.047117553,41.19375,0.047682511,1,2,hexokinase activity
+V. jacobsoni,MF,GO:0004995,0.047117553,41.19375,0.047682511,1,2,tachykinin receptor activity
+V. jacobsoni,MF,GO:0005522,0.047117553,41.19375,0.047682511,1,2,profilin binding
+V. jacobsoni,MF,GO:0019789,0.047117553,41.19375,0.047682511,1,2,SUMO transferase activity
+V. jacobsoni,MF,GO:0017070,0.047117553,41.19375,0.047682511,1,2,U6 snRNA binding
+V. jacobsoni,MF,GO:0005536,0.047117553,41.19375,0.047682511,1,2,glucose binding
+V. jacobsoni,MF,GO:0003978,0.047117553,41.19375,0.047682511,1,2,UDP-glucose 4-epimerase activity
+V. jacobsoni,MF,GO:0004791,0.047117553,41.19375,0.047682511,1,2,thioredoxin-disulfide reductase activity
+V. jacobsoni,MF,GO:0004822,0.047117553,41.19375,0.047682511,1,2,isoleucine-tRNA ligase activity
+V. jacobsoni,MF,GO:0004816,0.047117553,41.19375,0.047682511,1,2,asparagine-tRNA ligase activity
+V. jacobsoni,MF,GO:0004818,0.047117553,41.19375,0.047682511,1,2,glutamate-tRNA ligase activity
+V. jacobsoni,MF,GO:0003720,0.047117553,41.19375,0.047682511,1,2,telomerase activity
+V. jacobsoni,MF,GO:0001968,0.047117553,41.19375,0.047682511,1,2,fibronectin binding
+V. jacobsoni,MF,GO:0003839,0.047117553,41.19375,0.047682511,1,2,gamma-glutamylcyclotransferase activity
+V. jacobsoni,MF,GO:0008410,0.047117553,41.19375,0.047682511,1,2,CoA-transferase activity
+V. jacobsoni,MF,GO:0042054,0.048404686,6.36574746,0.357618836,2,15,histone methyltransferase activity
+V. jacobsoni,MF,GO:0016705,0.04887899,3.084689785,1.382792833,4,58,"oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen"
+Varroa,BP,GO:0003091,0.005554481,371.3571429,0.005561949,1,2,renal water homeostasis
+Varroa,BP,GO:0055017,0.005554481,371.3571429,0.005561949,1,2,cardiac muscle tissue growth
+Varroa,BP,GO:0060038,0.005554481,371.3571429,0.005561949,1,2,cardiac muscle cell proliferation
+Varroa,BP,GO:0071377,0.005554481,371.3571429,0.005561949,1,2,cellular response to glucagon stimulus
+Varroa,BP,GO:0060419,0.005554481,371.3571429,0.005561949,1,2,heart growth
+Varroa,BP,GO:0046006,0.005554481,371.3571429,0.005561949,1,2,regulation of activated T cell proliferation
+Varroa,BP,GO:0046007,0.005554481,371.3571429,0.005561949,1,2,negative regulation of activated T cell proliferation
+Varroa,BP,GO:0061939,0.005554481,371.3571429,0.005561949,1,2,c-di-GMP signaling
+Varroa,BP,GO:0007143,0.005554481,371.3571429,0.005561949,1,2,female meiotic nuclear division
+Varroa,BP,GO:0090036,0.005554481,371.3571429,0.005561949,1,2,regulation of protein kinase C signaling
+Varroa,BP,GO:0090038,0.005554481,371.3571429,0.005561949,1,2,negative regulation of protein kinase C signaling
+Varroa,BP,GO:1903538,0.005554481,371.3571429,0.005561949,1,2,regulation of meiotic cell cycle process involved in oocyte maturation
+Varroa,BP,GO:0033762,0.005554481,371.3571429,0.005561949,1,2,response to glucagon
+Varroa,BP,GO:0031150,0.005554481,371.3571429,0.005561949,1,2,sorocarp stalk development
+Varroa,BP,GO:0009052,0.005554481,371.3571429,0.005561949,1,2,"pentose-phosphate shunt, non-oxidative branch"
+Varroa,BP,GO:0031149,0.005554481,371.3571429,0.005561949,1,2,sorocarp stalk cell differentiation
+Varroa,BP,GO:0031285,0.005554481,371.3571429,0.005561949,1,2,regulation of sorocarp stalk cell differentiation
+Varroa,BP,GO:0014855,0.005554481,371.3571429,0.005561949,1,2,striated muscle cell proliferation
+Varroa,BP,GO:0008103,0.005554481,371.3571429,0.005561949,1,2,oocyte microtubule cytoskeleton polarization
+Varroa,BP,GO:0016325,0.005554481,371.3571429,0.005561949,1,2,oocyte microtubule cytoskeleton organization
+Varroa,BP,GO:0030951,0.005554481,371.3571429,0.005561949,1,2,establishment or maintenance of microtubule cytoskeleton polarity
+Varroa,BP,GO:0006435,0.005554481,371.3571429,0.005561949,1,2,threonyl-tRNA aminoacylation
+Varroa,BP,GO:0022610,0.007570633,5.76113879,0.792577675,4,285,biological adhesion
+Varroa,BP,GO:0007155,0.007570633,5.76113879,0.792577675,4,285,cell adhesion
+Varroa,BP,GO:0051447,0.011079167,123.7619048,0.011123897,1,4,negative regulation of meiotic cell cycle
+Varroa,BP,GO:0045835,0.011079167,123.7619048,0.011123897,1,4,negative regulation of meiotic nuclear division
+Varroa,BP,GO:0050798,0.011079167,123.7619048,0.011123897,1,4,activated T cell proliferation
+Varroa,BP,GO:0050891,0.011079167,123.7619048,0.011123897,1,4,multicellular organismal water homeostasis
+Varroa,BP,GO:0048149,0.011079167,123.7619048,0.011123897,1,4,behavioral response to ethanol
+Varroa,BP,GO:0060283,0.011079167,123.7619048,0.011123897,1,4,negative regulation of oocyte development
+Varroa,BP,GO:1903430,0.011079167,123.7619048,0.011123897,1,4,negative regulation of cell maturation
+Varroa,BP,GO:0000395,0.011079167,123.7619048,0.011123897,1,4,mRNA 5'-splice site recognition
+Varroa,BP,GO:1903537,0.011079167,123.7619048,0.011123897,1,4,meiotic cell cycle process involved in oocyte maturation
+Varroa,BP,GO:0007591,0.011079167,123.7619048,0.011123897,1,4,"molting cycle, chitin-based cuticle"
+Varroa,BP,GO:2000480,0.011079167,123.7619048,0.011123897,1,4,negative regulation of cAMP-dependent protein kinase activity
+Varroa,BP,GO:2000479,0.011079167,123.7619048,0.011123897,1,4,regulation of cAMP-dependent protein kinase activity
+Varroa,BP,GO:1900193,0.011079167,123.7619048,0.011123897,1,4,regulation of oocyte maturation
+Varroa,BP,GO:1900194,0.011079167,123.7619048,0.011123897,1,4,negative regulation of oocyte maturation
+Varroa,BP,GO:0031156,0.011079167,123.7619048,0.011123897,1,4,regulation of sorocarp development
+Varroa,BP,GO:2000253,0.011079167,123.7619048,0.011123897,1,4,positive regulation of feeding behavior
+Varroa,BP,GO:0031288,0.011079167,123.7619048,0.011123897,1,4,sorocarp morphogenesis
+Varroa,BP,GO:0030104,0.011079167,123.7619048,0.011123897,1,4,water homeostasis
+Varroa,BP,GO:1905880,0.011079167,123.7619048,0.011123897,1,4,negative regulation of oogenesis
+Varroa,BP,GO:0034199,0.011079167,123.7619048,0.011123897,1,4,activation of protein kinase A activity
+Varroa,BP,GO:0072375,0.013830386,92.8125,0.013904871,1,5,medium-term memory
+Varroa,BP,GO:0003014,0.016574214,74.24285714,0.016685846,1,6,renal system process
+Varroa,BP,GO:0042130,0.016574214,74.24285714,0.016685846,1,6,negative regulation of T cell proliferation
+Varroa,BP,GO:0032945,0.016574214,74.24285714,0.016685846,1,6,negative regulation of mononuclear cell proliferation
+Varroa,BP,GO:0007026,0.016574214,74.24285714,0.016685846,1,6,negative regulation of microtubule depolymerization
+Varroa,BP,GO:0007019,0.016574214,74.24285714,0.016685846,1,6,microtubule depolymerization
+Varroa,BP,GO:0050672,0.016574214,74.24285714,0.016685846,1,6,negative regulation of lymphocyte proliferation
+Varroa,BP,GO:0060281,0.016574214,74.24285714,0.016685846,1,6,regulation of oocyte development
+Varroa,BP,GO:1903429,0.016574214,74.24285714,0.016685846,1,6,regulation of cell maturation
+Varroa,BP,GO:0001556,0.016574214,74.24285714,0.016685846,1,6,oocyte maturation
+Varroa,BP,GO:0010737,0.016574214,74.24285714,0.016685846,1,6,protein kinase A signaling
+Varroa,BP,GO:0010738,0.016574214,74.24285714,0.016685846,1,6,regulation of protein kinase A signaling
+Varroa,BP,GO:0070528,0.016574214,74.24285714,0.016685846,1,6,protein kinase C signaling
+Varroa,BP,GO:0070664,0.016574214,74.24285714,0.016685846,1,6,negative regulation of leukocyte proliferation
+Varroa,BP,GO:0031154,0.016574214,74.24285714,0.016685846,1,6,culmination involved in sorocarp development
+Varroa,BP,GO:0031114,0.016574214,74.24285714,0.016685846,1,6,regulation of microtubule depolymerization
+Varroa,BP,GO:2000242,0.016574214,74.24285714,0.016685846,1,6,negative regulation of reproductive process
+Varroa,BP,GO:1905879,0.016574214,74.24285714,0.016685846,1,6,regulation of oogenesis
+Varroa,BP,GO:0045475,0.016574214,74.24285714,0.016685846,1,6,locomotor rhythm
+Varroa,BP,GO:0030952,0.016574214,74.24285714,0.016685846,1,6,establishment or maintenance of cytoskeleton polarity
+Varroa,BP,GO:0006928,0.018862142,4.349051491,1.037303414,4,373,movement of cell or subcellular component
+Varroa,BP,GO:0051445,0.022039774,53.02040816,0.022247794,1,8,regulation of meiotic cell cycle
+Varroa,BP,GO:0032878,0.022039774,53.02040816,0.022247794,1,8,regulation of establishment or maintenance of cell polarity
+Varroa,BP,GO:1903038,0.022039774,53.02040816,0.022247794,1,8,negative regulation of leukocyte cell-cell adhesion
+Varroa,BP,GO:0050868,0.022039774,53.02040816,0.022247794,1,8,negative regulation of T cell activation
+Varroa,BP,GO:0060259,0.022039774,53.02040816,0.022247794,1,8,regulation of feeding behavior
+Varroa,BP,GO:0033002,0.022039774,53.02040816,0.022247794,1,8,muscle cell proliferation
+Varroa,BP,GO:0007274,0.022039774,53.02040816,0.022247794,1,8,neuromuscular synaptic transmission
+Varroa,BP,GO:2000114,0.022039774,53.02040816,0.022247794,1,8,regulation of establishment of cell polarity
+Varroa,BP,GO:0030435,0.022039774,53.02040816,0.022247794,1,8,sporulation resulting in formation of a cellular spore
+Varroa,BP,GO:0040020,0.022039774,53.02040816,0.022247794,1,8,regulation of meiotic nuclear division
+Varroa,BP,GO:0008354,0.022039774,53.02040816,0.022247794,1,8,germ cell migration
+Varroa,BP,GO:0008355,0.022039774,53.02040816,0.022247794,1,8,olfactory learning
+Varroa,BP,GO:0007399,0.022314872,3.476119615,1.64911776,5,593,nervous system development
+Varroa,BP,GO:0006030,0.024143119,8.988235294,0.241944764,2,87,chitin metabolic process
+Varroa,BP,GO:0006807,0.024489234,2.360821918,15.28423475,21,5496,nitrogen compound metabolic process
+Varroa,BP,GO:0006376,0.024761545,46.38839286,0.025028769,1,9,mRNA splice site selection
+Varroa,BP,GO:0031175,0.025946949,5.124286194,0.645186038,3,232,neuron projection development
+Varroa,BP,GO:1901564,0.026738988,2.200755192,9.510932106,15,3420,organonitrogen compound metabolic process
+Varroa,BP,GO:0022008,0.027133682,3.868668281,1.159666283,4,417,neurogenesis
+Varroa,BP,GO:0010639,0.027327701,8.390720391,0.25863061,2,93,negative regulation of organelle organization
+Varroa,BP,GO:0051156,0.027476,41.23015873,0.027809743,1,10,glucose 6-phosphate metabolic process
+Varroa,BP,GO:0006098,0.027476,41.23015873,0.027809743,1,10,pentose-phosphate shunt
+Varroa,BP,GO:0019682,0.027476,41.23015873,0.027809743,1,10,glyceraldehyde-3-phosphate metabolic process
+Varroa,BP,GO:1901071,0.028425204,8.2086818,0.264192558,2,95,glucosamine-containing compound metabolic process
+Varroa,BP,GO:0006040,0.029540334,8.034307992,0.269754507,2,97,amino sugar metabolic process
+Varroa,BP,GO:0000187,0.030183161,37.10357143,0.030590717,1,11,activation of MAPK activity
+Varroa,BP,GO:0042048,0.032883044,33.72727273,0.033371692,1,12,olfactory behavior
+Varroa,BP,GO:0048512,0.032883044,33.72727273,0.033371692,1,12,circadian behavior
+Varroa,BP,GO:0031111,0.032883044,33.72727273,0.033371692,1,12,negative regulation of microtubule polymerization or depolymerization
+Varroa,BP,GO:0022408,0.032883044,33.72727273,0.033371692,1,12,negative regulation of cell-cell adhesion
+Varroa,BP,GO:0006022,0.034172832,7.404530744,0.292002301,2,105,aminoglycan metabolic process
+Varroa,BP,GO:0001707,0.03557567,30.91369048,0.036152666,1,13,mesoderm formation
+Varroa,BP,GO:0030307,0.03557567,30.91369048,0.036152666,1,13,positive regulation of cell growth
+Varroa,BP,GO:0007017,0.035753221,4.499556213,0.731396241,3,263,microtubule-based process
+Varroa,BP,GO:0051250,0.038261057,28.53296703,0.03893364,1,14,negative regulation of lymphocyte activation
+Varroa,BP,GO:0051784,0.038261057,28.53296703,0.03893364,1,14,negative regulation of nuclear division
+Varroa,BP,GO:0050866,0.038261057,28.53296703,0.03893364,1,14,negative regulation of cell activation
+Varroa,BP,GO:0007419,0.038261057,28.53296703,0.03893364,1,14,ventral cord development
+Varroa,BP,GO:0007622,0.038261057,28.53296703,0.03893364,1,14,rhythmic behavior
+Varroa,BP,GO:0043934,0.038261057,28.53296703,0.03893364,1,14,sporulation
+Varroa,BP,GO:0002695,0.038261057,28.53296703,0.03893364,1,14,negative regulation of leukocyte activation
+Varroa,BP,GO:0043170,0.040126974,2.093148747,13.81309935,19,4967,macromolecule metabolic process
+Varroa,BP,GO:0036498,0.040939224,26.49234694,0.041714614,1,15,IRE1-mediated unfolded protein response
+Varroa,BP,GO:0048332,0.040939224,26.49234694,0.041714614,1,15,mesoderm morphogenesis
+Varroa,BP,GO:0048520,0.040939224,26.49234694,0.041714614,1,15,positive regulation of behavior
+Varroa,BP,GO:0006739,0.043610189,24.72380952,0.044495589,1,16,NADP metabolic process
+Varroa,BP,GO:0007308,0.043610189,24.72380952,0.044495589,1,16,oocyte construction
+Varroa,BP,GO:0007309,0.043610189,24.72380952,0.044495589,1,16,oocyte axis specification
+Varroa,BP,GO:0030301,0.043610189,24.72380952,0.044495589,1,16,cholesterol transport
+Varroa,BP,GO:0051704,0.043695408,3.299126819,1.348772535,4,485,multi-organism process
+Varroa,BP,GO:0045292,0.046273972,23.17633929,0.047276563,1,17,"mRNA cis splicing, via spliceosome"
+Varroa,BP,GO:0000245,0.048930591,21.81092437,0.050057537,1,18,spliceosomal complex assembly
+Varroa,BP,GO:0007635,0.048930591,21.81092437,0.050057537,1,18,chemosensory behavior
+Varroa,CC,GO:0005576,0.00300947,4.499806202,2.053683922,7,652,extracellular region
+Varroa,CC,GO:0031012,0.0060304,9.182051282,0.377978636,3,120,extracellular matrix
+Varroa,CC,GO:0001772,0.006290153,330.8181818,0.006299644,1,2,immunological synapse
+Varroa,CC,GO:0008537,0.012542449,110.2424242,0.012599288,1,4,proteasome activator complex
+Varroa,CC,GO:0035327,0.018757107,66.12727273,0.018898932,1,6,transcriptionally active chromatin
+Varroa,CC,GO:0031588,0.018757107,66.12727273,0.018898932,1,6,nucleotide-activated protein kinase complex
+Varroa,CC,GO:0030130,0.024934343,47.22077922,0.025198576,1,8,clathrin coat of trans-Golgi network vesicle
+Varroa,CC,GO:0043256,0.024934343,47.22077922,0.025198576,1,8,laminin complex
+Varroa,CC,GO:0012510,0.024934343,47.22077922,0.025198576,1,8,trans-Golgi network transport vesicle membrane
+Varroa,CC,GO:0005952,0.024934343,47.22077922,0.025198576,1,8,cAMP-dependent protein kinase complex
+Varroa,CC,GO:0098805,0.025346984,4.04619883,1.146535196,4,364,whole membrane
+Varroa,CC,GO:0044853,0.031074371,36.71717172,0.03149822,1,10,plasma membrane raft
+Varroa,CC,GO:0097546,0.031074371,36.71717172,0.03149822,1,10,ciliary base
+Varroa,CC,GO:0005720,0.031074371,36.71717172,0.03149822,1,10,nuclear heterochromatin
+Varroa,CC,GO:0071944,0.033525712,2.882649281,2.519857573,6,800,cell periphery
+Varroa,CC,GO:0030140,0.037177407,30.03305785,0.037797864,1,12,trans-Golgi network transport vesicle
+Varroa,CC,GO:0005605,0.037177407,30.03305785,0.037797864,1,12,basal lamina
+Varroa,CC,GO:0022624,0.037177407,30.03305785,0.037797864,1,12,proteasome accessory complex
+Varroa,CC,GO:0031594,0.037177407,30.03305785,0.037797864,1,12,neuromuscular junction
+Varroa,CC,GO:0044421,0.042474566,3.40367428,1.348123802,4,428,extracellular region part
+Varroa,CC,GO:0005869,0.043243662,25.40559441,0.044097508,1,14,dynactin complex
+Varroa,CC,GO:0030132,0.043243662,25.40559441,0.044097508,1,14,clathrin coat of coated pit
+Varroa,CC,GO:0034399,0.043243662,25.40559441,0.044097508,1,14,nuclear periphery
+Varroa,CC,GO:0005930,0.049273349,22.01212121,0.050397151,1,16,axoneme
+Varroa,CC,GO:0005905,0.049273349,22.01212121,0.050397151,1,16,clathrin-coated pit
+Varroa,CC,GO:0097014,0.049273349,22.01212121,0.050397151,1,16,ciliary plasm
+Varroa,CC,GO:0030125,0.049273349,22.01212121,0.050397151,1,16,clathrin vesicle coat
+Varroa,CC,GO:1902911,0.049273349,22.01212121,0.050397151,1,16,protein kinase complex
+Varroa,MF,GO:0004829,0.005811196,351.4358974,0.005819452,1,2,threonine-tRNA ligase activity
+Varroa,MF,GO:0004655,0.005811196,351.4358974,0.005819452,1,2,porphobilinogen synthase activity
+Varroa,MF,GO:0004751,0.005811196,351.4358974,0.005819452,1,2,ribose-5-phosphate isomerase activity
+Varroa,MF,GO:0004000,0.017334978,70.26666667,0.017458355,1,6,adenosine deaminase activity
+Varroa,MF,GO:0097100,0.017334978,70.26666667,0.017458355,1,6,supercoiled DNA binding
+Varroa,MF,GO:0004862,0.023047928,50.18315018,0.023277806,1,8,cAMP-dependent protein kinase inhibitor activity
+Varroa,MF,GO:0005184,0.023047928,50.18315018,0.023277806,1,8,neuropeptide hormone activity
+Varroa,MF,GO:0070840,0.023047928,50.18315018,0.023277806,1,8,dynein complex binding
+Varroa,MF,GO:0022804,0.025267795,5.088120679,0.634320215,3,218,active transmembrane transporter activity
+Varroa,MF,GO:0005452,0.025892245,43.90705128,0.026187532,1,9,inorganic anion exchanger activity
+Varroa,MF,GO:0034236,0.028728489,39.02564103,0.029097258,1,10,protein kinase A catalytic subunit binding
+Varroa,MF,GO:0004707,0.028728489,39.02564103,0.029097258,1,10,MAP kinase activity
+Varroa,MF,GO:0001105,0.03155668,35.12051282,0.032006983,1,11,RNA polymerase II transcription coactivator activity
+Varroa,MF,GO:0015291,0.031697623,7.62206047,0.279333673,2,96,secondary active transmembrane transporter activity
+Varroa,MF,GO:0008603,0.034376841,31.92540793,0.034916709,1,12,cAMP-dependent protein kinase regulator activity
+Varroa,MF,GO:0016861,0.034376841,31.92540793,0.034916709,1,12,"intramolecular oxidoreductase activity, interconverting aldoses and ketoses"
+Varroa,MF,GO:0030552,0.034376841,31.92540793,0.034916709,1,12,cAMP binding
+Varroa,MF,GO:0043565,0.03452915,3.497893628,1.239543173,4,426,sequence-specific DNA binding
+Varroa,MF,GO:0008061,0.034787058,7.234449761,0.293882302,2,101,chitin binding
+Varroa,MF,GO:0033613,0.045577629,23.40512821,0.046555612,1,16,activating transcription factor binding
+Varroa,MF,GO:0001078,0.045577629,23.40512821,0.046555612,1,16,"transcriptional repressor activity, RNA polymerase II proximal promoter sequence-specific DNA binding"
