@@ -44,18 +44,18 @@ library("gridExtra")
 
 ```
 
-**Background:** Varroa mites are specialist ectoparasites of _Apis_ honey bees, originally distributed throughout Asia. Within the cryptic genus, two sister species <span style="color:red"> _Varroa destructor_ </span> and <span style="color:blue">  _Varroa jacobsoni_ </span> have drawn attention as they both independently and repeatdely switched host from the Eastern honey bee _Apis cerana_ to the Western honey bee _A. mellifera_. 
+**Background:** Varroa mites are specialist ectoparasites of _Apis_ honey bees, originally distributed throughout Asia. Within the cryptic genus, two sister species <span style="color:red"> _Varroa destructor_ </span> and <span style="color:blue">  _Varroa jacobsoni_ </span> have drawn attention as they both independently and repeatdely switched host from the Eastern honey bee _Apis cerana_ to the Western honey bee _A. mellifera_. While _A. cerana_ tolerate mite's presence, the arrival of _V. destructor_ and its associated viruses has been driving _A. mellifera_ colony collapse in many parts of the world. 
 
-These two mites are morphologically similar, occupy the same ecological niche as brood parasite and present identical parasite life cycle which is synchronized to their common hosts. Yet it is unclear whether _Varroa destructor_ and _Varroa jacobsoni_ evolved toward similar or divergent adaptations to their hosts. 
+These two mites are morphologically similar, occupy the same ecological niche as brood parasite and present identical parasite life cycle which is synchronized to their common hosts. Yet it is unclear whether _V. destructor_ and _V. jacobsoni_ evolved toward similar or divergent adaptations to their hosts. 
 
-We expected that the co-evolutive arm-race between the mite-parasite and its bee-host will leave genomic footprints through positively selected genes (dN/dS) in Varroa genomes. Although, _Varroa destructor_ and _Varroa jacobsoni_ both jumped onto _A. mellifera_, ~80 years ago and 11 years ago respectively; we hypothesized that most of positive selection signatures should result from co-evolution with their original host _A. cerana_.
+We expected that the coevolutive arm-race between the mite-parasite and its bee-host will leave genomic footprints through positively selected genes (dN/dS) in Varroa genomes. Although, _V. destructor_ and _V. jacobsoni_ both jumped onto _A. mellifera_, ~80 years ago and 11 years ago respectively; we hypothesized that most of positive selection signatures should result from co-evolution with their original host _A. cerana_.
 
 
 # 1| Reported distribution of Varroa mites on the Eastern honey bee
 
-Only a taxonomical expert eye or meticulous morphometrical measurements allow to differentiate <span style="color:red"> _Varroa destructor_ </span> and <span style="color:blue">  _Varroa jacobsoni_ </span> on the field. It is also possible to assume one species presence regarding their geographical distribution given these species were originally parapatric on the Eastern honey bee. 
+Aside from genetic barcoding, differentiating <span style="color:red"> _V. destructor_ </span> and <span style="color:blue"> _V. jacobsoni_ </span> on the field requires a taxonomical expert eye or meticulous morphometrical measurements. To better understand their distribution on the same original host, we reviewed the reported presence of each of this mite on _A. cerana_ by collecting data from both litterature and NCBI confirming its presence by mtDNA barcoding.
 
-We reviewed the reported presence of each of this mite on their original host by collecting data from both litterature and NCBI confirming its presence by mtDNA barcoding.
+The pattern appearing from the points distribution confirm that these sister species are parapatric and that it becomes possible to assume one species presence also regarding their geographical distribution.
 
 ``` {r load worldlayer, warning=FALSE, results="hide", cache = TRUE}
 # Download the country borders layer
@@ -65,7 +65,7 @@ world_spdf=readOGR(dsn= getwd() , layer="TM_WORLD_BORDERS_SIMPL-0.3")
 
 ```
 
-The following interactive map focuse in Asia where Varroa mites occur naturally on _A. cerana_ : it is possible to zoom in and out, and passing the cursor on one point give basic information on the year and reporter. 
+The following interactive map focus on Asia where Varroa mites occur naturally on their original host _A. cerana_ : it is possible to zoom in and out, and passing the cursor on one point give basic information on the year and reporter. 
 
 On the top right corner of the map, a control button allow to add/remove layers containing mtDNA haplogroup information for each Varroa species.  
 
@@ -400,9 +400,11 @@ leaflet(coord.vdac) %>%
   hideGroup("V. jacobsoni Ambon")
 
 ```
-
+  
+  
 # 2| Annotated orthogroups for Varroa mites and Acari
-
+  
+  
 ## Details of the orthogroups defined by ORTHONOME
 
 <span style="color:red"> _Varroa destructor_ </span> [(GCA_002443255.1)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002443255.1/) and <span style="color:blue">  _Varroa jacobsoni_ </span> [(GCA_002532875.1)](https://www.ncbi.nlm.nih.gov/assembly/GCF_002532875.1/) genomes were compared with those of four other Acari species:  
@@ -432,6 +434,7 @@ g
 ```
 
 Below is the summary output of orthologs genes (with NCBI gene ID) among the six Acari species as obtained using the [ORTHONOME](www.orthonome.com) pipeline.  
+  
 SOG = super orthologue group and OG = orthologue group.
 
 ``` {r orthogroup table, cache = TRUE}
@@ -443,7 +446,8 @@ kable(cbind(tableS1)) %>%
   
 
 ## Gene ontology terms associated with orthologs clusters
-
+  
+  
 Regarding the Acari phylogenetic tree (Figure 3), ortholog genes specific to each lineage were enriched using the [goatools pipeline](https://github.com/tanghaibao/goatools).
 
 ``` {r phylotree, cache = TRUE}
@@ -483,7 +487,7 @@ kable(cbind(tableS2)) %>%
 
 Here we created a karyogram of the seven major chromosome assembled in the <span style="color:red">  _Varroa destructor_ </span> reference genome and plot the location of the genes detected under positive selection. The localization and description of each gene were summarized in separate species files after searching for their ID in NCBI database and in the .gff annotation file.  
 
-The following code generate a .pdf file with the full karyogram but due to the need for high resolution to properly see the bands, only a snapshot in .tiff file is presented as preview.  
+The following code generate a .pdf file with the full karyogram but it is necessary to look at it with high resolution to properly see the bands. For illustration purpose only a snapshot in .tiff file is presented as preview.  
 
 The karyogram plot was inspired from the script detailed [here](https://www.biostars.org/p/269857/).
 
@@ -571,7 +575,7 @@ knitr::include_graphics("data/Positive selection/VDVJ-POSSEL.png")
 
 ## Shared genes between the sister Varroa species
 
-The following table list all 40 genes under positive selection shared only by both Varroa mite genomes. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in black.
+The following table list all *40 genes under positive selection* shared only by both Varroa mite genomes. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in black.
 
 ``` {r varroa possel, cache = TRUE}
 tableS3 <- read.csv("data/Positive selection/tableS03-posselvarroa.csv")
@@ -585,7 +589,7 @@ kable(cbind(tableS3)) %>%
 
 ## Genes under positive selection specific to _V. destructor_
 
-The following table list all 234 genes under positive selection found only in <span style="color:red">  _Varroa destructor_ </span>. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in red (see keywords).
+The following table list all *234 genes under positive selection* found only in <span style="color:red">  _Varroa destructor_ </span>. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in red (see keywords).
 
 ``` {r vdestructor possel, cache = TRUE}
 tableS4 <- read.csv("data/Positive selection/tableS04-posvd.csv")
@@ -612,7 +616,7 @@ kable(cbind(tableS4)) %>%
 
 ## Genes under positive selection specific to _V. jacobsoni_
 
-The following table list all 224 genes under positive selection found only in <span style="color:blue">  _Varroa jacobsoni_ </span>. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in blue (see keywords).
+The following table list all *224 genes under positive selection* found only in <span style="color:blue">  _Varroa jacobsoni_ </span>. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in blue (see keywords).
 
 ``` {r vjacobsoni possel, cache = TRUE}
 tableS5 <- read.csv("data/Positive selection/tableS05-posvj.csv")
@@ -638,7 +642,7 @@ kable(cbind(tableS5)) %>%
 
 ## GO Term enrichment of positively selected genes
 
-We used the package `GOstats` to enrich the gene under positive selection for each species of Varroa mites and for their set of shared genes. We used an hypergeometric tests for GO Term association with the `hyperGTest` function to detect whether or not certain term are significantly overepresented. 
+We used the package `GOstats` to enrich genes under positive selection for each Varroa mite species and for their set of shared genes. We used an hypergeometric tests for GO Term association with the `hyperGTest` function to detect whether or not certain terms are significantly overepresented. 
 
 Tests were done with different parameters for the ontology; with BP = Biological Processes, MF = Molecular Function and CC = Celullar component. 
 
@@ -759,7 +763,7 @@ GO_enrich.vj <-as.data.frame(summary(over.vj))
 
 ```
 
-Once all tests have been run for <span style="color:red"> _Varroa destructor_ </span> and <span style="color:blue"> _Varroa jacobsoni_ </span> genomes, the significantly overrepresented GO Terms and their description (p-value < 0.05) were concatenated in a summary table presented below:
+Once all tests have been run for <span style="color:red"> _V. destructor_ </span> and <span style="color:blue"> _V. jacobsoni_ </span> genomes, the significantly overrepresented GO Terms and their description (p-value < 0.05) were concatenated in a summary table presented below:
 
 ``` {r GOterms posseltab, cache = TRUE}
 
@@ -770,14 +774,26 @@ kable(cbind(tableS6)) %>%
   scroll_box(width = "100%", height = "800px")
 
 ```
-
-Now we have all the significant GO terms associated with the genes under positive selection, we would like to reduce and visualize the most redundant ones. In order to observe whether or not the same GO terms or related terms are overlaping or being very different for the two Varroa sister species, we use the online tool of [REVIGO](http://revigo.irb.hr/).  
+  
+  
+Now we have all the significant GO terms associated with the genes under positive selection, we would like to reduce and visualize the most redundant ones. In order to observe whether or not the same GO terms or related terms are overlapping or being very different for the two Varroa sister species, we use the online tool of [REVIGO](http://revigo.irb.hr/).  
 **Supek et al., PloS One (2011), 6(7), e21800**
 
 We allowed a medium (70%) to small semantic similarity of the GO terms (based on Resnik's and Lin's measures which use the semantic similarity of two GO terms related to their common ancestor terms.)  
 **Schlicker et al., BMC Bioinformatics (2006), 7(1):302**.
 
-REVIGO produces a R script which generates the bobble chart or the tree map as in Figure 3 and 4. Bobble chart script generated by REVIGO for the positive selected genes with Small similarity.
+REVIGO produces a R script which generates the bobble chart or the tree map as in Figure 3 and 4 in the manuscript. Below is an example of bobble chart script generated by REVIGO for the positive selected genes with Small Similarity options and choosing to run the data as follow:
+
+Example of input in REVIGO   
+(Vdes GO term are coded with 0.1, Vjac 0.001 and shared 0.0.01 so we can have bobble color by species)
+GO:0003254	0.1
+GO:0051899	0.1
+GO:0097306	0.1
+GO:0006627	0.001
+GO:0034982	0.001
+GO:0046007	0.01
+...
+
 
 ``` {r GOterms revigo, message = FALSE}
 # --------------------------------------------------------------------------
@@ -910,7 +926,7 @@ p1;
 
 # 4| Genes duplicated in tandem in Varroa genomes
 
-A much reduce number of genes were detected to duplicate in tandem and to be species specific for each of the honey bee parasite. A total of 51 tandem duplicated genes were detected in the <span style="color:red"> _Varroa destructor_  </span> genome and 35 in the <span style="color:blue"> _Varroa jacobsoni_ </span> genome. The Varroa sister species shared 19 genes duplicated in tandem. 
+A reduce number of genes were detected to duplicate in tandem and to be species specific for each of the honey bee parasite. A total of *51 tandem duplicated genes* were detected in the <span style="color:red"> _V. destructor_  </span> genome and 35 in the <span style="color:blue"> _V. jacobsoni_ </span> genome. The Varroa sister species shared 19 genes duplicated in tandem. 
 
 ## Duplicated genes species specific to each Varroa
 
@@ -945,8 +961,7 @@ Among the 32 and 16 clusters of duplicated genes in _V. destructor_ and _V. jaco
 
 The alignment in .fasta were submitted to [IQ-TREE web server](http://www.iqtree.org/) with the following parameters: Model = Find Best and Apply, State Frequency = Estimated by Maximul Likelihood, Branch support with Bootstrap Ultrafast with 1000 replicates and all other options by default.
 
-One cluster of genes in _V. destructor_ contains three duplication of histone H2A-like.
-The outgroup use here is a histone H2A-like gene from _M. occidentalis_.
+One cluster of genes (vd.gene.dup_01) in _V. destructor_ contains three duplication of *histone H2A-like*. The outgroup used here is a histone H2A-like gene from _M. occidentalis_.
 
 ``` {r duplication tree, cache = TRUE}
 Histone <- read.tree("data/Duplication/tree_vd.gene.dup01-histone.nwk")
@@ -966,10 +981,11 @@ histone.tree
 #msaplot(p, fasta = "data/Duplication/vd.gene.dup_01.fasta")
 ```
 
-It seems that the CDS region for the two loci LOC111250934 on chromosome 1 and LOC111255102 on the contig BEIS01000444.1 are the 100% identical. Since the contig BEIS01000444.1 could result from assembly artefact and in a conservative way, we prefer to consider that only two duplicated genes should be considered here.  
+It seems that the CDS region for the two loci LOC111250934 on chromosome 1 and LOC111255102 on the contig BEIS01000444.1 are 100% identical. Since the contig BEIS01000444.1 could result from assembly artefact and in a conservative way, we prefer to consider that only LOC111250934 and LOC111250948 should be considered here.  
   
   
-One cluster of genes in _V. destructor_ contains six duplication of heat shock 70 kDa protein-like. The outgroup use here is a heat shock 70 kDa protein-like gene from the mosquito _Aedes albopictus_.
+  
+One cluster of genes in _V. destructor_ contains six duplication of *heat shock 70 kDa protein-like*. The outgroup use here is a heat shock 70 kDa protein-like gene from the mosquito _Aedes albopictus_.
 
 ```{r duplication tree2, cache = TRUE}
 Heatshock <- read.tree("data/Duplication/tree_vd.gene.dup02-heatshock.nwk")
@@ -991,9 +1007,11 @@ heatshock.tree
 
 ```
 
-Here non of the Heatshock proteins CDS were 100% identical, suggesting that their similarity may result from duplication events rather than assembly artefact.
+Here the *heatshock proteins gene* CDS were not 100% identical, suggesting that their similarity may result from duplication events rather than assembly artefact.
   
-Finally we also checked two duplication clusters detected in _V. jacobsoni_.
+  
+  
+Finally we also checked two duplication clusters detected in _V. jacobsoni_. One of the for this species contains four *ABC family* genes. The outgroup use here is a ATP-binding cassette sub-family A member 3-like gene from the mosquito _M. occidentalis_.
 
 ```{r duplication tree3, cache = TRUE}
 ABC <- read.tree("data/Duplication/tree_vj.gene.dup10abc.nwk")
@@ -1012,8 +1030,9 @@ ABC.tree <- ggtree(ABC) +
 ABC.tree
 
 ```
-
-The cluster Vj.gene.dup_13 included genes annotated with different function compared to other cluster with "myelin-associated glycoprotein-like", "immunoglobulin superfamily member 10-like" and "tyrosine-protein kinase-like otk" but all on the same scaffold `NW_019214325.1`.
+  
+  
+The following cluster (Vj.gene.dup_13) included genes annotated with different described functions including "myelin-associated glycoprotein-like", "immunoglobulin superfamily member 10-like" and "tyrosine-protein kinase-like otk" but all are on the same scaffold `NW_019214325.1`.
 
 
 ```{r duplication tree4, cache = TRUE}
@@ -1034,8 +1053,11 @@ dup13.tree
 ```
 
 ## Karyogram of the duplicated genes
+  
+  
+The idea of this plot is to visualise where are located the duplications event on the seven major chromosomes of _V. destructor_ (red) and shared by the two Varroa mites (black). The curves are indicating how distant are located the duplicated units from each other for _V. destructor_.
 
-``` {r karyogram duplication, cache = TRUE, message = FALSE}
+``` {r karyogram duplication, cache = TRUE, warning = FALSE, message = FALSE}
 
 duplivdvj <- read.csv("data/Duplication/Vdvj-duplicate-06102018-short.csv")
 duplivd <- read.csv("data/Duplication/Vd-duplicate-06102018-short.csv")
@@ -1065,42 +1087,42 @@ ggplot(data = chrom_sizes) +
                                       xmax = as.numeric(chromosome) + 0.3, 
                                       ymax = end, ymin = start, fill = c("Common to both Varroa"))) +
   
-  geom_curve(aes(x = 1 + 0.4, y = 9743941, xend = 1 + 0.6, yend= 9749576, color ="red"))+  
-  geom_curve(aes(x = 1 + 0.4, y = 14020703, xend = 1 + 0.6, yend= 15116915, color ="red"))+  
-  geom_curve(aes(x = 1 + 0.4, y = 15116915, xend = 1 + 0.6, yend= 15326537, color ="red"))+  
-  geom_curve(aes(x = 1 + 0.4, y = 15326537, xend = 1 + 0.6, yend= 15339678, color ="red"))+  
-  geom_curve(aes(x = 1 + 0.4, y = 15339678, xend = 1 + 0.6, yend= 15347116, color ="red"))+ 
-  geom_curve(aes(x = 1 + 0.4, y = 15347116, xend = 1 + 0.6, yend= 15378965, color ="red"))+ 
-  geom_curve(aes(x = 1 + 0.4, y = 21689375, xend = 1 + 0.6, yend= 21710643, color ="red"))+   
-  geom_curve(aes(x = 1 + 0.4, y = 22298740, xend = 1 + 0.6, yend= 22514440, color ="red"))+   
-  geom_curve(aes(x = 1 + 0.4, y = 44820095, xend = 1 + 0.6, yend= 44822808, color ="red"))+   
-  geom_curve(aes(x = 1 + 0.4, y = 73377174, xend = 1 + 0.6, yend= 73720465, color ="red"))+   
-  geom_curve(aes(x = 1 + 0.4, y = 73980847, xend = 1 + 0.6, yend= 73989530, color ="red"))+   
-  geom_curve(aes(x = 2 + 0.4, y = 41272447, xend = 2 + 0.6, yend= 41311871, color ="red"))+   
-  geom_curve(aes(x = 2 + 0.4, y = 43163870, xend = 2 + 0.6, yend= 43427422, color ="red"))+   
-  geom_curve(aes(x = 3 + 0.4, y = 18281050, xend = 3 + 0.6, yend= 18292369, color ="red"))+   
-  geom_curve(aes(x = 3 + 0.4, y = 28608596, xend = 3 + 0.6, yend= 28620308, color ="red"))+   
-  geom_curve(aes(x = 3 + 0.4, y = 39040262, xend = 3 + 0.6, yend= 39046251, color ="red"))+   
-  geom_curve(aes(x = 3 + 0.4, y = 51462784, xend = 3 + 0.6, yend= 51492028, color ="red"))+   
-  geom_curve(aes(x = 3 + 0.4, y = 51476292, xend = 3 + 0.6, yend= 51499478, color ="red"))+   
-  geom_curve(aes(x = 3 + 0.4, y = 54387453, xend = 3 + 0.6, yend= 54534443, color ="red"))+   
-  geom_curve(aes(x = 4 + 0.4, y = 11380742, xend = 4 + 0.6, yend= 11389392, color ="red"))+   
-  geom_curve(aes(x = 4 + 0.4, y = 14611045, xend = 4 + 0.6, yend= 14626702, color ="red"))+   
-  geom_curve(aes(x = 4 + 0.4, y = 14651045, xend = 4 + 0.6, yend= 14659371, color ="red"))+   
-  geom_curve(aes(x = 4 + 0.4, y = 46620793, xend = 4 + 0.6, yend= 46642117, color ="red"))+   
-  geom_curve(aes(x = 5 + 0.4, y = 6735699, xend = 5 + 0.6, yend= 6832127, color ="red"))+   
-  geom_curve(aes(x = 5 + 0.4, y = 25703068, xend = 5 + 0.6, yend= 25729551, color ="red"))+   
-  geom_curve(aes(x = 5 + 0.4, y = 30415175, xend = 5 + 0.6, yend= 30418126, color ="red"))+   
-  geom_curve(aes(x = 5 + 0.4, y = 33395295, xend = 5 + 0.6, yend= 33414971, color ="red"))+   
-  geom_curve(aes(x = 5 + 0.4, y = 35812050, xend = 5 + 0.6, yend= 35861530, color ="red"))+   
-  geom_curve(aes(x = 5 + 0.4, y = 35985578, xend = 5 + 0.6, yend= 36027877, color ="red"))+   
-  geom_curve(aes(x = 6 + 0.4, y = 3126901, xend = 6 + 0.6, yend= 3156849, color ="red"))+   
-  geom_curve(aes(x = 6 + 0.4, y = 4714576, xend = 6 + 0.6, yend= 4729744, color ="red"))+   
-  geom_curve(aes(x = 6 + 0.4, y = 4775135, xend = 6 + 0.6, yend= 4786415, color ="red"))+   
-  geom_curve(aes(x = 7 + 0.4, y = 2565206, xend = 7 + 0.6, yend= 2584985, color ="red"))+   
-  geom_curve(aes(x = 7 + 0.4, y = 11113832, xend = 7 + 0.6, yend= 11147298, color ="red"))+   
-  geom_curve(aes(x = 7 + 0.4, y = 16776607, xend = 7 + 0.6, yend= 14338944, color ="red"))+   
-  geom_curve(aes(x = 7 + 0.4, y = 14299082, xend = 7 + 0.6, yend= 16784714, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 9743941, xend = 1 + 0.5, yend= 9749576, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 14020703, xend = 1 + 0.5, yend= 15116915, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 15116915, xend = 1 + 0.5, yend= 15326537, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 15326537, xend = 1 + 0.5, yend= 15339678, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 15339678, xend = 1 + 0.5, yend= 15347116, color ="red"))+ 
+  geom_curve(aes(x = 1 + 0.4, y = 15347116, xend = 1 + 0.5, yend= 15378965, color ="red"))+ 
+  geom_curve(aes(x = 1 + 0.4, y = 21689375, xend = 1 + 0.5, yend= 21710643, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 22298740, xend = 1 + 0.5, yend= 22514440, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 44820095, xend = 1 + 0.5, yend= 44822808, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 73377174, xend = 1 + 0.5, yend= 73720465, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 73980847, xend = 1 + 0.5, yend= 73989530, color ="red"))+   
+  geom_curve(aes(x = 2 + 0.4, y = 41272447, xend = 2 + 0.5, yend= 41311871, color ="red"))+   
+  geom_curve(aes(x = 2 + 0.4, y = 43163870, xend = 2 + 0.5, yend= 43427422, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 18281050, xend = 3 + 0.5, yend= 18292369, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 28608596, xend = 3 + 0.5, yend= 28620308, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 39040262, xend = 3 + 0.5, yend= 39046251, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 51462784, xend = 3 + 0.5, yend= 51492028, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 51476292, xend = 3 + 0.5, yend= 51499478, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 54387453, xend = 3 + 0.5, yend= 54534443, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 11380742, xend = 4 + 0.5, yend= 11389392, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 14611045, xend = 4 + 0.5, yend= 14626702, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 14651045, xend = 4 + 0.5, yend= 14659371, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 46620793, xend = 4 + 0.5, yend= 46642117, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 6735699, xend = 5 + 0.5, yend= 6832127, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 25703068, xend = 5 + 0.5, yend= 25729551, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 30415175, xend = 5 + 0.5, yend= 30418126, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 33395295, xend = 5 + 0.5, yend= 33414971, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 35812050, xend = 5 + 0.5, yend= 35861530, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 35985578, xend = 5 + 0.5, yend= 36027877, color ="red"))+   
+  geom_curve(aes(x = 6 + 0.4, y = 3126901, xend = 6 + 0.5, yend= 3156849, color ="red"))+   
+  geom_curve(aes(x = 6 + 0.4, y = 4714576, xend = 6 + 0.5, yend= 4729744, color ="red"))+   
+  geom_curve(aes(x = 6 + 0.4, y = 4775135, xend = 6 + 0.5, yend= 4786415, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 2565206, xend = 7 + 0.5, yend= 2584985, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 11113832, xend = 7 + 0.5, yend= 11147298, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 16776607, xend = 7 + 0.5, yend= 14338944, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 14299082, xend = 7 + 0.5, yend= 16784714, color ="red"))+   
   
   # add bands for regions for VJ
   geom_rect(data = duplivjortho, aes(xmin = as.numeric(chromosome) - 0.3, 
@@ -1135,8 +1157,11 @@ dev.off()
 ```{r label2, out.width = "100%", cache = TRUE}
 knitr::include_graphics("data/Duplication/VDVJ-DUPLICATION.png")
 ```
-
-
+  
+One issue here is that since _V. jacobsoni_ genome has not been assembled with chromosomal information, we infer some duplicated genes on the genomic architecture of _V. destructor_. However, some genes found duplicated in _V. jacobsoni_ had no orthologues in _V. destructor_ which makes a detailed mapping such as the one for _V. destructor_ impossible.
+  
+  
+To show the relation between duplicated genes, we decided to plot their span on _V. jacobsoni_ scaffolds involved.
 ```{r karyogram duplication2, cache = TRUE, message = FALSE}
 
 duplivj <- read.csv("data/Duplication/Vj-duplicate-06102018-short.csv")
@@ -1170,7 +1195,7 @@ scaffold_order <- factor(x = scaffold_order, levels = rev(scaffold_order))
 # convert the scaffold column in each dataset to the ordered factor
 scaffold_sizes[["scaffold"]] <- factor(x = scaffold_sizes[["scaffold"]], levels = scaffold_order)
 
-#pdf(file = "data/Duplication/VJ-DUPLICATIONSCAFFOLD.pdf", width = 20, height = 12)
+pdf(file = "data/Duplication/VJ-DUPLICATIONSCAFFOLD.pdf", width = 20, height = 12)
 ggplot(data = scaffold_sizes) + 
   # base rectangles for the chroms, with numeric value for each chrom on the x-axis
   geom_rect(aes(xmin = as.numeric(scaffold) - 0.3, 
@@ -1196,6 +1221,28 @@ ggplot(data = scaffold_sizes) +
                                   ymax = end, ymin = start, fill = "V. jacobsoni")) +
   scale_fill_manual(values = c("blue")) +
 
+  geom_curve(aes(x = 1 + 0.4, y = 58340, xend = 1 + 0.5, yend= 93749))+
+  geom_curve(aes(x = 2 + 0.4, y = 101806, xend = 2 + 0.5, yend= 130280))+
+  geom_curve(aes(x = 2 + 0.4, y = 130280, xend = 2 + 0.5, yend= 133473))+
+  geom_curve(aes(x = 2 + 0.4, y = 133473, xend = 2 + 0.5, yend= 152958))+
+  geom_curve(aes(x = 2 + 0.4, y = 127642, xend = 2 + 0.5, yend= 131554))+
+  geom_curve(aes(x = 3 + 0.4, y = 281398, xend = 3 + 0.5, yend= 303758))+
+  geom_curve(aes(x = 4 + 0.4, y = 322525, xend = 4 + 0.5, yend= 333104))+
+  geom_curve(aes(x = 5 + 0.4, y = 20041, xend = 5 + 0.5, yend= 25205))+
+  geom_curve(aes(x = 6 + 0.4, y = 28275, xend = 6 + 0.5, yend= 41270))+
+  geom_curve(aes(x = 7 + 0.4, y = 90342, xend = 7 + 0.5, yend= 96198))+
+  geom_curve(aes(x = 8 + 0.4, y = 220946, xend = 8 + 0.5, yend= 228126))+
+  geom_curve(aes(x = 15 + 0.4, y = 32937, xend = 15 + 0.5, yend= 41024))+
+  geom_curve(aes(x = 15 + 0.4, y = 41024, xend = 9 + 0.5, yend= 107517))+
+  geom_curve(aes(x = 9 + 0.4, y = 107517, xend = 9 + 0.5, yend= 185887))+
+  geom_curve(aes(x = 10 + 0.4, y = 322623, xend = 10 + 0.5, yend= 336039))+
+  geom_curve(aes(x = 11 + 0.4, y = 133333, xend = 11 + 0.5, yend= 177491))+
+  geom_curve(aes(x = 12 + 0.4, y = 521680, xend = 12 + 0.5, yend= 524135))+
+  geom_curve(aes(x = 12 + 0.4, y = 524135, xend = 12 + 0.5, yend= 527138))+
+  geom_curve(aes(x = 13 + 0.4, y = 26314, xend = 13 + 0.5, yend= 36211))+
+  geom_curve(aes(x = 14 + 0.4, y = 2375, xend = 14 + 0.5, yend= 8004))+
+  geom_curve(aes(x = 16 + 0.4, y = 21, xend = 16 + 0.5, yend= 20032))+
+  
   # black & white color theme 
   theme(panel.grid.major = element_line(colour = 'gray70', size=0.2, linetype = "dashed"),
           panel.grid.minor = element_blank(), 
@@ -1209,7 +1256,11 @@ ggplot(data = scaffold_sizes) +
           legend.position=c(0.85, 0.80),
           legend.title = element_blank())
 
-#dev.off()
+dev.off()
+```
+
+```{r label3, out.width = "80%", cache = TRUE}
+knitr::include_graphics("data/Duplication/VJ-DUPLICATIONSCAFFOLD.png")
 ```
 ## GO term association with duplicated genes in Varroa
 
