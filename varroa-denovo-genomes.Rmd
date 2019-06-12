@@ -39,12 +39,14 @@ library("maps") # for the map background
 library("leaflet") #for the interactive maps
 library("htmltools")
 library("rgdal")
+library("grid")
+library("gridExtra")
 
 ```
 
-**Background:** Varroa mites are specialist ectoparasites of _Apis_ honey bees, native from Asia. Within the cryptic genus, two sister species <span style="color:red"> _Varroa destructor_ </span> and <span style="color:blue">  _Varroa jacobsoni_ </span> have drawn attention as they both independently and repeatdely switched host from the Eastern honey bee _Apis cerana_ to the Western honey bee _A. mellifera_. 
+**Background:** Varroa mites are specialist ectoparasites of _Apis_ honey bees, originally distributed throughout Asia. Within the cryptic genus, two sister species <span style="color:red"> _Varroa destructor_ </span> and <span style="color:blue">  _Varroa jacobsoni_ </span> have drawn attention as they both independently and repeatdely switched host from the Eastern honey bee _Apis cerana_ to the Western honey bee _A. mellifera_. 
 
-These two mite species are very similar morphologically, occupy the same ecological niche as brood parasite and present identical parasite life cycle which is synchronized to their common hosts. Yet it is unclear whether _Varroa destructor_ and _Varroa jacobsoni_ evolved toward similar or divergent adaptations to their hosts. 
+These two mites are morphologically similar, occupy the same ecological niche as brood parasite and present identical parasite life cycle which is synchronized to their common hosts. Yet it is unclear whether _Varroa destructor_ and _Varroa jacobsoni_ evolved toward similar or divergent adaptations to their hosts. 
 
 We expected that the co-evolutive arm-race between the mite-parasite and its bee-host will leave genomic footprints through positively selected genes (dN/dS) in Varroa genomes. Although, _Varroa destructor_ and _Varroa jacobsoni_ both jumped onto _A. mellifera_, ~80 years ago and 11 years ago respectively; we hypothesized that most of positive selection signatures should result from co-evolution with their original host _A. cerana_.
 
@@ -55,7 +57,7 @@ Only a taxonomical expert eye or meticulous morphometrical measurements allow to
 
 We reviewed the reported presence of each of this mite on their original host by collecting data from both litterature and NCBI confirming its presence by mtDNA barcoding.
 
-``` {r layer, warning=FALSE, results="hide", cache = TRUE}
+``` {r load worldlayer, warning=FALSE, results="hide", cache = TRUE}
 # Download the country borders layer
 #download.file("http://thematicmapping.org/downloads/TM_WORLD_BORDERS_SIMPL-0.3.zip" , destfile="world_shape_file.zip")
 #system("unzip world_shape_file.zip")
@@ -63,16 +65,19 @@ world_spdf=readOGR(dsn= getwd() , layer="TM_WORLD_BORDERS_SIMPL-0.3")
 
 ```
 
-The map is interactive: it is possible to zoom in and out, and passing the cursor on one point will give basic information on the year and reporter. On the top right corner of the map, a control button allow to add/remove layers containing mtDNA haplogroup information for each Varroa species.  
+The following interactive map focuse in Asia where Varroa mites occur naturally on _A. cerana_ : it is possible to zoom in and out, and passing the cursor on one point give basic information on the year and reporter. 
 
+On the top right corner of the map, a control button allow to add/remove layers containing mtDNA haplogroup information for each Varroa species.  
+
+Color dots represent species distribution as:  
 <span style="color:red"> _Varroa destructor_ </span>  
 <span style="color:blue"> _Varroa jacobsoni_ </span>  
 <span style="color:green"> _Varroa underwoodi_ </span>  
 <span style="color:black"> _Varroa sp._ </span>  
 
-``` {r layersmap, warning=FALSE, cache = TRUE}
+``` {r leaflet map, warning=FALSE, cache = TRUE}
 #Data with exact or approximate GPS coordinates obtained from references
-coordvarroa <- read.csv("data/mappingpoints_Varroacerana2019.csv", header = TRUE)
+coordvarroa <- read.csv("data/Map/mappingpoints_Varroacerana2019.csv", header = TRUE)
 
 coord.vdac <- coordvarroa %>% filter(Species == "Vdestructor") %>% filter(Host == "Acerana") 
 coord.vjac <- coordvarroa %>% filter(Species == "Vjacobsoni") %>% filter(Host == "Acerana")
@@ -414,8 +419,8 @@ leaflet(coord.vdac) %>%
 **Grbicet al,. Nature (2011), 479(7374), 487-492**  
 
 
-``` {r orthogroup, cache = TRUE}
-tableS1 <- read.csv("data/tableS01-orthogroups.csv")
+``` {r orthogroup plot, cache = TRUE}
+tableS1 <- read.csv("data/Orthogroups/tableS01-orthogroups.csv")
 
 g <- ggplot(tableS1, aes(x=shared))
 g <-  g + geom_bar(color="black", fill="gray")
@@ -429,7 +434,7 @@ g
 Below is the summary output of orthologs genes (with NCBI gene ID) among the six Acari species as obtained using the [ORTHONOME](www.orthonome.com) pipeline.  
 SOG = super orthologue group and OG = orthologue group.
 
-``` {r details orthogroup, cache = TRUE}
+``` {r orthogroup table, cache = TRUE}
 kable(cbind(tableS1)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 10) %>%
   scroll_box(width = "100%", height = "400px")
@@ -441,8 +446,8 @@ kable(cbind(tableS1)) %>%
 
 Regarding the Acari phylogenetic tree (Figure 3), ortholog genes specific to each lineage were enriched using the [goatools pipeline](https://github.com/tanghaibao/goatools).
 
-``` {r tree, cache = TRUE}
-acariphylo <- read.tree("data/tree_rooted.nwk")
+``` {r phylotree, cache = TRUE}
+acariphylo <- read.tree("data/Orthogroups/tree_rooted.nwk")
 
 ggtree(acariphylo) + 
   geom_tiplab() +
@@ -460,9 +465,11 @@ ggtree(acariphylo) +
 
 Below, are the details for these orthology clusters shared by Varroa mites and _T. mercedesae_ (ASIAN-MITES); + _M. occidentalis_ (MESOSTIGMATA); + _I. scapularis_ (PARASITIFORMES); and + _T. urticae_ (ROOT).
 
-``` {r orthogroup acari, cache = TRUE}
+Ontology BP = Biological Processes, CC = Cellular Components and MF = Molecular Function.
 
-tableS2 <- read.csv("data/tableS02-goshared.csv")
+``` {r orthogroup GOterms, cache = TRUE}
+
+tableS2 <- read.csv("data/Orthogroups/tableS02-goshared.csv")
 
 kable(cbind(tableS2)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 10) %>%
@@ -480,7 +487,7 @@ The following code generate a .pdf file with the full karyogram but due to the n
 
 The karyogram plot was inspired from the script detailed [here](https://www.biostars.org/p/269857/).
 
-``` {r karyogram, message=FALSE, warning=FALSE, results="hide", cache = TRUE}
+``` {r karyogram positive sel, message=FALSE, warning=FALSE, results="hide", cache = TRUE}
 # chr1 is BEIS01000001.1 or NW_019211454.1
 # chr2 is BEIS01000002.1 or NW_019211455.1
 # chr3 is BEIS01000003.1 or NW_019211456.1
@@ -496,11 +503,11 @@ chrom_sizes <- structure(list(V1 = c("chr1", "chr2", "chr3", "chr4",
 colnames(chrom_sizes) <- c("chromosome", "size")
 
 ## Read files with information on chromosome location (for illustration purpose genes span was 5000bp from the starting point to be visible on the karyogram)
-regionsvd <- read.csv("data/Vd-location-17072018-short.csv")
+regionsvd <- read.csv("data/Positive selection/Vd-location-17072018-short.csv")
 
-regionsvj <- read.csv("data/Vj-location-17072018-short.csv")
+regionsvj <- read.csv("data/Positive selection/Vj-location-17072018-short.csv")
 
-common <- read.csv("data/Varroa-ancestor-20072018-short.csv")
+common <- read.csv("data/Positive selection/Varroa-ancestor-20072018-short.csv")
 
 chrom_order <- c("chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7")
 chrom_key <- setNames(object = as.character(c(1, 2, 3, 4, 5, 6, 7)), nm = chrom_order)
@@ -509,7 +516,7 @@ chrom_order <- factor(x = chrom_order, levels = rev(chrom_order))
 # convert the chromosome column in each dataset to the ordered factor
 chrom_sizes[["chromosome"]] <- factor(x = chrom_sizes[["chromosome"]], levels = chrom_order)
 
-#pdf(file = "data/VDVJ-POSSEL.pdf", width = 20, height = 12)
+#pdf(file = "data/Positive selection/VDVJ-POSSEL.pdf", width = 20, height = 12)
 POSEL <- ggplot(data = chrom_sizes)
     # base rectangles for the chroms, with numeric value for each chrom on the x-axis
 POSEL <- POSEL + geom_rect(aes(xmin = as.numeric(chromosome) - 0.3, 
@@ -523,15 +530,15 @@ POSEL <- POSEL + scale_x_discrete(name = "chromosome", limits = names(chrom_key)
     # add bands for regions for VD
 POSEL <- POSEL + geom_rect(data = regionsvd, aes(xmin = as.numeric(chromosome) - 0.0, 
                                       xmax = as.numeric(chromosome) + 0.3, 
-                                      ymax = end, ymin = start, fill = "V. destructor")) 
+                                      ymax = end5000bp, ymin = start, fill = "V. destructor")) 
       # add bands for regions for both
 POSEL <- POSEL + geom_rect(data = common, aes(xmin = as.numeric(chromosome) - 0.3, 
                                       xmax = as.numeric(chromosome) + 0.3, 
-                                      ymax = end, ymin = start, fill = c("Common to both Varroa"))) 
+                                      ymax = end5000bp, ymin = start, fill = c("Common to both Varroa"))) 
     # add bands for regions for VJ
 POSEL <- POSEL + geom_rect(data = regionsvj, aes(xmin = as.numeric(chromosome) - 0.3, 
                                       xmax = as.numeric(chromosome) + 0.0, 
-                                      ymax = end, ymin = start, fill = "V. jacobsoni")) 
+                                      ymax = end5000bp, ymin = start, fill = "V. jacobsoni")) 
 POSEL <- POSEL + scale_fill_manual(values = c( "black","red2", "blue")) 
 POSEL <- POSEL + ggtitle("Genes detected under positive selection in Varroa mite lineages")
     # supress scientific notation on the y-axis
@@ -557,17 +564,17 @@ POSEL <- POSEL + theme(panel.grid.major = element_line(colour = 'gray70', size=0
 
 The converted .tiff file obtained from the .pdf is presented here as an online preview. The figure 4 has been modified and improved from this base using Adobe Illustrator.
 
-```{r label, out.width = "100%", cache = TRUE}
-knitr::include_graphics("data/VDVJ-POSSEL.png")
+```{r snapshot plot1, out.width = "100%", cache = TRUE}
+knitr::include_graphics("data/Positive selection/VDVJ-POSSEL.png")
 ```
 
 
 ## Shared genes between the sister Varroa species
 
-The following table list all 40 genes under positive selection shared only by both Varroa mite genomes. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in red.
+The following table list all 40 genes under positive selection shared only by both Varroa mite genomes. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in black.
 
 ``` {r varroa possel, cache = TRUE}
-tableS3 <- read.csv("data/tableS03-posselvarroa.csv")
+tableS3 <- read.csv("data/Positive selection/tableS03-posselvarroa.csv")
 
 kable(cbind(tableS3)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -580,8 +587,8 @@ kable(cbind(tableS3)) %>%
 
 The following table list all 234 genes under positive selection found only in <span style="color:red">  _Varroa destructor_ </span>. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in red (see keywords).
 
-``` {r vdes possel, cache = TRUE}
-tableS4 <- read.csv("data/tableS04-posvd.csv")
+``` {r vdestructor possel, cache = TRUE}
+tableS4 <- read.csv("data/Positive selection/tableS04-posvd.csv")
 
 kable(cbind(tableS4)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -607,8 +614,8 @@ kable(cbind(tableS4)) %>%
 
 The following table list all 224 genes under positive selection found only in <span style="color:blue">  _Varroa jacobsoni_ </span>. Possible gene implicated in tolerance to external stressors or stimuli (Table 2) is indicated in blue (see keywords).
 
-``` {r vjac possel, cache = TRUE}
-tableS5 <- read.csv("data/tableS05-posvj.csv")
+``` {r vjacobsoni possel, cache = TRUE}
+tableS5 <- read.csv("data/Positive selection/tableS05-posvj.csv")
 
 kable(cbind(tableS5)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -638,7 +645,7 @@ Tests were done with different parameters for the ontology; with BP = Biological
 ``` {r GOterms possel, warning=FALSE, cache = TRUE}
 
 #Preparing the data
-Vd.data <-read.csv("data/vdesgoassoc.csv")
+Vd.data <-read.csv("data/Positive selection/vdesgoassoc.csv")
 #dim(Vd.data)
 #summary(Vd.data)
 #Vd.data$Gene.id
@@ -650,11 +657,11 @@ Vd.melt <- Vd.data %>%
 Vd.melt2 <-Vd.melt[!(is.na(Vd.melt$GO.ids) | Vd.melt$GO.ids==""),]
 #head(Vd.melt2)
 
-#write.csv(Vd.melt2, file = "data/VdesGOready.csv")
+#write.csv(Vd.melt2, file = "data/Positive selection/VdesGOready.csv")
 ## In the csv I removed the LOC before sequence number to avoid problems due to character and integerFALSE compatibility
 
 ##Preparing the GO frame
-annot.vd <- read.csv("data/VdesGOready2.csv") 
+annot.vd <- read.csv("data/Positive selection/VdesGOready2.csv") 
 
 annot.vd2 <- annot.vd %>%
   mutate(evidence = "IEA") %>%
@@ -669,7 +676,7 @@ gsc.vd <-GeneSetCollection(goAllFrame.vd, setType = GOCollection())
 universe.vd <- unique(annot.vd2$gene)
 #head(universe.vd)
 
-genesposel.vd <- read.csv("data/Vdesselected1511.csv")
+genesposel.vd <- read.csv("data/Positive selection/Vdesselected1511.csv")
 genes.vd <- unique(genesposel.vd$geneno)
 #head(genes.vd)
 
@@ -690,11 +697,11 @@ over.vd <- hyperGTest(params.vd)
 GO_enrich.vd <- as.data.frame(summary(over.vd))
 #GO_enrich.vd %>% 
 #  arrange(Pvalue) %>% 
-#  write.csv(file = "data/GO_term_enrichment_VdBP-15112018.csv")
+#  write.csv(file = "data/Positive selection/GO_term_enrichment_VdBP-15112018.csv")
 
 #### V. jacobsoni
 
-Vj.data <-read.csv("data/vjacgoassoc.csv")
+Vj.data <-read.csv("data/Positive selection/vjacgoassoc.csv")
 #dim(Vj.data)
 #summary(Vj.data)
 #Vj.data$Gene.id
@@ -706,12 +713,12 @@ Vj.melt <- Vj.data %>%
 Vj.melt2 <-Vj.melt[!(is.na(Vj.melt$GO.ids) | Vj.melt$GO.ids==""),]
 #head(Vj.melt2)
 
-#write.csv(Vj.melt2, file = "data/VjacGOready.csv")
+#write.csv(Vj.melt2, file = "data/Positive selection/VjacGOready.csv")
 
 ## In the csv I removed the LOC before sequence number to avoid problems due to character and integerFALSE compatibility
 
 #Enrichment with GOstats
-annot.vj <- read.csv("data/VjacGOready2.csv") 
+annot.vj <- read.csv("data/Positive selection/VjacGOready2.csv") 
 
 annot.vj2 <- annot.vj %>%
   mutate(evidence = "IEA") %>%
@@ -726,7 +733,7 @@ gsc.vj <-GeneSetCollection(goAllFrame.vj, setType = GOCollection())
 universe.vj <- unique(annot.vj2$gene)
 #head(universe.vj)
 
-genesposel.vj <- read.csv("data/Vjacselected1511.csv")
+genesposel.vj <- read.csv("data/Positive selection/Vjacselected1511.csv")
 genes.vj <- unique(genesposel.vj$geneno)
 #head(genes.vj)
 
@@ -748,7 +755,7 @@ over.vj <- hyperGTest(params.vj)
 GO_enrich.vj <-as.data.frame(summary(over.vj))
 #GO_enrich.vj %>% 
 #  arrange(Pvalue) %>% 
-#  write.csv(file = "data/GO_term_enrichment_VjBP-15112018.csv")
+#  write.csv(file = "data/Positive selection/GO_term_enrichment_VjBP-15112018.csv")
 
 ```
 
@@ -756,7 +763,7 @@ Once all tests have been run for <span style="color:red"> _Varroa destructor_ </
 
 ``` {r GOterms posseltab, cache = TRUE}
 
-tableS6 <- read.csv("data/tableS06-posGOterm.csv")
+tableS6 <- read.csv("data/Positive selection/tableS06-posGOterm.csv")
 
 kable(cbind(tableS6)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 8) %>%
@@ -772,7 +779,7 @@ We allowed a medium (70%) to small semantic similarity of the GO terms (based on
 
 REVIGO produces a R script which generates the bobble chart or the tree map as in Figure 3 and 4. Bobble chart script generated by REVIGO for the positive selected genes with Small similarity.
 
-``` {r GOterms revigo}
+``` {r GOterms revigo, message = FALSE}
 # --------------------------------------------------------------------------
 # Here is your data from REVIGO. Scroll down for plot configuration options.
 
@@ -909,7 +916,7 @@ A much reduce number of genes were detected to duplicate in tandem and to be spe
 
 ``` {r duplicate details, cache = TRUE}
 
-tableS7 <- read.csv("data/tableS07-duplicatediff.csv")
+tableS7 <- read.csv("data/Duplication/tableS07-duplicatediff.csv")
 
 kable(cbind(tableS7)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -925,7 +932,7 @@ kable(cbind(tableS7)) %>%
 
 ``` {r duplicate species, cache = TRUE}
 
-tableS8 <- read.csv("data/tableS08-duplicateshared.csv")
+tableS8 <- read.csv("data/Duplication/tableS08-duplicateshared.csv")
 
 kable(cbind(tableS8)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -934,46 +941,181 @@ kable(cbind(tableS8)) %>%
 
 ## Similarity of duplicated genes and trees
 
+Among the 32 and 16 clusters of duplicated genes in _V. destructor_ and _V. jacobosni_, respectively, five involved more than just two genes. We investigated whether these duplications were not artefact of the assembly by aligning the CDS (Coding Sequence) with an outgroup.
 
+The alignment in .fasta were submitted to [IQ-TREE web server](http://www.iqtree.org/) with the following parameters: Model = Find Best and Apply, State Frequency = Estimated by Maximul Likelihood, Branch support with Bootstrap Ultrafast with 1000 replicates and all other options by default.
+
+One cluster of genes in _V. destructor_ contains three duplication of histone H2A-like.
+The outgroup use here is a histone H2A-like gene from _M. occidentalis_.
+
+``` {r duplication tree, cache = TRUE}
+Histone <- read.tree("data/Duplication/tree_vd.gene.dup01-histone.nwk")
+
+histone.tree <- ggtree(Histone) + 
+  geom_tiplab(align=TRUE, linesize=.2) + 
+  geom_nodepoint()+
+  geom_nodelab(nudge_x=0.01)+
+  theme_tree2()+
+  geom_cladelabel(node=2, label="chr1", color="red2", offset=.2, align=TRUE)+
+  geom_cladelabel(node=3, label="BEIS01000444.1", color="red2", offset=.2, align=TRUE)+
+  geom_cladelabel(node=4, label="chr1", color="red2", offset=.2, align=TRUE)+
+  xlim(0,0.45)+ 
+  ggtitle("Histone H2A-like_vd.gene.dup_01 cluster", subtitle ="Best-fit model: K2P")
+
+histone.tree
+#msaplot(p, fasta = "data/Duplication/vd.gene.dup_01.fasta")
+```
+
+It seems that the CDS region for the two loci LOC111250934 on chromosome 1 and LOC111255102 on the contig BEIS01000444.1 are the 100% identical. Since the contig BEIS01000444.1 could result from assembly artefact and in a conservative way, we prefer to consider that only two duplicated genes should be considered here.  
+  
+  
+One cluster of genes in _V. destructor_ contains six duplication of heat shock 70 kDa protein-like. The outgroup use here is a heat shock 70 kDa protein-like gene from the mosquito _Aedes albopictus_.
+
+```{r duplication tree2, cache = TRUE}
+Heatshock <- read.tree("data/Duplication/tree_vd.gene.dup02-heatshock.nwk")
+
+heatshock.tree <- ggtree(Heatshock) + 
+  geom_tiplab(align=TRUE, linesize=.2) + 
+  geom_nodepoint()+
+  geom_nodelab(nudge_x=0.1)+
+  geom_cladelabel(node=2, label="chr1", color="red2", offset=2, align=TRUE)+
+  geom_cladelabel(node=3, label="chr1", color="red2", offset=2, align=TRUE)+
+  geom_cladelabel(node=4, label="chr1", color="red2", offset=2, align=TRUE)+
+  geom_cladelabel(node=5, label="chr1", color="red2", offset=2, align=TRUE)+
+  geom_cladelabel(node=6, label="chr1", color="red2", offset=2, align=TRUE)+
+  geom_cladelabel(node=7, label="chr1", color="red2", offset=2, align=TRUE)+
+  theme_tree2()+
+  xlim(0,5)+
+  ggtitle("heat shock 70 kDa protein-like", subtitle ="Best-fit model: TN+F+G4")
+heatshock.tree
+
+```
+
+Here non of the Heatshock proteins CDS were 100% identical, suggesting that their similarity may result from duplication events rather than assembly artefact.
+  
+Finally we also checked two duplication clusters detected in _V. jacobsoni_.
+
+```{r duplication tree3, cache = TRUE}
+ABC <- read.tree("data/Duplication/tree_vj.gene.dup10abc.nwk")
+
+ABC.tree <- ggtree(ABC) + 
+  geom_tiplab(align=TRUE, linesize=.2) + 
+  geom_nodepoint()+
+  geom_nodelab(nudge_x=0.1)+
+  geom_cladelabel(node=2, label="NW_019214192.1", color="blue", offset=1.2, align=TRUE)+
+  geom_cladelabel(node=3, label="NW_019214773.1", color="red2", offset=1.2, align=TRUE)+
+  geom_cladelabel(node=4, label="NW_019214773.1", color="red2", offset=1.2, align=TRUE)+
+  geom_cladelabel(node=5, label="NW_019214192.1", color="blue", offset=1.2, align=TRUE)+
+  theme_tree2()+
+  xlim(0,4)+
+  ggtitle("ATP-binding cassette sub-family A member 3-like", subtitle ="Best-fit model: TIM3e ")
+ABC.tree
+
+```
+
+The cluster Vj.gene.dup_13 included genes annotated with different function compared to other cluster with "myelin-associated glycoprotein-like", "immunoglobulin superfamily member 10-like" and "tyrosine-protein kinase-like otk" but all on the same scaffold `NW_019214325.1`.
+
+
+```{r duplication tree4, cache = TRUE}
+dup13 <- read.tree("data/Duplication/tree_vj.gene.dup13immuno.nwk")
+
+dup13.tree <- ggtree(dup13) + 
+  geom_tiplab(align=TRUE, linesize=.2) + 
+  geom_nodepoint()+
+  geom_nodelab(nudge_x=0.1)+
+  geom_cladelabel(node=2, label="NW_019214325.1", color="red2", offset=0.7, align=TRUE)+
+  geom_cladelabel(node=3, label="NW_019214325.1", color="red2", offset=0.7, align=TRUE)+
+  geom_cladelabel(node=4, label="NW_019214325.1", color="red2", offset=0.7, align=TRUE)+
+  theme_tree2()+
+  xlim(0,2)+
+  ggtitle("Cluster vjacob.gene.dup 13", subtitle ="Best-fit model: K2P ")
+dup13.tree
+
+```
 
 ## Karyogram of the duplicated genes
 
-``` {r duplication, cache = TRUE}
+``` {r karyogram duplication, cache = TRUE, message = FALSE}
 
-duplivdvj <- read.csv("data/Vdvj-duplicate-06102018-short.csv")
+duplivdvj <- read.csv("data/Duplication/Vdvj-duplicate-06102018-short.csv")
+duplivd <- read.csv("data/Duplication/Vd-duplicate-06102018-short.csv")
+duplivjortho <- read.csv("data/Duplication/Vj-duplicate-12062019-destructor.csv")
 
-duplivd <- read.csv("data/Vd-duplicate-06102018-short.csv")
-
-pdf(file = "data/VDVJ-DUPLICATION.pdf", width = 20, height = 12)
+pdf(file = "data/Duplication/VDVJ-DUPLICATION.pdf", width = 20, height = 12)
 ggplot(data = chrom_sizes) + 
-    # base rectangles for the chroms, with numeric value for each chrom on the x-axis
-    geom_rect(aes(xmin = as.numeric(chromosome) - 0.3, 
+  # base rectangles for the chroms, with numeric value for each chrom on the x-axis
+  geom_rect(aes(xmin = as.numeric(chromosome) - 0.3, 
                   xmax = as.numeric(chromosome) + 0.3, 
                   ymax = size, ymin = 0), 
               colour="black", fill = "white") + 
-   # rotate the plot 90 degrees
-    coord_flip() +
-   # give the appearance of a discrete axis with chrom labels
-    scale_x_discrete(name = "chromosome", limits = names(chrom_key)) +
-    # add bands for regions for VD
-        geom_rect(data = duplivd, aes(xmin = as.numeric(chromosome) - 0.0, 
+  
+  # rotate the plot 90 degrees
+  coord_flip() +
+  
+  # give the appearance of a discrete axis with chrom labels
+  scale_x_discrete(name = "chromosome", limits = names(chrom_key)) +
+  
+  # add bands for regions for VD
+  geom_rect(data = duplivd, aes(xmin = as.numeric(chromosome) - 0.0, 
                                       xmax = as.numeric(chromosome) + 0.3, 
                                       ymax = end, ymin = start, fill = "V. destructor")) +
-      # add bands for regions for both
-    geom_rect(data = duplivdvj, aes(xmin = as.numeric(chromosome) - 0.0, 
+
+  # add bands for regions for both
+  geom_rect(data = duplivdvj, aes(xmin = as.numeric(chromosome) - 0.0, 
                                       xmax = as.numeric(chromosome) + 0.3, 
                                       ymax = end, ymin = start, fill = c("Common to both Varroa"))) +
-    # add bands for regions for VJ
-        #geom_rect(data = duplivj, aes(xmin = as.numeric(chromosome) - 0.3, 
-        #                              xmax = as.numeric(chromosome) + 0.0, 
-        #                              ymax = end, ymin = start, fill = "V. jacobsoni")) +
-    scale_fill_manual(values = c( "black","red2", "blue")) +
-    ggtitle("Genes detected under positive selection in Varroa mite lineages") +
+  
+  geom_curve(aes(x = 1 + 0.4, y = 9743941, xend = 1 + 0.6, yend= 9749576, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 14020703, xend = 1 + 0.6, yend= 15116915, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 15116915, xend = 1 + 0.6, yend= 15326537, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 15326537, xend = 1 + 0.6, yend= 15339678, color ="red"))+  
+  geom_curve(aes(x = 1 + 0.4, y = 15339678, xend = 1 + 0.6, yend= 15347116, color ="red"))+ 
+  geom_curve(aes(x = 1 + 0.4, y = 15347116, xend = 1 + 0.6, yend= 15378965, color ="red"))+ 
+  geom_curve(aes(x = 1 + 0.4, y = 21689375, xend = 1 + 0.6, yend= 21710643, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 22298740, xend = 1 + 0.6, yend= 22514440, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 44820095, xend = 1 + 0.6, yend= 44822808, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 73377174, xend = 1 + 0.6, yend= 73720465, color ="red"))+   
+  geom_curve(aes(x = 1 + 0.4, y = 73980847, xend = 1 + 0.6, yend= 73989530, color ="red"))+   
+  geom_curve(aes(x = 2 + 0.4, y = 41272447, xend = 2 + 0.6, yend= 41311871, color ="red"))+   
+  geom_curve(aes(x = 2 + 0.4, y = 43163870, xend = 2 + 0.6, yend= 43427422, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 18281050, xend = 3 + 0.6, yend= 18292369, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 28608596, xend = 3 + 0.6, yend= 28620308, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 39040262, xend = 3 + 0.6, yend= 39046251, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 51462784, xend = 3 + 0.6, yend= 51492028, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 51476292, xend = 3 + 0.6, yend= 51499478, color ="red"))+   
+  geom_curve(aes(x = 3 + 0.4, y = 54387453, xend = 3 + 0.6, yend= 54534443, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 11380742, xend = 4 + 0.6, yend= 11389392, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 14611045, xend = 4 + 0.6, yend= 14626702, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 14651045, xend = 4 + 0.6, yend= 14659371, color ="red"))+   
+  geom_curve(aes(x = 4 + 0.4, y = 46620793, xend = 4 + 0.6, yend= 46642117, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 6735699, xend = 5 + 0.6, yend= 6832127, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 25703068, xend = 5 + 0.6, yend= 25729551, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 30415175, xend = 5 + 0.6, yend= 30418126, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 33395295, xend = 5 + 0.6, yend= 33414971, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 35812050, xend = 5 + 0.6, yend= 35861530, color ="red"))+   
+  geom_curve(aes(x = 5 + 0.4, y = 35985578, xend = 5 + 0.6, yend= 36027877, color ="red"))+   
+  geom_curve(aes(x = 6 + 0.4, y = 3126901, xend = 6 + 0.6, yend= 3156849, color ="red"))+   
+  geom_curve(aes(x = 6 + 0.4, y = 4714576, xend = 6 + 0.6, yend= 4729744, color ="red"))+   
+  geom_curve(aes(x = 6 + 0.4, y = 4775135, xend = 6 + 0.6, yend= 4786415, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 2565206, xend = 7 + 0.6, yend= 2584985, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 11113832, xend = 7 + 0.6, yend= 11147298, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 16776607, xend = 7 + 0.6, yend= 14338944, color ="red"))+   
+  geom_curve(aes(x = 7 + 0.4, y = 14299082, xend = 7 + 0.6, yend= 16784714, color ="red"))+   
+  
+  # add bands for regions for VJ
+  geom_rect(data = duplivjortho, aes(xmin = as.numeric(chromosome) - 0.3, 
+                                      xmax = as.numeric(chromosome) + 0.0, 
+                                      ymax = end, ymin = start, fill = "V. jacobsoni")) +
+
+  scale_fill_manual(values = c( "black","red2", "blue")) +
+  ggtitle("Genes detected under positive selection in Varroa mite lineages") +
+
     # supress scientific notation on the y-axis
-   scale_y_continuous(breaks = c(0e+00, 1e+07, 2e+07,3e+07,4e+07,5e+07,6e+07,7e+07), labels = comma) +
+    scale_y_continuous(breaks = c(0e+00, 1e+07, 2e+07,3e+07,4e+07,5e+07,6e+07,7e+07), labels = comma) +
     xlab("Chromosomes")+
     ylab("region (bp)")+
-          # black & white color theme 
+
+    # black & white color theme 
     theme(panel.grid.major = element_line(colour = 'gray70', size=0.2, linetype = "dashed"), 
           panel.grid.minor = element_blank(), 
           panel.background = element_blank(),
@@ -991,11 +1133,84 @@ dev.off()
 ```
 
 ```{r label2, out.width = "100%", cache = TRUE}
-knitr::include_graphics("data/VDVJ-POSSEL.png")
+knitr::include_graphics("data/Duplication/VDVJ-DUPLICATION.png")
 ```
 
 
+```{r karyogram duplication2, cache = TRUE, message = FALSE}
 
+duplivj <- read.csv("data/Duplication/Vj-duplicate-06102018-short.csv")
+
+#NW_019212968.1	426717bp
+#NW_019213061.1	397455
+#NW_019213156.1	306665
+#NW_019213457.1	779431
+#NW_019213603.1	116895
+#NW_019213631.1	100986
+#NW_019213999.1	128196
+#NW_019214181.1	266698
+#NW_019214192.1	198533
+#NW_019214266.1	458418
+#NW_019214281.1	182253
+#NW_019214325.1	720025
+#NW_019214581.1	100050
+#NW_019214722.1	67126
+#NW_019214773.1	60246
+#NW_019214922.1	40910
+
+# Varroa destructor chromosome sizes
+scaffold_sizes <- structure(list(V1 = c("NW_019212968.1", "NW_019213061.1", "NW_019213156.1", "NW_019213457.1", "NW_019213603.1", "NW_019213631.1", "NW_019213999.1", "NW_019214181.1", "NW_019214192.1", "NW_019214266.1", "NW_019214281.1", "NW_019214325.1", "NW_019214581.1", "NW_019214722.1", "NW_019214773.1", "NW_019214922.1"), V2 = c(426717L, 397455L, 306665L, 779431L, 116895L, 100986L, 128196L, 266698L, 198533L, 458418L, 182253L, 720025L, 100050L, 67126L, 60246L, 40910L )), .Names = c("V1", 
+"V2"), class = "data.frame", row.names = c(NA, -16L))
+colnames(scaffold_sizes) <- c("scaffold", "size")
+
+scaffold_order <- c("NW_019212968.1", "NW_019213061.1", "NW_019213156.1", "NW_019213457.1", "NW_019213603.1", "NW_019213631.1", "NW_019213999.1", "NW_019214181.1", "NW_019214192.1", "NW_019214266.1", "NW_019214281.1", "NW_019214325.1", "NW_019214581.1", "NW_019214722.1", "NW_019214773.1", "NW_019214922.1")
+scaffold_key <- setNames(object = as.character(c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)), nm = scaffold_order)
+scaffold_order <- factor(x = scaffold_order, levels = rev(scaffold_order))
+
+# convert the scaffold column in each dataset to the ordered factor
+scaffold_sizes[["scaffold"]] <- factor(x = scaffold_sizes[["scaffold"]], levels = scaffold_order)
+
+#pdf(file = "data/Duplication/VJ-DUPLICATIONSCAFFOLD.pdf", width = 20, height = 12)
+ggplot(data = scaffold_sizes) + 
+  # base rectangles for the chroms, with numeric value for each chrom on the x-axis
+  geom_rect(aes(xmin = as.numeric(scaffold) - 0.3, 
+                  xmax = as.numeric(scaffold) + 0.3, 
+                  ymax = size, ymin = 0), 
+              colour="black", fill = "white") + 
+  
+  # rotate the plot 90 degrees
+  coord_flip() +
+  
+  # give the appearance of a discrete axis with chrom labels
+  scale_x_discrete(name = "scaffold", limits = names(scaffold_key)) +
+  ggtitle("Genes detected under positive selection in Varroa jacobsoni lineages") +
+
+  # supress scientific notation on the y-axis
+  scale_y_continuous(breaks = c(0e+00, 1e+05, 2e+05,3e+05,4e+05,5e+05,6e+05,7e+05), labels = comma) +
+  xlab("scaffold")+
+  ylab("region (bp)")+
+  
+  #add bands for regions for VJ
+  geom_rect(data = duplivj, aes(xmin = as.numeric(chromosome) - 0.3, 
+                                  xmax = as.numeric(chromosome) + 0.3, 
+                                  ymax = end, ymin = start, fill = "V. jacobsoni")) +
+  scale_fill_manual(values = c("blue")) +
+
+  # black & white color theme 
+  theme(panel.grid.major = element_line(colour = 'gray70', size=0.2, linetype = "dashed"),
+          panel.grid.minor = element_blank(), 
+          panel.background = element_blank(),
+          axis.text.x = element_text(colour = "black", size = 16),
+          axis.title.x = element_text(colour = "black", size = 20, face = "bold"),
+          axis.text.y = element_text(colour = "black", size = 20),
+          axis.title.y = element_text(colour = "black", size = 20, face = "bold"),
+          plot.title = element_text(color = "black", size = 24, face = "bold"),
+          legend.text=element_text(size=24, face = "bold.italic"),
+          legend.position=c(0.85, 0.80),
+          legend.title = element_blank())
+
+#dev.off()
+```
 ## GO term association with duplicated genes in Varroa
 
 We enriched the duplicated genes using the same method as for the genes under positive selection with `GOstats` package and **HyperGTest** function.
@@ -1003,7 +1218,7 @@ We enriched the duplicated genes using the same method as for the genes under po
 For the GO term associated with the duplicated genes in _V. destructor_.
 ``` {r duplicate GOVdes, cache = TRUE}
 
-tableS9 <- read.csv("data/tableS09-duplicategoVD.csv")
+tableS9 <- read.csv("data/Duplication/tableS09-duplicategoVD.csv")
 
 kable(cbind(tableS9)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -1014,7 +1229,7 @@ kable(cbind(tableS9)) %>%
 For the GO term associated with the duplicated genes in _V. jacobsoni_.
 ``` {r duplicate GOVjac, cache = TRUE}
 
-tableS10 <- read.csv("data/tableS10-duplicategoVJ.csv")
+tableS10 <- read.csv("data/Duplication/tableS10-duplicategoVJ.csv")
 
 kable(cbind(tableS10)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
@@ -1025,7 +1240,7 @@ kable(cbind(tableS10)) %>%
 For the GO term associated with the duplicated genes shared by both Varroa.
 ``` {r duplicate GOshared, cache = TRUE}
 
-tableS11 <- read.csv("data/tableS11-duplicategoshared.csv")
+tableS11 <- read.csv("data/Duplication/tableS11-duplicategoshared.csv")
 
 kable(cbind(tableS11)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 9) %>%
