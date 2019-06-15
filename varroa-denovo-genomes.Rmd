@@ -482,6 +482,20 @@ kable(cbind(tableS2)) %>%
 
 # 3| Genes detected under positive selection
 
+`HyPhy` and `aBSREL` method were used to test for each branch of the Acari phylogeny, whether a proportion of sites have evolved under positive selection. Raw results for genes detected under positive selection after FDR correction (p_Holm) are presented on the following table with orthogroups ID. 
+  
+Vjac = _V. jacobsoni_, Vdes = _V. destructor_, Tmer = _T. mercedesae_, Mocc = _M. occidentalis_, Isca = _I. scapularis_, Turt = _T. urticae_
+
+``` {r hyPhy GOterms, cache = TRUE}
+
+tableHyPhy <- read.csv("data/Positive selection/VarroaAbsrelResults.csv")
+
+kable(cbind(tableHyPhy)) %>%
+  kable_styling(bootstrap_options = "striped", font_size = 10) %>%
+  scroll_box(width = "100%", height = "400px")
+
+```
+
 ## Chromosomal localisation and Varroa karyogram
 
 Here we created a karyogram of the seven major chromosome assembled in the <span style="color:red">  _Varroa destructor_ </span> reference genome and plot the location of the genes detected under positive selection. The localization and description of each gene were summarized in separate species files after searching for their ID in NCBI database and in the .gff annotation file.  
