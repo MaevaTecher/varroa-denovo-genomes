@@ -18,6 +18,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This document was written in R Markdown, and translated into .html using the R package `knitr`. Press the buttons labelled **Code** to show the R code.
 
 ```{r message=FALSE, warning=FALSE, results="hide"}
+
 library("tidyverse")
 library("knitr") # for the markdown
 library("kableExtra") # for creating a scrolling table
@@ -41,6 +42,7 @@ library("htmltools")
 library("rgdal")
 library("grid")
 library("gridExtra")
+library("GeneOverlap")
 
 ```
 
@@ -437,11 +439,12 @@ Below is the summary output of orthologs genes (with NCBI gene ID) among the six
 SOG = super orthologue group and OG = orthologue group.
 
 ``` {r orthogroup table, cache = TRUE}
+
 kable(cbind(tableS1)) %>%
   kable_styling(bootstrap_options = "striped", font_size = 10) %>%
   scroll_box(width = "100%", height = "400px")
-
 ```
+
   
 
 ## Gene ontology terms associated with orthologs clusters
@@ -495,6 +498,7 @@ kable(cbind(tableHyPhy)) %>%
   scroll_box(width = "100%", height = "400px")
 
 ```
+
 
 ## Chromosomal localisation and Varroa karyogram
 
@@ -586,11 +590,12 @@ knitr::include_graphics("data/Positive selection/VDVJ-POSSEL.png")
 ```
 
 
-## Shared genes between the sister Varroa species
+## Genes under positive selection between the split of Varroa species
 
-The following table list all *40 genes under positive selection* shared only by both Varroa mite genomes. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in black.
+The following table list all *40 genes under positive selection* shared only by both Varroa mite genomes before their split. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in black.
 
 ``` {r varroa possel, cache = TRUE}
+
 tableS3 <- read.csv("data/Positive selection/tableS03-posselvarroa.csv")
 
 kable(cbind(tableS3)) %>%
@@ -599,12 +604,14 @@ kable(cbind(tableS3)) %>%
 
 ```
 
+  
 
 ## Genes under positive selection specific to _V. destructor_
 
 The following table list all *234 genes under positive selection* found only in <span style="color:red">  _Varroa destructor_ </span>. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in red (see keywords).
 
 ``` {r vdestructor possel, cache = TRUE}
+
 tableS4 <- read.csv("data/Positive selection/tableS04-posvd.csv")
 
 kable(cbind(tableS4)) %>%
@@ -632,6 +639,7 @@ kable(cbind(tableS4)) %>%
 The following table list all *224 genes under positive selection* found only in <span style="color:blue">  _Varroa jacobsoni_ </span>. Possible genes implicated in tolerance to external stressors or stimuli (Table 2) is indicated in blue (see keywords).
 
 ``` {r vjacobsoni possel, cache = TRUE}
+
 tableS5 <- read.csv("data/Positive selection/tableS05-posvj.csv")
 
 kable(cbind(tableS5)) %>%
@@ -649,6 +657,39 @@ kable(cbind(tableS5)) %>%
   row_spec(194, bold = T, color = "white", background = "#1A8CFF") %>%
   row_spec(198, bold = T, color = "white", background = "#1A8CFF") %>%
   row_spec(212, bold = T, color = "white", background = "#1A8CFF")
+
+```
+
+## Fisher's exact test on overlapping genes
+  
+We tested whether the set of genes under positive selection were significantly overlapping between _V. destructor_ and _V. jacobsoni_ using the Fisher's exact test from the `GeneOverlap` package.
+  
+
+```{r overlap genepositive, cache = TRUE}
+
+vd.list <- as.character(tableS4$pos.vd.gene.id)
+
+vj.list <-as.character(tableS5$ortholog.vd) ## to check the intersect we need to look at the gene ID from Vdes_3.0 genome
+
+gs.orthologs = 9628 #genes
+
+##Testing overlap between two gene lists
+go.obj <- newGeneOverlap(vd.list, vj.list, gs.orthologs)
+go.obj <- testGeneOverlap(go.obj)
+print(go.obj)
+
+## if pvalue is under 0.05 then means overlap is highly significant
+## if Odd ratio is equal or less than 1, there is no association between the two lists
+## Jaccard index measures the similarity of the list between 0 and 1, no similarity
+
+```
+
+  
+The test results show that the overlap is highly significant considering the 9,628 orthologs genes by both mites and that both _V. destructor_ and _V. jacobsoni_ positively selected genes will overlap (n = 13). However, we checked the significativity of this test by additionally performing a Fisher's exact two-tailed test which also revealed significant.
+
+```{r fishertest, cache = TRUE}
+
+fisher.test(matrix(c(9128, 221, 212, 13), nrow=2))
 
 ```
 
@@ -788,7 +829,41 @@ kable(cbind(tableS6)) %>%
 
 ```
   
+## Fisher's exact test on overlapping GO terms
   
+Since our overlap regarding the exact gene ID under positive selection was significant for the small number detected, we tested if their associated GO terms were also significantly overlapping or rather indicating different metabolic pathways involved.  
+
+On the original BLAST2GO association gene ID and GO terms for _V. destructor_ genome, a total of 6,608 GO terms were found and considered as the full set.  
+
+
+```{r overlap gotermpositive, cache = TRUE}
+
+vd.golist <-read.csv("data/Positive selection/vdgolist.csv", header = FALSE)
+as.character(vd.golist$V1)
+
+vj.golist <-read.csv("data/Positive selection/vjgolist.csv", header = FALSE)
+as.character(vj.golist$V1)
+
+## if pvalue is under 0.05 then means overlap is highly significant
+## if Odd ratio is equal or less than 1, there is no association between the two lists
+## Jaccard index measures the similarity of the list between 0 and 1, no similarity
+
+gs.goterm = 6608 #GO terms from the BLAST2GO association in Vdes_3.0 genome
+
+##Testing overlap between two GO term list
+go.obj3 <- newGeneOverlap(vd.golist$V1, vj.golist$V1, gs.goterm)
+go.obj3 <- testGeneOverlap(go.obj3)
+print(go.obj3)
+
+fisher.test(matrix(c(6220, 198, 187, 3), nrow=2))
+
+```
+   
+Here, the very small overlap is considered not significant by both one-tailed and two-tailed Fisher's exact test, indicating that with the effective tested here, the 201 and 190 GO terms enriched for the positively selected genes of _V. destructor_ and _V. jacobsoni_ are involved in divergent biological processes, molecular function and cellular components.
+   
+    
+    
+    
 Now we have all the significant GO terms associated with the genes under positive selection, we would like to reduce and visualize the most redundant ones. In order to observe whether or not the same GO terms or related terms are overlapping or being very different for the two Varroa sister species, we use the online tool of [REVIGO](http://revigo.irb.hr/).  
 **Supek et al., PloS One (2011), 6(7), e21800**
 
