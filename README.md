@@ -1,5 +1,5 @@
 # varroa-denovo-genomes
-We provide here an online supplemental data containing raw data and scripts which were used to create some figures in our manuscript about Varroa destructor and Varroa jacobsoni genomes https://www.biorxiv.org/content/10.1101/512988v1
+We provide here an online supplemental material containing raw data and scripts used to create some of the figures in our manuscript about _Varroa destructor_ and _Varroa jacobsoni_ genomes https://www.biorxiv.org/content/10.1101/512988v1
 
 The interactive .html version of the R markdown is directly available [here](https://maevatecher.github.io/varroa-denovo-genomes/).
 
